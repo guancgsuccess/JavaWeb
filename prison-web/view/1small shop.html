@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<style type="text/css">
+			
+			.outer{
+				background-image:url(../img/QQ图片20181126181724.jpg);
+				background-size: 100% 100%;
+				background-repeat:no-repeat;
+				/*position: relative;*/
+				width:100%;
+				height:600px;
+				/*top: -20px;*/
+				background-color:rgba(00,00,00,0.9)
+				}
+			.c1{
+				/*主体背景div*/
+				width:1000px;
+				height: 1500px;
+				position: relative;
+				top: -320px;
+				margin:auto;
+				/*border: 1px solid black;*/
+			}
+			#n1{
+				/*好再来监狱大标题*/
+				width: 998px;
+				height: 180px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				text-align:center;
+				font-size: 6em;
+				line-height: 180px;
+			}
+			#n2{
+				/*囚犯大头照*/
+				width: 175px;
+				height:250px ;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 180px;
+				left: 824px;
+				background-image: url(../img/qiufan1.jpg);
+			}
+			#n3{
+				/*公示公告背景div*/
+				width: 200px;
+				height: 250px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 180px;
+			}
+			#n6{
+				/*公示公告标题*/
+				width:198px;
+				height: 60px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				border-radius: 5px;
+				text-align: center;
+				font-size: 2em;
+				line-height: 60px;
+				background-color: blueviolet;
+			}
+			#n7{
+				/*公示公告内容*/
+				width: 198px;
+				height: 188px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				border-radius: 5px;
+				top: 60px;
+			}
+			#n4{
+				/*滑动图片*/
+				width:624px;
+				height: 250px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 180px;
+				left:200px;
+			}
+			#n5{
+				/*好再来小卖部*/
+				width: 998px;
+				height: 300px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top:430px;
+			}
+			#SmallShopPhoto{
+				/*小卖部图片*/
+				width:500px;
+				height: 298px;
+				position: absolute;
+				/*border: 1px solid black;*/	
+			}
+			#SmallShopText{
+				/*小卖部面包屑*/
+				width:322px ;
+				height: 298px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				left: 500px;
+			}
+			#PeopleInformation{
+				/*囚犯信息介绍*/
+				width: 175px;
+				height:298px ;
+				position: absolute;
+				/*border: 1px solid black;*/
+				left: 822px;
+			}
+			#PeopleInformation1{
+				width: 173px;
+				height: 60px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				border-radius: 5px;
+				text-align: center;
+				line-height: 60px;
+				font-size: 2em;
+			}
+			#PeopleInformation2{
+				width: 173px;
+				height: 236px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 60px;
+				border-radius: 5px;
+			}
+			#InformationPart{
+				/*信息公开板块*/
+				width: 998px;
+				height: 700px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 730px;
+				/*border-radius: 5px;*/
+			}
+			#InformationPhoto{
+			    /*信息公开图片*/
+				width: 996px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				background-image: url(../img/111.jpg);
+			}
+			#YuWu{
+				/*狱务板块*/
+				width: 498px;
+				height: 330px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 40px;
+			}
+			#YuWuTitle{
+				/*狱务标题*/
+				width: 496px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px solid black;*/
+			}
+			#YuWuPrime{
+				/*狱务主体*/
+				width: 496px;
+				height: 288px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 40px;
+			}
+			#GuiFan{
+				/*规范板块*/
+				width: 498px;
+				height: 330px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				left: 498px;
+				top: 40px;
+			}
+			#GuiFanTitle{
+				/*规范标题*/
+				width: 496px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px solid black;*/
+			}
+			#GuiFanPrime{
+				/*规范主体*/
+				width: 496px;
+				height: 288px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 40px;
+			}
+			#JianXing{
+				/*减刑板块*/
+				width: 498px;
+				height: 328px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 370px;
+			}
+			#JianXingTitle{
+				/*减刑标题*/
+				width: 496px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px solid black;*/
+			}
+			#JianXingPrime{
+				/*减刑主体*/
+				width: 496px;
+				height: 286px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 40px;
+			}
+			#ZanYu{
+				/*暂予板块*/
+				width: 498px;
+				height: 328px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 370px;
+				left: 498px;
+			}
+			#ZanYuTitle{
+				/*暂予标题*/
+				width: 496px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px solid black;*/
+			}
+			#ZanYuPrime{
+				/*暂予主体*/
+				width: 496px;
+				height: 286px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				top: 40px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-default my-nav" role="navigation">
+					<div class="container-fluid"> 
+				    <div class="navbar-header">
+				        <button type="button" class="navbar-toggle" data-toggle="collapse"
+				                data-target="#example-navbar-collapse">
+				            <span class="sr-only">切换导航</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
+				        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home	">&nbsp;</span>好再来监狱囚犯系统</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+				        <ul class="nav navbar-nav navbar-right">
+				            <li class="active"><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>个人信息</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-envelope">&nbsp;</span>写信息</a></li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				                	<span class="glyphicon glyphicon-th	">&nbsp;</span>
+				                                         小卖部 <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li><a href="#">jmeter</a></li>
+				                    <li><a href="#">EJB</a></li>
+				                    <li><a href="#">Jasper Report</a></li>
+				                    <li class="divider"></li>
+				                    <li><a href="#">分离的链接</a></li>
+				                    <li class="divider"></li>
+				                    <li><a href="#">另一个分离的链接</a></li>
+				                </ul>
+				            </li>
+				        </ul>
+				    </div>
+				    </div>
+					<div class="outer"></div>
+					<div class="c1">
+						<div id="n1">
+							<span>好再来监狱囚犯操作系统</span>
+						</div>
+						<div id="n2"></div>
+						<div id="n3">
+							<div id="n6">
+								<span style="color: white;">公示公告</span>
+							</div>
+							<div id="n7">
+								<p></p>
+							</div>
+						</div>
+						<div id="n4"></div>
+						<div id="n5">
+							<div id="SmallShopPhoto"></div>
+							<div id="SmallShopText"></div>
+							<div id="PeopleInformation">
+								<div id="PeopleInformation1">个人信息</div>
+								<div id="PeopleInformation2"></div>
+							</div>
+						</div>
+						<div id="InformationPart">
+							<div id="InformationPhoto"></div>
+							<div id="YuWu">
+								<div id="YuWuTitle">
+									<p style="font-size: 18px;">狱务公开指南</p>
+								</div>
+								<div id="YuWuPrime"></div>
+							</div>
+							<div id="GuiFan">
+								<div id="GuiFanTitle">
+									<p style="font-size: 18px;">规范性文件</p>
+								</div>
+								<div id="GuiFanPrime"></div>
+							</div>
+							<div id="JianXing">
+								<div id="JianXingTitle">
+									<p style="font-size: 18px;">减刑假释公示</p>
+								</div>
+								<div id="JianXingPrime"></div>
+							</div>
+							<div id="ZanYu">
+								<div id="ZanYuTitle">
+									<p style="font-size: 18px;">暂予监外执行公示</p>
+								</div>
+								<div id="ZanYuPrime"></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		<!--引入jquery-->
+		
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
