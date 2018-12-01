@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>面包屑和响应式表格 </title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			.my_table tr:hover {
+				background-color: lightgoldenrodyellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">2013</a>
+					</li>
+					<li class="active">十一月</li>
+				</ul>
+				<div class="table-responsive">
+					<table class="table my_table">
+						<caption>响应式表格布局</caption>
+						<thead>
+							<tr>
+								<th>产品</th>
+								<th>付款日期</th>
+								<th>状态</th>
+								<th>单价</th>
+								<th>产品</th>
+								<th>付款日期</th>
+								<th>状态</th>
+								<th>单价</th>
+							</tr>
+
+						</thead>
+						<tbody>
+							<tr>
+								<td>产品1</td>
+								<td>23/11/2013</td>
+								<td>待发货</td>
+								<td>500</td>
+								<td>产品1</td>
+								<td>23/11/2013</td>
+								<td>待发货</td>
+								<td>500</td>
+							</tr>
+							<tr>
+								<td>产品2</td>
+								<td>10/11/2013</td>
+								<td>发货中</td>
+								<td>500</td>
+								<td>产品1</td>
+								<td>23/11/2013</td>
+								<td>待发货</td>
+								<td>500</td>
+							</tr>
+							<tr>
+								<td>产品3</td>
+								<td>20/10/2013</td>
+								<td>待确认</td>
+								<td>500</td>
+								<td>产品1</td>
+								<td>23/11/2013</td>
+								<td>待发货</td>
+								<td>500</td>
+							</tr>
+							<tr>
+								<td>产品4</td>
+								<td>20/10/2013</td>
+								<td>已退货</td>
+								<td>500</td>
+								<td>产品1</td>
+								<td>23/11/2013</td>
+								<td>待发货</td>
+								<td>500</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!--引入jquery-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
