@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Buyer</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			.main {
+				/*margin: auto;*/
+				border: 1px solid red;
+				/*width: 960px;*/
+				height: 550px;
+			}
+			
+			.my_color {
+				margin-top: 20px;
+				color: cornflowerblue;
+			}
+			
+			.mg {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			
+			div>a:link {
+				text-decoration: none;
+			}
+			
+			div>a:visited {
+				color: black;
+			}
+			
+			div>a:hover {
+				color: cornflowerblue;
+			}
+			
+			div>a:active {
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class=" navbar-default" role="navigation" style="border: 0px;background-color: aliceblue;">
+					<div class="navbar-header">
+						<small class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;农产品在线交易</small></a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">农产品主页</a>
+							</li>
+							<li>
+								<a href="#">收藏夹</a>
+							</li>
+							<li>
+								<a href="#">商品分类</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									联系客服 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">买家客服</a>
+									</li>
+									<li>
+										<a href="#">卖家客服</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">意见反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--</div>-->
+				</nav>
+				<div class="col-sm-offset-1 col-sm-10">
+					<div class="col-sm-1">
+						<div class="row my_color">
+							<font size="4">全部功能</font>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">愿望单</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">订单记录</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">评价管理</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">退款服务</font>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-11 ">
+						<p style="font-size: 21px; margin-top: 19px; color: cadetblue;">评价管理</p>
+						<hr color="cadetblue" />
+						<!--表格-->
+						<div class="table-responsive">
+							<table class="table">
+								<caption><font size="4px">给他人评价</font></caption>
+								<thead style="font-size: 13px;">
+									<tr>
+										<th>评论</th>
+										<th>被评价人</th>
+										<th>宝贝信息</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody style="font-size: 13px;">
+									<tr>
+										<td>哎呦，不错哦！<br/>[2018-6-12]</td>
+										<td><a>爱巧食品专营店</a></td>
+										<td>23/11/2013</td>
+										<td>匿名评价</td>
+									</tr>
+									<tr>
+										<td>味道不怎么样<br/>[2018-3-17]</td>
+										<td><a>美特斯邦威官方</a></td>
+										<td>10/11/2013</td>
+										<td>实名评价</td>
+									</tr>
+									<tr>
+										<td>我觉得口以。<br/>[2018-1-6]</td>
+										<td><a>旋光家居专营店</a></td>
+										<td>20/10/2013</td>
+										<td>匿名评价</td>
+									</tr>
+									<tr>
+										<td>土特产很不错，很早以前就听说了，味道...<br/>[2017-12-12]</td>
+										<td><a>哒卜人旗舰店</a></td>
+										<td>20/10/2013</td>
+										<td>匿名评价</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--引入jquery-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

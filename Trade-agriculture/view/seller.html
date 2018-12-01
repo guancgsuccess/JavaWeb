@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>seller</title>
+
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			/*.main {
+				border: 1px solid red;
+				height: 550px;
+			}*/
+			
+			.my_color {
+				margin-top: 20px;
+				color: cornflowerblue;
+			}
+			
+			.mg {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			
+			div>a:link {
+				text-decoration: none;
+			}
+			
+			div>a:visited {
+				color: black;
+			}
+			
+			div>a:hover {
+				color: cornflowerblue;
+			}
+			
+			div>a:active {
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class=" navbar-default" role="navigation" style="border: 0px;background-color: aliceblue;">
+					<div class="navbar-header">
+						<small class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;农产品在线交易</small></a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">农产品主页</a>
+							</li>
+							<li>
+								<a href="#">收藏夹</a>
+							</li>
+							<li>
+								<a href="#">商品分类</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									联系客服 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">买家客服</a>
+									</li>
+									<li>
+										<a href="#">卖家客服</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">意见反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--</div>-->
+				</nav>
+
+				<!--<div class="form-group">-->
+				<div class="col-sm-offset-1 col-sm-10 main">
+					<div class="col-sm-1 main">
+						<div class="row my_color">
+							<font size="4">全部功能</font>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">我的店铺</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">愿望单</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">订单记录</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">评价管理</font>
+							</a>
+						</div>
+						<div class="row mg">
+							<a href="#">
+								<font size="2">退款服务</font>
+							</a>
+						</div>
+						
+					</div>
+					<div class="col-sm-11 main">
+						<p style="font-size: 21px; margin-top: 19px; color: cadetblue;">我的店铺</p>
+						<hr>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th> </th>
+										<th>商品名称</th>
+										<th>介绍</th>
+										<th>单价</th>
+										<th>销量</th>
+										<th>库存</th>
+										<th>状态</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../img/seller1.jpg" style="max-width: 100px;"></td>
+										<td>红辣椒</td>
+										<td>这是一个介绍这是一个介绍这是一个介绍这是一个介绍</td>
+										<td>10</td>
+										<td>100</td>
+										<td>50</td>
+										<td>
+											<select id="condition">
+												<option selected="selected">--选择状态--</option>
+												<option>销售中</option>
+												<option>下架</option>
+											</select>
+											
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<div class="row" style="width: 900px;">
+								<div class="col-sm-4 col-sm-offset-5">
+									<button class="btn btn-primary">添加商品</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
