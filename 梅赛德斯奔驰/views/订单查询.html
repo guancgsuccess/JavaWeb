@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单查询</title>
+		<link rel="stylesheet" type="text/css" href="../plugins1/bootstrap-3.3.7-dist/css/bootstrap.min.css" />	
+		<!--引用订单查询的css文件-->
+		<link rel="stylesheet" type="text/css" href="../css/订单查询.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style type="text/css">
+			.header{
+				background-color: #000000;
+				width: 100%;
+			}
+			.myarea{
+				position: absolute;
+				top: 5%;
+				right: 8%;
+				z-index: 1;
+			}
+			.div1{
+				padding: 6% 8%;
+				height: 220px;
+			}
+			
+			.mynav{
+				position: relative;
+				background-color: #000000;
+				border: 0px;
+				top: 0px;
+				left: 40%;
+				z-index: 1;
+				font-size: 30px;
+				width: 70%;
+			}
+			li a{
+				color: white;
+			}
+			li a:hover{
+				color: dodgerblue;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container header">
+			<div class="div1">
+				<a href="home_page.html" style="position: absolute;top: 3%;left: 10%;">
+					<img src="../img/logo.png" />
+				</a>
+				<div class="myarea">
+					<ul class="breadcrumb" style="background-color: #000000;">
+    					<li><a href="#">登录</a></li>
+   						<li><a href="#">注册</a></li>
+					</ul>
+				</div>
+				<nav class="navbar navbar-default mynav" role="navigation">
+				    <div class="collapse navbar-collapse" style="z-index: -1;" id="example-navbar-collapse">
+				        <ul class="nav navbar-nav">
+				            <li><a href="#" >车型</a></li>
+				            <li><a href="#" >购车指南</a></li>
+				           	<li class ="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">客服服务
+				            		<b class="caret"></b>
+				            	</a>
+								<ul class="dropdown-menu" style="position: relative; width: 100 vw;">
+					                <li><a href="#">星徽保养菜单</a></li>
+			                    	<li><a href="#">原厂修养套餐家族</a></li>
+			                   	 	<li><a href="#">手机端服务体验</a></li>
+			                    	<li><a href="原厂配件.html">原厂配件</a></li>
+			                    	<li><a href="#">事故与保险服务</a></li>
+			                    	<li><a href="#">24小时道路救援</a></li>
+			                    	<li><a href="#">召回通知</a></li>
+			                   	 	<li><a href="#">留学回国人员购车业务</a></li>
+			                    	<li><a href="#">金融服务</a></li>
+				               	</ul>
+				            </li>
+				           	<li><a href="#">Mercedes me</a></li>
+				           	<li><a href="#">梅赛德斯-AMG</a></li>
+				           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				           	<span class="glyphicon glyphicon-search"></span>
+				        </ul>
+				    </div>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="my-order">
+			<div class="order-info">
+				<div class="div-title">
+					<div class="order-title-name">
+						订单查询
+					</div>
+					<div class="order-title-date">
+						8102年92月11日
+					</div>
+				</div>
+				
+				<legend ></legend>
+				
+				<div class="div-receiver">
+					<div class="order-receiver">
+			            <b class="title-receiver">收件人</b><br>
+			            <br>
+			            <b>姓名：</b>王翠花<br>
+			            <b>地址：</b>上海市黄浦区南京路步行街666号<br>
+			            <b>电话：</b>021-63582606<br>
+			        </div>
+			        <div class="order-number">
+			          	<b class="title-number">#183</b><br>
+			         	<br>
+			          	<b>创建时间：</b>2014-11-7 11:31<br>
+			          	<b>订单总额：</b>￥265.22<br>
+			          	<b>订单状态：</b>处理中
+			        </div>
+				</div>
+				
+				<legend ></legend>
+				<div class="order-body">
+					<div class="body-info-left">
+						<img src="../img/订单详情/order-图样.png"/>
+					</div>
+					<div class="body-info-right">
+						<b>梅赛德斯-奔驰长轴距C级轿车</b><br>
+						<b>外观：</b>北极白色<br>
+			            <b>内饰：</b>黑色<br>
+			            <b>轮毂：</b>43.2 厘米（17 英寸）轻合金车轮<br>
+			            <b>精选定制：</b>无加装<br>
+			            <b>选装配备：</b>无加装<br>
+					</div>
+				</div>
+				
+				
+				<legend ></legend>
+				<div class="dealer-address">
+					<div class="dealer-address-right">
+						<b>上海冠松之星汽车销售服务有限公司虹口分公司（便捷服务中心）</b><br>
+						<b>地址：</b>虹口区大连路295号<br>
+			            <b>电话：</b>+ 86 21 65566617<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../plugins1/jquery/jquery.min.js"></script>
+		<script src="../plugins1/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		
+	</body>
+</html>

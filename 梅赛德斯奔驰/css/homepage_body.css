@@ -1,0 +1,75 @@
+.mypicture{
+	width: 100%;
+}
+.title{color: #666;text-align: center;font-size: 30px;}
+.title:before,.title:after{content: "";width: 100px;border-top: 1px #e1e1e1 solid; display: inline-block;
+vertical-align: middle;}
+.title:before{   width: 650px;}
+.title:after{    width: 650px;}
+.myfont{
+	    font-style: normal;
+	    font-variant-ligatures: normal;
+	    font-variant-caps: normal;
+	    font-variant-numeric: normal;
+	    font-variant-east-asian: normal;
+	    font-weight: 400;
+	    font-stretch: normal;
+	    font-size: 36px;
+	    line-height: 50px;
+	    font-family: SimSun, serif;
+}
+#cars{
+	position: relative;
+}
+#cars div{
+	border: 1px solid white;
+	position: absolute;
+	width: 18.8%;
+	height: 485px;
+	font-size: 36px;
+	padding-top: 0px;
+	/*color: white;*/
+}
+#cars a{
+	opacity:0.1;
+}
+#cars span{
+	position: relative;
+	top: -100px;
+}
+#cars a:link{
+	color: white;
+	text-decoration: none;
+}
+#cars a:hover{
+	opacity: 0.4;
+}
+#div1{
+	top:0px;
+	left: 189px;
+}
+#div2{
+	top: 0px;
+	left: 474px;
+}
+#div3{
+	top: 0px;
+	left: 760px;
+}
+#div4{
+	top: 0px;
+	left:1044px;
+}
+.footer a:link{
+	opacity: 0;
+}
+.footer a:hover{
+	opacity: 0.5;
+}
+#bg{
+	background-image: url(../img/homepage/footer-4.jpg);
+	width: 100%;
+	height: 442px;
+	padding: 5% 20%;
+	margin-bottom: 70px;
+}
