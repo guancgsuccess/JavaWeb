@@ -16,7 +16,8 @@
 				width: 960px;
 				height: 550px;
 			}*/
-			.my_color{
+			
+			.my_color {
 				margin-top: 20px;
 				color: cornflowerblue;
 			}
@@ -24,9 +25,9 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid bg-info">
 			<div class="row">
-				<nav class=" navbar-default" role="navigation" style="border: 0px;background-color: aliceblue;">
+				<nav class=" navbar-default" role="navigation" style="border: 0px;background-color: black;">
 					<div class="navbar-header">
 						<small class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;管理员</small></a>
 					</div>
@@ -53,9 +54,9 @@
 						<div class="row my_color">
 							<font size="4">管理员信息</font>
 						</div><br>
-						
+
 						<div class="row mg">
-							<img src="../img/管理员头像.png" style="max-height: 150px;"<br><br><br>
+							<img src="../img/管理员头像.png" style="max-height: 150px;" <br><br><br>
 							<font size="3">管理员编号：<br/>95279527</font><br><br>
 							<font size="3">管理员姓名：<br/>张三</font><br><br>
 						</div>
@@ -68,7 +69,6 @@
 			</div>
 		</div>
 
-		
 		<script type="text/javascript">
 			// 基于准备好的dom，初始化echarts实例
 			var myChart = echarts.init(document.getElementById('main'));
@@ -94,7 +94,7 @@
 			}
 
 			option = {
-					
+
 				tooltip: {
 					trigger: 'axis',
 					formatter: function(params) {

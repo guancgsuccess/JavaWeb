@@ -3,44 +3,55 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>Buyer</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Buyerwish</title>
+
 		<!--引入bootstrap样式-->
 		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 		<style type="text/css">
-			.main {
-				/*margin: auto;*/
-				/*border: 1px solid red;*/
-				/*width: 960px;*/
-				/*height: 550px;*/
+			/*.main {
+				border: 1px solid red;
+				height: 550px;
+			}*/
+			p{
+				font-weight: bold;
+				color: red;
 			}
-			.my_color{
+			.my_color {
 				margin-top: 20px;
 				color: cornflowerblue;
 			}
-			.mg{
+			
+			.mg {
 				margin-top: 5px;
 				margin-bottom: 5px;
 			}
-			div>a:link{
+			
+			div>a:link {
 				text-decoration: none;
 			}
-			div>a:visited{
+			
+			div>a:visited {
 				color: black;
 			}
-			div>a:hover{
+			
+			div>a:hover {
 				color: cornflowerblue;
 			}
-			div>a:active{
+			
+			div>a:active {
 				color: black;
 			}
-			th{
-				text-align: center;
+			.hd1{
+				float: left;
 			}
-			td {
-				text-align:center;
-				vertical-align:middle;
+			.hd2{
+				float: right;
+				margin-top: 17px;
+			}
+			.head1{
+				width: auto;
+				height: 60px;
+				/*border: 1px solid red;*/
 			}
 		</style>
 	</head>
@@ -85,123 +96,144 @@
 				</nav>
 
 				<!--<div class="form-group">-->
-				<div class="col-sm-offset-1 col-sm-10 ">
-					<div class="col-sm-1 ">
+				<div class="col-sm-offset-1 col-sm-10 main">
+					<div class="col-sm-1 main">
 						<div class="row my_color">
 							<font size="4">全部功能</font>
 						</div>
 						<div class="row mg">
-							<a href="#"><font size="2" >愿望单</font></a>
+							<a href="#">
+								<font size="2">愿望单</font>
+							</a>
 						</div>
 						<div class="row mg">
-							<a href="#"><font size="2" >订单记录</font></a>
+							<a href="#">
+								<font size="2">订单记录</font>
+							</a>
 						</div>
 						<div class="row mg">
-							<a href="#"><font size="2" >评价管理</font></a>
+							<a href="#">
+								<font size="2">评价管理</font>
+							</a>
 						</div>
 						<div class="row mg">
-							<a href="#"><font size="2" >退款服务</font></a>
+							<a href="#">
+								<font size="2">退款服务</font>
+							</a>
 						</div>
 					</div>
-					
-					<div class="col-sm-10 ">
-				
+					<div class="col-sm-11 main" style="background-image: url(../img/BuyerOrder.jpg);">
+						<div class="head1">
 							
-						<p style="font-size: 21px; margin-top: 19px; color: cadetblue;">商品</p>						
-						<hr />					
-							<div class="table-responsive">
-								
-							<table class="table table-hover">
-							<!--<table class="table" border="1" width="100%" height="75%">-->
-								
-								<thead>
-									<!--
-					                	标题行
-					                -->
-					                <!--th：加粗  居中显示-->
-					                <th>商品样例</th>
-					                <th>介绍</th>
-					                <th >数量</th>
-					                <th>总价</th>
-					                <th>操作</th>
+						
+							<div class="hd1">
+								<p style="font-size: 21px; margin-top: 19px; color: cadetblue;">商品</p>
+							</div>
+						
+								<div class="col-sm-6 col-sm-offset-3 hd2">
+									<div class="input-group">
+						                <input type="text" class="form-control" placeholder="请输入商品名称">
+						                <span class="input-group-btn">
+						                    <button class="btn btn-primary">搜索</button>
+						                </span>
+						            </div>
+								</div>
+						</div>
+						<hr>
+						<div class="table-responsive">
+							<table id="mytable" class="table">
+								<thead style="background-color: lightblue;">
+									<tr>
+										
+										<th>商品样例</th>
+										<th>介绍</th>
+										<th>数量</th>
+										<th>总价</th>
+										<th>操作</th>
+										<th></th>
+									</tr>
 								</thead>
-								
-								<tbody align="center" >
-									<tr >
-										<td width="100px" height="50px">
-											<div>
-												<img src="../img/登录2.jpg" width="90px"height="60px">
-											</div>						
+								<tbody>
+									<tr style="max-height: 100px;">
+										<td><img src="../img/one.jpg" style="max-height: 100px;"></td>
+										<td><div style="line-height: 100px;">
+											这是一商品名
+										</div>
+										
+										<td><div style="line-height: 100px;">10</div></td>
+										
 										</td>
-										<td align="middle">3213212313213213213213213213</td>
-										<td vertical-align:middle;>1</td>
-										<td>20</td>
-										<td><a href="#">删除</a></td>
+										
+										<td><div style="line-height: 100px;"><p>100</p></div></td>
+										<td><div style="line-height: 100px;"><button class="btn btn-primary">评价</button></div></td>
 									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>0002</td>
-										<td>James Gosling</td>
-										<td>男</td>
-										<td><a href="#">删除</a></td>
+									<tr style="max-height: 100px;">
+										
+										<td><img src="../img/one.jpg" style="max-height: 100px;"></td>
+										<td><div style="line-height: 100px;">
+											这是一商品名
+										</div>
+										
+										<td><div style="line-height: 100px;">10</div></td>
+										
+										
+										</td>
+										
+										<td><div style="line-height: 100px;"><p>100</p></div></td>
+										<td><div style="line-height: 100px;"><button class="btn btn-primary">评价</button></div></td>
 									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>0003</td>
-										<td>James Gosling</td>
-										<td>男</td>
-										<td><a href="#">删除</a></td>
+									<tr style="max-height: 100px;">
+										<td><img src="../img/one.jpg" style="max-height: 100px;"></td>
+										<td><div style="line-height: 100px;">
+											这是一商品名
+										</div>
+										
+										<td><div style="line-height: 100px;">10</div></td>
+										
+										</td>
+										
+										<td><div style="line-height: 100px;"><p>100</p></div></td>
+										<td><div style="line-height: 100px;"><button class="btn btn-primary">评价</button></div></td>
 									</tr>
-									
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>0003</td>
-										<td>James Gosling</td>
-										<td>男</td>
-										<td><a href="#">删除</a></td>
+									<tr style="max-height: 100px;">
+										<td><img src="../img/one.jpg" style="max-height: 100px;"></td>
+										<td><div style="line-height: 100px;">
+											这是一商品名
+										</div>
+										
+										<td><div style="line-height: 100px;">10</div></td>
+																		
+										</td>
+										
+										<td><div style="line-height: 100px;"><p>100</p></div></td>
+										<td><div style="line-height: 100px;"><button class="btn btn-primary">评价</button></div></td>
 									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>0003</td>
-										<td>James Gosling</td>
-										<td>男</td>
-										<td><a href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>0003</td>
-										<td>James Gosling</td>
-										<td>男</td>
-										<td><a href="#">删除</a></td>
+									<tr style="max-height: 100px;">
+										<td><img src="../img/one.jpg" style="max-height: 100px;"></td>
+										<td><div style="line-height: 100px;">
+											这是一商品名
+										</div>
+										
+										<td><div style="line-height: 100px;">10</div></td>
+										
+										</td>
+										<td><div style="line-height: 100px;"><p>100</p></div></td>
+										<td><div style="line-height: 100px;"><button class="btn btn-primary">评价</button></div></td>
 									</tr>
 									
 								</tbody>
-								
-												
 							</table>
-								
 						</div>
-						
-						
-						
-						
 					</div>
-					
-					
-					
-					
 				</div>
-				<!--</div>-->
-				
-				
-				
-				
+
 			</div>
 		</div>
-
-		<!--引入jquery-->
+		
+		<script>
+			
+		</script>
 		<script src="../plugins/jquery/jquery.min.js"></script>
-		<!--引入bootstrap.min.js-->
 		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	</body>
 
