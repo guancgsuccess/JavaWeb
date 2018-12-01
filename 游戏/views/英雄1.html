@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<!--<link rel="stylesheet" type="text/css"  href="css/mod1.css"/>-->
+		<style type="text/css">
+			#outer{
+				width: 2000px;
+				height: 1500px;
+				border: 0px solid black;
+				background-image: url(../img/b1.jpg);
+				background-repeat: no-repeat;
+				background: cover;
+				background-attachment: fixed;
+			}
+			#h10{
+				width: 200px;
+				height: 100px;
+				border: 0px solid white;
+				font-size: 1.5em;
+			}
+			#head{
+				width: 1400px;
+				height: 200px;
+				border: 0px solid red;
+				margin-left: 201px;
+				font-size: 1em;
+				color: white;
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px #000886;
+				font-weight: bold;
+				font-family: "黑体"
+                background: -webkit-linear-gradient(black, DarkBlue);
+                background: -moz-linear-gradient(black, DarkBlue);
+                background: -o-linear-gradient(black, DarkBlue);
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(	DarkBlue));
+                background: linear-gradient(black, 	DarkBlue);
+
+				
+
+				}
+				#body_left{
+				width: 200px;
+				height: 1000px;
+				border: 0px solid green;
+				margin-top: 100px;
+				color: white;
+				
+				/*margin-left: 201px;*/
+			}
+			#body_right{
+				width: 1200px;
+				height: 1000px;
+				border: 0px solid blue;
+				color: aliceblue;
+				margin-top: -1000px;
+				margin-left: 201px;
+				
+			}
+			#foot{
+				width: 1400px;
+				height: 200px;
+				border: 0px solid rosybrown;
+				 /*background: -webkit-linear-gradient(black, Indigo);
+                background: -moz-linear-gradient(black, Indigo);
+                background: -o-linear-gradient(black, Indigo);
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(	Indigo));
+                background: linear-gradient(black, 	Indigo);*/
+				/*margin-left: 201px;*/
+			}
+			#classify{
+				width: 1200px;
+				height: 50px;
+				border: 0px solid black;
+				font-size: 1.5em;
+				
+			}
+			#letter/*分类*/{
+				width: 1200px;
+				height: 50px;
+				border: 0px solid gold;
+				font-size: 2.5em;
+				color: cadetblue;
+			
+			}
+				#ss{
+				margin-left: 401px;
+			}
+				#hot{
+			font-size: 1.5em;
+				color: black;
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px #000886;
+				font-weight: bold;
+				font-family: "楷体";
+			}
+			#picture{
+				width: 250px;
+				height: 350px;
+				border: 0px solid brown;
+				margin-left: 945px;
+				margin-top: 100px;
+				background-attachment: fixed;
+			}
+			#logo{
+				width: 350px;
+				height: 150px;
+				border: 0px solid brown;
+				font-size: 3em;
+				color: white;
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px #000886;
+				font-weight: bold;
+				font-family: "黑体";
+				margin-top: 70px;
+				
+			}
+			#talk{
+				width: 650px;
+				height: 175px;
+				border: 0px solid brown;
+				font-size: 16px;
+				color: white;
+				margin-top: -120px;
+				margin-left: 650px;
+			}
+			#mid{
+				width: 1100px;
+				height:880px;
+				border: 0px solid white;
+				font-size: 1.25em;
+			}
+			#h1{
+				width: 150px;
+				height:900px;
+				border: 0px solid white;
+				margin-top: 0px;
+				margin-left: 160px;
+				position: absolute;
+			}
+			#h2{
+				width: 150px;
+				height:900px;
+				border: 0px solid white;
+				margin-top: 0px;
+				margin-left: 330px;
+				position: absolute;
+			}
+			#h3{
+				width: 150px;
+				height:900px;
+				border: 0px solid white;
+				margin-top: 0px;
+				margin-left: 500px;
+				position: absolute;
+			}	
+			#h4{
+			width: 150px;
+			height:900px;
+			border: 0px solid white;
+			margin-top: 0px;
+			margin-left: 700px;
+			position: absolute;
+			}
+			#h5{
+				width: 150px;
+				height:900px;
+				border: 0px solid white;
+				margin-top: 0px;
+				margin-left: 0px;
+				position: absolute;
+			}	
+			#h9{
+				width: 150px;
+				height: 150px;
+				border: 0px solid white;
+				margin-top: -1350px;
+				margin-left: 1450px;
+			}
+			/*#h6{
+				width: 150px;
+				height:150px;
+				border: 1px solid white;
+				margin-top: -160px;
+				margin-left: 550px;
+			}	
+			#h7{
+				width: 150px;
+				height:150px;
+				border: 1px solid white;
+				margin-top: 50px;
+				margin-left: 550px;
+			}	
+			#h8{
+				width: 150px;
+				height:150px;
+				border: 1px solid white;
+				margin-top: -160px;
+				margin-left: 95px;
+			}
+			#h9{
+				width: 150px;
+				height:150px;
+				border: 1px solid white;
+				margin-top: 15px;
+				margin-left: 550px;
+			}
+			#h10{
+				width: 150px;
+				height:150px;
+				border: 1px solid white;
+				margin-top: -150px;
+				margin-left: 95px;
+			}	
+					*/
+			.navbar-brand{
+				font-size: 3em;
+				color: white;
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px yellow;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="head">
+				
+				<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-inverse" role="navigation">
+			    <div class="container-fluid"> 
+			    <div class="navbar-header">
+			        <!--<button type="button" class="navbar-toggle" data-toggle="collapse"
+			                data-target="#example-navbar-collapse">
+			            <span class="sr-only">切换导航</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>-->
+			        <a class="navbar-brand" href="#">王者联盟</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			            <li class="active"><a href="http://127.0.0.1:8020/%E7%BD%91%E9%A1%B5/%E8%8B%B1%E9%9B%84%E8%B5%84%E6%96%991.html">英雄</a></li>
+			            <li><a href="http://127.0.0.1:8020/%E7%BD%91%E9%A1%B5/%E7%9A%AE%E8%82%A4.html">皮肤</a></li>
+			            <li><a href="#">个人信息</a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    登录 <b class="caret"></b>
+			                </a>
+			            </li>
+			        </ul>
+			    </div>
+			    </div>
+			</nav>
+				<script type="text/javascript">
+		    	function qq(value,name){
+		    	alert(value+":"+name)
+		    	}
+				</script>
+				<input id="ss" class="easyui-searchbox" style="width:300px"
+		   		data-options="searcher:qq,prompt:'Please Input Value',menu:'#mm'" >搜索栏</input>
+				
+			</div>
+			<p >特惠专区</p>
+			<div id="body_left">
+				<img src="../img/xiao.jpg" />
+				<dl class="">
+                <dt>
+                    <a href="/lol/item/12216.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/hot1.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="未来战士2018守卫">未来战士2018守卫</strong>
+                      
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12216.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="未来战士2018守卫">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;29.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					
+					                  <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12216);" data-seqid="12216" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/14163.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/hot2.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="K/DA偶像天团大礼包">K/DA偶像天团大礼包</strong>
+      
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/14163.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="K/DA偶像天团大礼包">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+						Q币价：<span class="t2 fwb">355.30</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(14163);" data-seqid="14163" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+             <dl class="">
+                <dt>
+                    <a href="/lol/item/14163.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/hot3.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="睡衣守护者全新上线">睡衣守护者全新上线</strong>
+      
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/14163.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="K/DA偶像天团大礼包">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+						Q币价：<span class="t2 fwb">355.30</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(14163);" data-seqid="14163" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+				<!--<br /><br /><br /><br /><br />
+			<a href="#"><img src="img/name.jpg" />
+				<p>改名卡：5Q币</p><br /></a>
+				
+			   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			   <a href="#"><img src="img/texiao1.jpg" />
+			   <p>击败特效：5Q币/永久</p></a>
+			   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="img/亲密度花.jpg" />
+			   <p>亲密度：3Q币</p></a>
+			   <a href="#"><img src="img/touxiangkuang2.jpg" />
+			   <p>神马星头像框：6Q币</p></a>
+			   <a href="#"><img src="img/toy.jpg" />
+			   <p>小猪佩琪玩偶：58.8Q币</p></a>-->
+			</div>
+			<div id="body_right">
+				<div id="classify">
+				王&nbsp;&nbsp;者&nbsp;&nbsp;联&nbsp;&nbsp;盟&nbsp;&nbsp;期&nbsp;&nbsp;待&nbsp;&nbsp;你&nbsp;&nbsp;们&nbsp;&nbsp;的&nbsp;&nbsp;加&nbsp;&nbsp;入&nbsp;&nbsp;！&nbsp;&nbsp;召
+					&nbsp;&nbsp;唤&nbsp;&nbsp;师&nbsp;&nbsp;们&nbsp;&nbsp;一&nbsp;&nbsp;起&nbsp;&nbsp;并&nbsp;&nbsp;肩&nbsp;&nbsp;作&nbsp;&nbsp;战&nbsp;&nbsp;吧&nbsp;&nbsp;！
+					<--<div id="picture">
+						<div class="container-fluid">
+			<div class="row">
+				<div id="myCarousel" class="carousel slide">
+				    
+				    <ol class="carousel-indicators">
+				        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#myCarousel" data-slide-to="1"></li>
+				        <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>   
+				    
+				    <div class="carousel-inner">
+				        <div class="item active">
+				            <img src="../img/lunbo1.jpg" alt="First slide">
+				        </div>
+				        <div class="item">
+				            <img src="../img/lunbo2.jpeg" alt="Second slide">
+				        </div>
+				        <div class="item">
+				            <img src="../img/lunbo3.jpg" alt="Third slide">
+				        </div>
+				    </div>
+				    
+				    <a class="carousel-control left" href="#myCarousel" 
+				       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+				    <a class="carousel-control right" href="#myCarousel" 
+				       data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+				</div>
+			</div>
+			<div id="letter">
+				 <a href="#"id="tanke">坦克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+				 <a href="#"id="sheshou">射手</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+				 <a href="#"id="fashi">法师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				 <a href="#"id="cike">刺客</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				 <a href="#"id="zhanshi">战士</a>
+			</div>
+						<!--<div class="pagination">
+				<ul>
+					<li><a href="#">Prev</a></li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">Next</a></li>
+				</ul>
+			</div>-->
+			<div id="mid">
+<!--				
+				<p>
+				<a href="#tanke">坦克</a>
+				</p><br /><br /><br /><br /><br /><br />
+			<p><a href="#sheshou">射手</a></p><br /><br /><br /><br /><br /><br />
+			<p><a href="#fashi">法师</a></p><br /><br /><br /><br /><br /><br />
+			<p><a href="#cike">刺客</a></p><br /><br /><br /><br /><br /><br />
+			<p><a href="#zhanshi">战士</a></p>-->
+			
+                <!--<dl class="">
+                <dt>
+                    <a href="/lol/item/13955.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="https://game.gtimg.cn/images/daoju/app/lol/medium/2-32017-9.jpg?_t=1539671497" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="地狱火 阿木木">地狱火 阿木木</strong>
+                        
+                        <p>道具介绍：地狱火 阿木木</p>
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/13955.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="地狱火 阿木木">
+                    	<strong>地狱火 阿木木</strong>
+                    </a>
+                    					<div class="bxlist-t1">
+						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;¥</span><span class="t2 fwb">65.55</span>
+					</div>
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13955);" data-seqid="13955" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+           
+            </dl>-->
+            
+            </dl>
+            </dl>
+			<!--<dt>
+                    <a href="/lol/item/13679.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="https://game.gtimg.cn/images/daoju/app/lol/medium/2-141002-9.jpg?_t=1536732669" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="奥德赛 凯隐">奥德赛 凯隐</strong>
+                        <p>道具期限：永久</p>
+                        <p>道具介绍：奥德赛 凯隐</p>
+                    </div>
+                </dt>-->
+				<div id="h1">
+					<!--<img src="img/tank1.jpg"/>-->
+					<dl class="">
+                <dt>
+                    <a href="#">
+                        <img src="../img/t2.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="神王 盖伦">神王 盖伦</strong>
+                        
+                        
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12659.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="神王 盖伦">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+						联盟卷：<span class="t2 fwb">9900</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">99.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					
+					<div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12659);" data-seqid="12659" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+                <dl class="">
+                <dt>
+                    <a href="/lol/item/12660.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t7.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="神王 德莱厄斯">神王 德莱厄斯</strong>
+          
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12660.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="神王 德莱厄斯">
+                    	
+                    </a>
+                    	<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">9900</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">99.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12660);" data-seqid="12660" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/12213.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t12.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="未来战士 锐雯">未来战士 锐雯</strong>
+                       
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12213.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="未来战士 锐雯">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12213);" data-seqid="12213" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            
+				</div>
+				
+				<div id="h2">
+					<dl class="">
+                <dt>
+                    <a href="/lol/item/11994.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t3.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="腥红之月 伊芙琳">腥红之月</strong>
+                     
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/11994.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="腥红之月 伊芙琳">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">4900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">49.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(11994);" data-seqid="11994" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/12215.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t8.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="未来战士 慎">未来战士 慎</strong>
+                        
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12215.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="未来战士 慎">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+						联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+						
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12215);" data-seqid="12215" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/11411.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t13.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="虚空之女 卡莎">虚空之女 卡莎</strong>
+                       
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/11411.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="虚空之女 卡莎">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">4500</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">45.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(11411);" data-seqid="11411" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+					<!--<img src="img/tanke2.png" />-->
+				</div>
+				<div id="h3">
+					<dl class="">
+                <dt>
+                    <a href="/lol/item/13955.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t4.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="地狱火 阿木木">地狱火 阿木木</strong>
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/13955.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="地狱火 阿木木">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">6900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">69.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+						
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13955);" data-seqid="13955" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/12214.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t9.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="未来战士 崔斯特"> 崔斯特</strong>
+                       
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/12214.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="未来战士 崔斯特">
+                    	
+                    </a>
+                    	
+                    	<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(12214);" data-seqid="12214" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/13275.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t14.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="霸天龙神 奥瑞利安 · 索尔">奥瑞利安·索尔</strong>
+                    
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/13275.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="霸天龙神 奥瑞利安 · 索尔">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13275);" data-seqid="13275" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+					
+				</div>
+				<div id="h4">
+					<dl class="">
+                <dt>
+                    <a href="/lol/item/14282.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t5.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="禁卫机甲 格雷福斯">格雷福斯</strong>
+                        
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/14282.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="禁卫机甲 格雷福斯">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(14282);" data-seqid="14282" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/14281.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t10.jpg" width="116" height="212">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="禁卫机甲 费德提克">费德提克</strong>
+                        
+                    </div>
+                </dt>
+                <dd>
+                    <a href="/lol/item/14281.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank" title="禁卫机甲 费德提克">
+                    	
+                    </a>
+                    <div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+					
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(14281);" data-seqid="14281" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+            <dl class="">
+                <dt>
+                    <a href="/lol/item/14281.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/fashi1.jpg" width="130" height="210">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="禁卫机甲 费德提克">小猪佩奇</strong>
+                       
+                    </div>
+                </dt>
+                <dd>
+                    <a href="#">
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">9900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">99.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t1">
+						
+					                    <div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(14281);" data-seqid="14281" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+            </dl>
+				</div>
+				<div id="h5">
+					<dt>
+                    <a href="#">
+                        <img src="../img/te1.jpg" width="116" height="210">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="奥德赛 凯隐">奥德赛 凯隐</strong>
+                       
+                       
+                    </div>
+                    <div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">9900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">99.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13680);" data-seqid="13680" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                </dt>
+                <br />
+                <dl class="">
+                <dt>
+                    <a href="/lol/item/13680.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
+                        <img src="../img/t6.jpg" width="116" height="210">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="奥德赛 亚索">奥德赛 亚索</strong>
+                        
+                       
+                    </div>
+                    
+                </dt>
+                
+                
+                <dd>
+                    <a href="#"/>
+                    	
+                    </a>
+                    					<div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					
+					<div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13680);" data-seqid="13680" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <br />
+                    <span class=""></span>
+                </dd>
+                
+                <dl class="">
+                <dt>
+                    <a href="#">
+                        <img src="../img/t11.jpg" width="116" height="210">
+                    </a>
+                    <div class="pop-tips">
+                        <span class="arrowbr">◆</span>
+                        <span class="arrow">◆</span>
+                        <strong title="奥德赛 金克丝">奥德赛 金克丝</strong>
+                        
+                        
+                    </div>
+                </dt>
+                <dd>
+                    <a href="img/t11.jpg" class="djname" target="_blank" title="奥德赛 金克丝">
+                    	
+                    </a>
+                    <div class="bxlist-t1">
+                    	联盟卷：<span class="t2 fwb">7900</span> <span class="t2 fwb">&nbsp;卷</span>
+						Q币价：<span class="t2 fwb">79.00</span> <span class="t2 fwb">Q币</span>
+					</div>
+					<div class="bxlist-t2 c">
+                        <a href="javascript:MT.buyGood(13686);" data-seqid="13686" class="btn-green buy-now" title="立即购买">立即购买</a>
+                    </div>
+                    <span class=""></span>
+                </dd>
+					<!--<img src="img/法师.jpg" />-->
+				</div>
+				
+			</div>
+			
+			</div>
+			<div id="foot">
+				<div id="logo" align="center"><br />
+				<i>King Alliance</i></div>
+				<div id="talk">
+					<br />
+					<br />
+								COPYRIGHT © 1998 - 2018 TENCENT. ALL RIGHTS RESERVED.<br />
+
+								COPYRIGHT © 2012 Riot Games,Inc. ALL RIGHTS RESERVED.<br />
+
+								本网络游戏适合18+岁的用户使用；为了您的健康，请合理控制游戏时间。<br />
+								粤网文[2017]6138-1456号|新出网证（粤）字010号<br />
+								批准文号：新出审字[2011]310号 |文网进字[2011] 004号 | 出版物号：ISBN 978-7-89989-145-2|全国文化市场统一举报电话：12318<br /></div>
+			</div>
+			<div id="h9">
+				<img src="../img/logo.jpg" width="150px" height="150px"/>
+			</div>
+			
+		</div>
+		
+			
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script>
+			$('#myCarousel').carousel({
+				interval: 1000
+			})
+			
+		</script>
+	</body>
+</html>
+	<!--<a href="javascript:;" class="mobile" id="">
+                        手机购买<i class="comico i-code"></i>
+                        <div class="codeimg">
+                            <img src="//js01.daoju.qq.com/common/images/channel/revision/lol/code.png" width="166" height="174" alt="二维码">
+                        </div>
+                    </a>
+				-->
+					<!--<img src="//ossweb-img.qq.com/images/clientpop/act/lol_1543302503_uploadnewsImg.jpg" alt="睡衣守护者全新上线" width="193" height="207">-->
+				

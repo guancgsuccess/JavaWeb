@@ -1,0 +1,40 @@
+
+	
+	#middle{
+		border: 0px solid red;
+		border-radius: 15%;
+		box-shadow: 3px -3px 1px #999;
+		width: 1520px;
+		height: 970px;
+		background: url(../img/bg-middle.jpg);
+		background-size: cover;
+		/*background-repeat: no-repeat;*/
+		/*background-attachment: fixed;*/
+		position:absolute;
+		margin-top: 300px;
+	}
+	
+	#middle{
+		text-align: center;
+	}
+	.form-control{
+		margin-left: 500px;
+	}
+	/*.btn{
+		size:50;
+	}*/
+	.btn-submit{
+		background-color: greenyellow;
+		color: black;
+	}
+	.btn-reset{
+		background-color: yellow;
+		color: black;
+	}
+	.btn-close{
+		background-color: skyblue;
+		color: black;
+	}
+	
+
+	

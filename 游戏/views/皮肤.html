@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<!--<link rel="stylesheet" type="text/css"  href="css/mod1.css"/>-->
+		<style type="text/css">
+			#outer{
+				width:1910px;
+				height: 1960px;
+				border: 0px solid black;
+				position: relative;
+				background-image: url(../img/酷黑.jpg)
+				/*background: fixed;
+				background: cover;*/;
+				background-repeat: no-repeat;
+				background-size:100% 100%;
+			}
+			#head1{
+				width: 1910px;
+				height: 65px;
+				border: 0px solid black;
+				position: absolute;
+			}
+			#body{
+				width: 990px;
+				height: 1225px;
+				border: 0px solid red;
+				margin: auto;
+				margin-top: 15px;
+				
+			}
+			#left_gif{
+				width: 100px;
+				height: 270px;
+				border: 0px solid green;
+				margin-top: -2000px;
+				/*background-image: url(img/GIF1.gif);*/
+				
+				/*position: fixed;*/
+			}
+			#right_gif{
+				width: 100px;
+				height: 100px;
+				border: 0px solid green;
+				margin-top: 0px;
+				margin-left:0px ;
+				background-image: url(../img/qq.jpg);
+				background-size:100% 100%;
+				
+			}
+			#foot{
+				width:990px ;
+				height: 200px;
+				border: 0px solid green;
+				margin-top: 30px;
+				margin-left:460px ;
+				
+			}
+			#num_{
+				width: 950px;
+				height: 150px;
+				border: 0px solid brown;
+				margin-top: 5px;
+				margin-left:15px ;
+				color: black;
+				font-size: 5em;
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px gold;
+				font-weight: bold;
+				font-family: "楷体";
+			}
+			#hot{
+				width: 650px;
+				height: 150px;
+				border: 0px solid brown;
+				margin-top: 5px;
+				margin-left:15px ;
+			}
+			#ma{
+			width: 300px;
+			height: 150px;
+			border: 0px solid brown;
+			margin-top: -150px;
+			margin-left:675px ;
+			background-image: url(../img/GIF1.gif);
+			background-size:100% 100%;
+			}
+			#skin{
+			width: 950px;
+			height: 895px;
+			border: 0px solid brown;
+			margin-left:15px ;
+			margin-top: 5px;
+			/*margin-top: -150px;
+			margin-left:775px ;*/
+			}
+			#more{
+				width: 200px;
+				height: 200px;
+				border: 0px solid green;
+			}
+			#shang{
+				width: 945px;
+				height: 885px;
+				border: 0px solid green;
+				margin-left:1px ;
+				color: gold;
+				font-size: 1.05em;
+			}
+			#xia{
+				width: 945px;
+				height: 440px;
+				border: 0px solid red;
+				margin-left:455px ;
+				margin-top:-10px;
+				/*margin-left:468px ;*/
+				color: white;
+				font-size: 1.05em;
+			}
+			#h1{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				float: left;
+			}
+			#h2{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				margin-left:30px ;
+				/*margin-left: 129px;*/
+				float: left;
+			}
+			#h3{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#h4{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#h5{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#h6{
+				width: 126px;
+				height: 885px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#x1{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				float: left;
+			}
+			#x2{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				margin-left:30px ;
+				/*margin-left: 129px;*/
+				float: left;
+			}
+			#x3{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#x4{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#x5{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#x6{
+				width: 126px;
+				height: 400px;
+				border: 0px solid white;
+				margin-left:30px ;
+				float: left;
+			}
+			#logo{
+				width: 350px;
+				height: 150px;
+				border: 0px solid brown;
+				font-size: 3em;
+				color: white;
+				/*background-image: url(img/GIF1.gif);*/
+				
+				/*设置文本阴影部分*/
+				/*右 下 模糊度 
+				 * 阴影部分的颜色值越小，阴影部分越清晰*/
+				text-shadow: 0px 0px 4px #000886;
+				font-weight: bold;
+				font-family: "黑体";}
+		#talk{
+				width: 650px;
+				height: 175px;
+				border: 0px solid brown;
+				font-size: 18px;
+				color: wheat;
+				margin-top: -150px;
+				margin-left: 450px;
+			}
+			#qq{
+				width: 150px;
+				height: 150px;
+				border: 0px solid beige;
+				margin-top:-1200px;
+				margin-left: 1450px;
+			}
+			#sao{
+				width: 100px;
+				height: 100px;
+				border: 0px solid beige;
+				background-image: url(img/qq.jpg);
+				background-size: 100%  100%;
+				
+			}
+		</style>
+		<script>
+			function change() {
+
+    	if (onclick="test") {
+        	xia.style.display = "block";
+        	other.style.display="none";
+    	}else{
+        	xia.style.display = "none";
+    	}
+    	
+    	}
+		
+		</script>
+		<!--<script>
+    	function change() {
+
+    	if (onclick="order") {
+        	sao.style.display = "block";
+        	
+    	}else{
+        	sao.style.display = "none";
+    	}
+		</script>-->
+	</head>
+	<body>
+	<div id="outer">
+		
+		<div id="head1">
+			<div class="container-fluid">
+			<div class="row">
+				<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-inverse" role="navigation">
+			    <div class="container-fluid"> 
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse"
+			                data-target="#example-navbar-collapse">
+			            <span class="sr-only">切换导航</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a class="navbar-brand" href="#">王者联盟</a>
+			        
+			    </div>
+			    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			        	<li><a href="http://127.0.0.1:8020/%E7%BD%91%E9%A1%B5/%E8%8B%B1%E9%9B%841.html">特惠专区</a></li>
+			            <li class="active"><a href="http://127.0.0.1:8020/%E7%BD%91%E9%A1%B5/%E8%8B%B1%E9%9B%84%E8%B5%84%E6%96%991.html">英雄</a></li>
+			            <li><a href="#">个人信息</a></li>
+			            <li><a href="#">注册</a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" >
+			                    登录 <b class="caret"></b>
+			          
+			                </a>
+			            </li>
+			        </ul>
+			    </div>
+			    </div>
+			</nav>
+    		<div id="body">
+    		<div id="num_" align="center">
+    			王者联盟皮肤专场
+    			
+    		</div>
+    		<div id="hot">
+    			<a href="http://news.4399.com/wzlm/phb/m/868091.html">
+    				<img src="../img/排行.png">  </a>
+    				<img src="../img/鲁班.png" width="105"height="130"/>
+    				<img src="../img/黄忠.jpg" width="105"height="130"/>
+    				<img src="../img/公孙离.jpg" width="105"height="130"/>
+    				<img src="../img/孙尚香.jpg" width="105"height="130"/>
+    				<!--<img src="img/后羿.jpg" width="110"height="130"/>-->
+    		</div>
+    		<div id="ma">
+    			
+    		</div>
+    		
+    		<div id="skin">
+    			<div id="shang">
+    				<div id="h1"><br /><br />
+    					<img src="../img/1.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/2.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/3.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/4.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="h2"><br /><br />
+    					<img src="../img/5.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/6.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/7.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/8.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="h3"><br /><br />
+    					<img src="../img/9.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/10.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/11.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/12.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="h4"><br /><br />
+    					<img src="../img/13.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/14.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/15.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/16.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="h5"><br /><br />
+    					<img src="../img/17.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/30.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/19.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/1.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="h6"><br /><br />
+    					<img src="../img/20.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span>
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/18.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/21.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						<img src="../img/22.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				
+    				<input type="button"value="加载更多" id="other" onclick="change()" >
+				
+            
+    			</div>
+    			<!--<div id="xia">
+    				
+    			</div>-->
+    			
+    		</div>
+    	</div>
+    	
+    	
+    		
+    	</div>
+    	<!--<textarea name="q2" rows="10" cols="75" id="xia" style="display:none"  class="form-control">
+					
+				</textarea>-->
+				
+		<div  id="xia" style="display:none"  <!--class="form-control"-->>
+				<div id="x1"><img src="../img/24.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span>
+						
+						<img src="../img/zuihou6.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br /></div>
+    				<div id="x2">
+    					<img src="../img/23.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span>
+						<img src="../img/zuihou1.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br /><br />
+    				</div>
+    				<div id="x3">
+    					<img src="../img/25.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						
+    					<img src="../img/zuihou2.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				
+    				</div>
+    				<div id="x4">
+    					<img src="../img/26.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						
+    					<img src="../img/zuihou3.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="x5">
+    					<img src="../img/28.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+						
+    					<img src="../img/zuihou4.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>
+    				<div id="x6">
+    					<img src="../img/29.png" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币 <br /></span>
+						
+    		
+    					<img src="../img/zuihou5.jpg" />
+    					联盟卷：<span class="t2 fwb">7800</span> <span class="t2 fwb">&nbsp; 卷</span><br />
+						Q币价：<span class="t2 fwb">78.00</span> <span class="t2 fwb">Q币</span><br />
+    				</div>	
+    				
+    					
+    				
+    				
+    				
+    		
+    				
+    					
+    					
+    				</div>-->
+		</div>
+		
+    	<div id="foot">
+    		<div id="logo" align="center"><br />
+				<i>King Alliance
+					<!--<img src="img/GIF1.gif" width="100%"  height="100%"-->
+				</i></div>
+				<div id="talk">
+					<br />
+					
+								COPYRIGHT © 1998 - 2018 TENCENT. ALL RIGHTS RESERVED.<br />
+
+								COPYRIGHT © 2012 Riot Games,Inc. ALL RIGHTS RESERVED.<br />
+
+								本网络游戏适合18+岁的用户使用；为了您的健康，请合理控制游戏时间。<br />
+								粤网文[2017]6138-1456号|新出网证（粤）字010号<br />
+								批准文号：新出审字[2011]310号 |文网进字[2011] 004号 | 出版物号：ISBN 978-7-89989-145-2|全国文化市场统一举报电话：12318<br /></div>
+			
+			<!--<div id="h9">
+				<img src="img/logo.jpg" width="150px" height="150px"/>
+			</div>
+			
+		</div>-->
+		
+			<!--</div>
+			<div id="qq">
+			<input type="button"value="点我" id="order" onclick="change()" >
+			<div id="sao">
+				
+			</div>-->
+		</div>
+		
+    	</div>
+		</div>
+	</div>
+	<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+	<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

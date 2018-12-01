@@ -1,0 +1,340 @@
+			body.home .heroes-section {
+				text-align: center;
+				background-image: url("../img/heros_section/candy.jpg");
+				background-position: top;
+				background-size: cover;
+			}
+			
+			.content-box {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+			
+			.row {
+				max-width: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			body.home .heroes-section {
+				text-align: center;
+			}
+			
+			.row:after {
+				clear: both;
+			}
+			
+			.u-max-width-container {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			
+			.u-max-width-container {
+				width: 100%;
+				max-width: 1250px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			body.home .heroes-section {
+				text-align: center;
+			}
+			
+			.intro-heading-gradient-blue {
+				background: -webkit-linear-gradient(top, #3f6493 10%, #345177 100%);
+				background-image: -o-linear-gradient(transparent, transparent);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-shadow: 0 4px 5px rgba(60, 72, 96, .5);
+			}
+			
+			.intro-heading {
+				margin-bottom: 44px;
+				text-transform: none;
+				font-style: italic;
+			}
+			
+			.intro-text {
+				line-height: 1.47;
+				margin-bottom: 3.6rem;
+			}
+			
+			.u-center-block {
+				display: table;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.h2,
+			h2 {
+				font: "microsoft yahei", impact, sans-serif;
+				font-size: 7.2rem;
+				line-height: normal;
+				letter-spacing: .08rem;
+				font-style: italic;
+				text-align: center;
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "microsoft yahei", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+				font-weight: 400;
+				color: inherit;
+				text-rendering: optimizeLegibility;
+				line-height: 1.4;
+			}
+			
+			body.home .heroes-section {
+				text-align: center;
+			}
+			
+			.u-limit-width {
+				max-width: 40em;
+			}
+			
+			.u-center-block {
+				display: table;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.intro-text {
+				line-height: 1.47;
+				margin-bottom: 3.6rem;
+			}
+			
+			p {
+				margin-bottom: 0;
+			}
+			
+			p {
+				font-size: inherit;
+				line-height: 1.6;
+				text-rendering: optimizeLegibility;
+			}
+			
+			p {
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+			}
+			
+			body.home .spotlight,
+			body.home .spotlight>.header,
+			body.home .spotlight>.holder {
+				position: relative;
+				text-shadow: 0 0 1px #405275;
+			}
+			
+			[class*=flex-container].m-center-items {
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			
+			.flex-container {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+				-webkit-box-pack: start;
+				-ms-flex-pack: start;
+				justify-content: flex-start;
+				-webkit-box-align: start;
+				-ms-flex-align: start;
+				align-items: flex-start;
+				-ms-flex-line-pack: strecth;
+				align-content: strecth;
+			}
+			
+			.spotlight-banner {
+				width: 100%;
+				min-height: 200px;
+				position: absolute;
+				padding: 10px 0 15px;
+				top: calc(50% - 100px);
+				text-align: right;
+				background-image: -webkit-linear-gradient(left, rgba(42, 55, 81, 0), rgba(42, 55, 81, .8)25%, rgba(42, 55, 81, .8)75%, rgba(42, 55, 81, 0));
+				background-image: linear-gradient(90deg, rgba(42, 55, 81, 0)0, rgba(42, 55, 81, .8)25%, rgba(42, 55, 81, .8)75%, rgba(42, 55, 81, 0));
+				background-position: 50%;
+				background-size: 1920px auto;
+				z-index: 0;
+			}
+			
+			.flex-item {
+				-webkit-box-flex: 0;
+				-ms-flex-positive: 0;
+				flex-grow: 0;
+				-ms-flex-negative: 1;
+				flex-shrink: 1;
+				-ms-flex-preferred-size: auto;
+				flex-basis: auto;
+				-ms-flex-item-align: auto;
+				-ms-grid-row-align: auto;
+				align-self: auto;
+			}
+			
+			.u-max-width-container {
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				max-width: 1250px;
+			}
+			
+			.spotlight-caption,
+			.spotlight-header {
+				color: #f0edf2;
+				padding-left: 64%;
+				text-align: center;
+			}
+			
+			.u-text-shadow {
+				text-shadow: 0 1px 2px #000;
+			}
+			
+			body.home .spotlight:before {
+				content: '';
+				position: absolute;
+				top: 59%;
+				left: 0;
+				right: 0;
+				padding-top: 28.07%;
+				background-image: url(http://overwatch.nos.netease.com/1/assets/img/pages/home/glow.png);
+				background-size: cover;
+			}
+			
+			body {
+				font-size: 1.6rem;
+				line-height: 1.5;
+			}
+			
+			.spotlight-image {
+				position: relative;
+				left: -270px;
+				display: inline-block;
+				min-width: 746px;
+				min-height: 440px;
+				margin: 0 auto;
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: 100% 100%;
+				z-index: 0;
+			}
+			
+			body.home .hero-portrait-group {
+				padding: 0;
+			}
+			
+			body.home .hero-portrait-group {
+				padding: 0 1.2rem;
+			}
+			
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.u-inline-block {
+				display: inline-block;
+			}
+			
+			.u-relative {
+				position: relative;
+			}
+			
+			li {
+				font-size: inherit;
+			}
+			
+			.hero-portrait {
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.hero-portrait {
+				position: relative;
+				display: inline-block;
+				padding-bottom: 2rem;
+				-webkit-transition: all 100ms cubic-bezier(0.19, 1, .22, 1);
+				transition: all 100ms cubic-bezier(0.19, 1, .22, 1);
+			}
+			
+			a {
+				color: #f7931e;
+			}
+			
+			a {
+				text-decoration: none;
+				line-height: inherit;
+				cursor: pointer;
+			}
+			
+			a {
+				background-color: transparent;
+			}
+			
+			.hero-portrait-image-mask {
+				display: block;
+				position: relative;
+				width: 70px;
+				height: 84px;
+				margin: 2.4px 6px;
+				border: 3px solid #f0edf2;
+				border-left-width: 0;
+				border-right-width: 0;
+				background-color: rgba(51, 51, 51, .9);
+				background-clip: padding-box;
+				overflow: hidden;
+				border-radius: 7px;
+				-webkit-transform: skew(25rad);
+				-ms-transform: skew(25rad);
+				transform: skew(25rad);
+			}
+			
+			.hero-portrait-image {
+				display: inline-block;
+				width: calc(100% + 10px);
+				height: 100%;
+				background-size: auto 100%;
+				background-position: 50% 50%;
+				position: relative;
+				-webkit-transform: skew(-25rad) translateX(-5px);
+				-ms-transform: skew(-25rad) translateX(-5px);
+				transform: skew(-25rad) translateX(-5px);
+			}
+			
+			.hero-portrait-label {
+				position: relative;
+				display: inline-block;
+				top: -4.2px;
+				margin-left: -10px;
+				padding: 1px 10px;
+				font-size: 1.3rem;
+				color: #333;
+				white-space: nowrap;
+			}
+			
+			.hero-portrait-label:hover>.hero-portrait-label {
+				top: -8.4px;
+				border-radius: .3rem;
+				background-color: #f0edf2;
+				color: #333;
+			}
+			
+			.hero-portrait:hover {
+				transform: scale(1.2) translateZ(0);
+			}

@@ -1,0 +1,134 @@
+		#footer {
+			position: relative;
+			font-size: 12px;
+			width: auto;
+			margin-top: 0px;
+			background: #202020;
+			/*background-color: rgba(1,1,1,0.5);*/
+		}
+		
+		#footer .footerWrap {
+			padding: 40px 0 0;
+			border-top: 1px solid rgba(255, 255, 255, .15);
+		}
+		
+		#footer .support-feedback {
+			max-width: 1000px;
+			margin: 0 auto 10px;
+			color: #ccc;
+			font-size: 14px;
+		}
+		
+		#footer .cs {
+			float: left;
+		}
+		
+		#footer .cs a {
+			color: #ccc;
+		}
+		
+			
+		#footer .footerWrap a {
+			text-decoration: none;
+			color: rgba(255, 255, 255, .5);
+		}
+		
+		
+		.cs .cs-online,
+		.cs-Feedback {
+			margin-right: 37px;
+		}
+		
+		.support-feedback .icon-1 {
+			background-position: -96px 0;
+		}
+		
+		.support-feedback .icon-1,
+		.support-feedback .icon-2,
+		.support-feedback .icon-3 {
+			display: inline-block;
+			height: 24px;
+			margin-right: 7px;
+			position: relative;
+			top: 5px;
+			width: 24px;
+		}
+		
+		.support-feedback .icon {
+			background-image: url(../img/nav_top/sprite-24-blue.png);
+			background-repeat: no-repeat;
+			background-size: auto;
+		}
+		
+		#footer .cprt {
+			max-width: 1000px;
+			margin: 50px auto 8px;
+			padding: 0 0 30px;
+			border-bottom: 1px solid rgba(255, 255, 255, .15);
+		}
+		
+		#footer .logo_bz {
+			display: inline-block;
+			overflow: hidden;
+			width: 140px;
+			height: 80px;
+			vertical-align: middle;
+			background: url(../img/footer_logo/blizzard.png) no-repeat 0 0;
+		}
+		
+		#footer .logo_ne {
+			display: inline-block;
+			overflow: hidden;
+			width: 105px;
+			height: 33px;
+			margin: 34px 0 0 20px;
+			vertical-align: middle;
+			background: url(../img/footer_logo/logo_ne.png)no-repeat 0 0;
+		}
+		
+		#footer .cprt .info {
+			position: relative;
+			display: inline-block;
+			padding: 20px 0 0 10%;
+			text-align: left;
+			vertical-align: middle;
+			color: rgba(255, 255, 255, .5);
+		}
+		
+		#footer .cprt .info ul li {
+			color: #ccc;
+			display: inline-block;
+			font-size: 14px;
+			padding-right: 10px;
+		}
+		
+		#footer .cprt .info ul li a {
+			color: #fff;
+			padding-right: 10px;
+		}
+		
+		#footer .tips {
+			text-align: center;
+			color: rgba(255, 255, 255, .3);
+		}
+		
+		#footer p+p {
+			margin-top: 0;
+		}
+		
+		ul+p {
+			margin-top: 1em;
+		}
+		
+		p {
+			margin-bottom: 0;
+		}
+		
+		p {
+			font-size: inherit;
+			line-height: 1.6;
+			text-rendering: optimizeLegibility;
+		}
+		h3{
+			color:gold
+		}

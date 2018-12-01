@@ -1,0 +1,28 @@
+
+	.wrapper {
+    width: 990px;
+    margin-left: 200px;
+    margin-top: 50px;
+    position: absolute;
+	}
+
+	#header {
+		margin: 0px 50px;
+    	padding-top: 50px;
+    	clear: both;
+	}
+	
+	#navigation{
+		color: #9D9D9D;
+		/*padding-top: 20px;*/
+		font-size: 23px;
+		font-family:"微软黑体";	
+	}
+
+
+	
+
+
+	
+
+
