@@ -27,6 +27,21 @@ body{
   padding: 20px; 
   border: 1px solid black;
 }
-.my-table{
+/* .my-table{
   width:600px;
+} */
+.my-table-hover>tbody>tr:hover{
+	background-color: rgba(0, 37, 77, 0.5);
+}
+.my-readed{
+	background-color: rgba(0, 140, 0, 0.5);
+}
+.my-table-hover>tbody>.my-readed:hover{
+	background-color: rgba(0, 200, 0, 0.5);
+}
+.my-unread{
+	background-color: rgba(140, 0, 0, 0.5);
+}
+.my-table-hover>tbody>.my-unread:hover{
+	background-color: rgba(200, 0, 0, 0.5);
 }
