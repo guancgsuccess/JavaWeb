@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<title></title>
+		<style type="text/css">
+				.header{
+				background-color: #000000;
+				width: 100%;
+			}
+			.myarea{
+				position: absolute;
+				top: 5%;
+				right: 8%;
+				z-index: 1;
+				}
+			.div1{
+				padding-top: 6%;
+				padding-left: 8%;
+				height:200px;
+			}
+			
+			.mynav{
+				position: relative;
+				background-color: transparent;
+				border: 0px;
+				top: 0px;
+				padding-left: 25%;
+				z-index: -1;
+				font-size: 30px;
+				/*position: relative;
+				background-color: #000000;
+				border: 0px;
+				top: 5px;
+				left: 38%;
+				z-index: 1;
+				font-size: 20px;
+				width: 70%;*/
+			}
+			.text {
+				/*width: 175px;*/
+				padding-top: 30px;
+				padding-right: 100px;
+				height: 20px;
+				background-color: black;
+				float:left;
+				font-size: 20px;
+			}
+			.text .mbox {
+				position: absolute;
+				left: 0px;
+				width: 100%;
+				height: 900px;
+				background-color:white;
+				display: none;
+				z-index: 3;
+			}
+			.text:hover .mbox {
+				display: block;
+			}
+				li a{
+				color: white;
+			}
+			li a:hover{
+				color: dodgerblue;
+			}
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  
+			  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);*/
+			  padding: 12px 705px;
+			}
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
+			.div2{
+				border: 0px;
+				height: 300px;
+				padding-top:70px ;
+				padding-left:20%; 
+			}
+			/*.div3{
+				height: 500px;
+				
+			}*/
+			.div4{
+				padding-left: 250px;
+				margin-top:60px ;
+			}
+			.div5{
+				padding-left: 250px;
+				margin-top: 300px;
+			}
+			.div6{
+				height: 280px;
+				background-color: #EEEEEE;
+			}
+			.div7{
+				height: 700px;
+				background-color: #EEEEEE;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container header"style="overflow-x: hidden;overflow-y: hidden;">
+			<div class="div1" >
+				<a href="home_page.html" style="position: absolute;top: 5%;left: 3%;">
+					<img src="../img/logo.png" />
+				</a>
+				<div class="myarea">
+					<ul class="breadcrumb" style="background-color: #000000;">
+    					<li><a href="#">登录</a></li>
+   						<li><a href="#">注册</a></li>
+					</ul>
+				</div>
+				<div class="text mynav">
+					&nbsp;
+				</div>
+				<div class="text" style="color: white;">
+					车型
+					<div class="mbox">
+					</div>
+				</div>
+				<div class="text"style="color: white;">
+					购车指南
+					<div class="mbox"  style="padding-left: 10%;padding-right: 10%;">
+						<div style="margin-bottom: 30px;">
+							<h1>购车指南</h1>
+						</div>
+						<div class="row" style="margin-bottom: 70px;">
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/440240banner.jpg" width="100%"/>心意所属，远行相伴</a>
+								<p style="font-size: 12px;padding-top: 5px;">在线预订GLE SUV、GLE轿跑SUV、GLS SUV任意一款，得限量好礼。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/special-offer.jpg" width="100%"/>限时购车新方案</a>
+								<p style="font-size: 12px;padding-top: 5px;">提供人性化的选车和购车方案，让购车体验更多元，更轻松。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/Dealer_Locator.png" width="100%"/>查找经销商</a>
+								<p style="font-size: 12px;padding-top: 5px;">根据服务项目及贩售车型，筛选出符合您需求的经销商。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/Financial_Calculator.png" width="100%"/>金融计算器</a>
+								<p style="font-size: 12px;padding-top: 5px;">提供各种弹性购车的新方案，您可以根据预算来进行试算。</p>
+							</div>
+						</div>
+						<div  style="margin-bottom: 70px;">
+							<a href="#"><img src="../img/guide/Test_Drive.png" width="23%"><p>预约试驾</p></a>
+							<p style="font-size: 12px;padding-top: 5px;">选择您心仪的车型，联系经销商，即刻体验梅赛德斯-奔驰。</p>
+						</div>
+						<hr />
+						<div class="collapse navbar-collapse"  id="example-navbar-collapse" style="padding-bottom: 3%;">
+							<ul class="nav navbar-nav">
+								<li><a href="#" >在线购车</a></li>
+				           		<li><a href="#">咨询销售信息</a></li>
+				           		<li><a href="#">下载产品手册</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="text"style="color: white;">
+					客户指南
+					<div class="mbox"></div>
+				</div>
+				<div class="text" style="color: white;">
+					<a href="#">mercedes me</a>
+				</div>
+				<div class="text" style="color: white;">
+					<a href="#">梅赛德斯</a>
+				</div>
+			</div>
+		</header>
+		<div style="position: relative;width: 100%;height: auto;">
+		<img src="../img/梅赛德斯-迈巴赫S级轿车/KV-update.jpg" width="100%"/>
+		<div style="position: absolute;width: 100%;z-index:1;top: 100px;">
+			<h4 align="center"style="color: white;">梅赛德斯-迈巴赫S级轿车</h4>
+			<h2 align="center"style="color: white;">礼待天下</h2>
+			<h4 align="center"style="color: white;">——</h4>
+			<h5 align="center"style="color: white;">梅赛德斯-迈巴赫S级轿车，为尊崇而生，殊荣尽展，礼行天下。</h5>
+		</div>
+		</div>
+		<div style="position: relative; background-color:lightgray;height: 70px;">
+			<div style="position:absolute ;width: 100%;top: 20px;">
+				<font style="padding-left: 15%;">*厂商建议零售价 ¥ 140.88 万起/月供 ¥ 6,932起</font>
+			</div>
+			<div class="dropdown" style="width:100%;top: 20px;">
+				
+			  <span style="padding-left:60% ;">购买工具</span>
+			  <div class="dropdown-content" style="width: 100%;top: 20px;">
+			  <p> <a href="#">金融计算器</a> </p>
+			    <p><a href="#">车型配置</a> </p>
+			    <p><a href="#">预约试驾</a></p>
+			    <p><a href="#">下载产品手册</a></p>
+			    <p><a href="#">查找经销商</a></p>
+			  </div>
+			</div>
+			<div style="padding-left: 70%;">
+			<a href="#"><button type="button"style="background-color: gray;color: white;">预约试驾</button>	</a>
+			<a href="#"><button type="button"style="background-color: skyblue;color: white;">即刻在线预定</button></a>
+			</div>
+			
+		</div>
+		<div class="div2">
+			<font style="color: lightgray;">
+				————————————————————
+			</font>
+				<font style="font-size:30px;">礼，体也。言得事之体也</font>
+			<font style="color: lightgray;">
+				—————————————————————
+			</font>
+			<br /><br /><br /><br />
+			<p style="padding-left: 40px;font-size: 20px;">君子之礼，自观于貌，自察于行。梅赛德斯-迈巴赫S级轿车，尽释无上尊礼之设计。周全礼道，气当自华。</p>
+		</div>
+		<img src="../img/梅赛德斯-迈巴赫S级轿车/BANNER1-PC.jpg"width="100%" />
+		
+				<div class="div4">
+				<img src="../img/梅赛德斯-迈巴赫S级轿车/feature4-4.jpg"style="position: relative;width: 520px;height: 320px;"/>
+				<div style="position: absolute;margin-top: -250px;margin-left: 600px;">
+				<font size="5">远程几何多光束LED大灯，享明晰之礼</font><br /><br /><br />
+				<font size="4">远程几何多光束LED大灯可根据当前道路及交通状况对</br>
+					行车灯进行快速、准确的调节，84颗LED灯泡都可单独><br />
+					控制，准确开启。如果系统未在直线方向上探测到其他<br />
+					车辆，远光灯的照明距离可扩展至更远，令视野更为明<br />
+					开阔，独享明晰视界</font>
+
+				</div>
+				</div>
+				<br /><br />
+				<div class="div5">
+					<div style="position: absolute;margin-top: -250px;">
+					<font size="5">可调光全景式天窗 (MAGIC SKY CONTROL)，享<br />
+						明朗之礼</font><br /><br /><br />
+					<font size="4">只需按下一个按钮，可调光全景式天窗 (MAGIC SKY<br />
+						 CONTROL) 即可为您带来敞篷体验。2段式全景滑动天<br />
+						 窗可于几秒钟内在深色与透明色之间切换。该天窗的每<br />
+						 段透明度均可单独进行调节。在深色状态下，车顶可明<br />
+						 显阻止车内温度升高。</font>
+					<img src="../img/梅赛德斯-迈巴赫S级轿车/4601.jpg"style="position: relative;margin-left: 600px;
+						margin-top: -250px;
+						width: 520px;height: 320px;"/>
+					</div>
+				</div>
+				<div class="div6"style="margin-top: 420px;">
+						<h2 style="padding:80px 35%;color: gray;">中不偏，庸不易，适者为礼也</h2>
+						<p style="font-size: 18px;padding-left:20% ;">不偏之谓中，不易之谓庸，梅赛德斯-迈巴赫S级轿车，坚持大道之法，令澎湃动力适时为您所用。</p>
+				</div>
+				<div >
+					<img src="../img/梅赛德斯-迈巴赫S级轿车/feature_2_pc.jpg"width="100%" />
+				</div>
+					
+		<div class="div7">
+				<div class="div4">
+				<img src="../img/梅赛德斯-迈巴赫S级轿车/SSPIP15574.jpg"style="position: relative;width: 520px;height: 320px;"/>
+				<div style="position: absolute;margin-top: -250px;margin-left: 600px;">
+				<font size="5">V12双涡轮发动机，享澎湃之礼</font><br /><br /><br />
+				<font size="4">令人惊叹的发动机设计，带来无限澎湃动力。呈60度夹</br>
+					角排列的12个气缸确保了平稳的运行特性。压铸镁材质<br />
+					的气缸盖罩，重量更轻。高品质合金可以保护发动机免<br />
+					受腐蚀，并赋予组件极强的耐热性。</font>
+
+				</div>
+				</div>
+				<br /><br />
+				<div class="div5">
+					<div style="position: absolute;margin-top: -250px;">
+					<font size="5">9速自动变速箱，享顺畅之礼</font><br /><br /><br />
+					<font size="4">9速自动变速箱（9G-TRONIC）具有9个前进档，将效<br />
+						率、舒适性和动态性提升至全新水平，更快、更平顺的<br />
+						换档操作令其魅力十足。在保持出众性能的同时提高了<br />
+						驾乘舒适性，且降低了噪声级与油耗。</font>
+					<img src="../img/梅赛德斯-迈巴赫S级轿车/feature2-2.jpg"style="position: relative;margin-left: 600px;
+						margin-top: -250px;
+						width: 520px;height: 320px;"/>
+					</div>
+				</div>
+			</div>
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+
+body{
+  background-image: url(../img/body-bg-yz.jpg);
+}
+.my-left-nav{
+  position:fixed; 
+  left: 0px; 
+  top: 0px;
+  z-index: -1;
+  width: 282px; 
+  height: 100%; 
+  padding-top: 40px;
+  background-color: rgba(25, 40, 40, 0.5);
+}
+.my-left-nav-btn{
+  margin: 30px 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.my-body{
+  color: white;
+  position: absolute; 
+  left: 300px; 
+  top: 70px; 
+  width: 1000px; 
+  padding: 20px; 
+  border: 1px solid black;
+}
+/* .my-table{
+  width:600px;
+} */
+.my-table-hover>tbody>tr:hover{
+	background-color: rgba(0, 37, 77, 0.5);
+}
+.my-readed{
+	background-color: rgba(0, 140, 0, 0.5);
+}
+.my-table-hover>tbody>.my-readed:hover{
+	background-color: rgba(0, 200, 0, 0.5);
+}
+.my-unread{
+	background-color: rgba(140, 0, 0, 0.5);
+}
+.my-table-hover>tbody>.my-unread:hover{
+	background-color: rgba(200, 0, 0, 0.5);
+}
