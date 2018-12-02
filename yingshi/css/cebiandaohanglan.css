@@ -1,0 +1,51 @@
+.card-holder {
+position: fixed;
+width: 0px;
+overflow: visible;
+margin-top: 120px;
+
+float: left;
+}
+
+.card-wrapper {
+display: inline-block;
+float: right;
+clear: both;
+
+}
+
+.card {
+position: relative;
+left: 32px;
+padding: 16px 32px 16px 64px;
+margin: 2px;
+x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+background: #fff;
+transition: all 0.3s ease-in-out 0.1s;
+border: 1px solid red;
+z-index: 999;
+
+}
+
+.card:hover {
+position: relative;
+left: 100%;
+margin-left: -50px;
+box-shadow:
+0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+0 8px 8px -8px rgba(0, 0, 0, 0.5);
+transition: all 0.3s ease-in-out;
+
+}
+
+.card-content {
+display: inline-block;
+color: white;
+font-family: 'Droid Sans', sans-serif;
+font-size: 16px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.bg-01 { background: rgb(0,0,0,0.5);}

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>电影</title>
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/css.css">
+		<link rel="stylesheet" type="text/css" href="../css/dingbudaohanglan.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<style type="text/css">
+		
+		
+		
+		
+			.jianju{
+				margin-top: 35px;
+			}
+			.outer{
+				margin-top: 30px;
+			}
+			.outer2{
+				margin: auto;
+				height: 2400px;
+				width: 1200px;
+			/*	border: 1px solid red;*/
+				margin-top: 20px;
+			}
+			
+
+
+			.om_yinduhehuoren{
+				height: 22px;
+				width: 167px;
+				margin-top:5px;
+				text-align: left;
+			/*	border: 1px solid red;*/
+			}
+						
+			/*日韩电影*/
+			.oumei{
+
+			float: left;}
+			.oumeidianying{
+				height: 650px;
+				width: 1200px;
+				/*border: 1px solid green;*/
+				float: left;
+			}
+			
+			.om{
+					width: 193px;
+					height: 295px;
+					/*border: 1px solid blue;*/
+					margin-top: 5px;
+					margin-right: 3px;
+					margin-bottom: 5px;
+					margin-left: 3px;
+					padding-top: 5px;
+					padding-right: 3px;
+					padding-bottom: 5px;
+					padding-left: 3px;
+					float: left;
+			}
+
+
+			.img_01{
+				width: 187px;
+				height: 262px;
+				
+			}
+			.tupianxiaoguo2:hover{
+				transform: scale(1.03,1.03);
+				transition: transform  .3s ;
+			}
+
+			/*侧边导航栏开始*/
+		
+.card-holder {
+position: fixed;
+width: 0px;
+overflow: visible;
+margin-top: 120px;
+
+float: left;
+}
+
+.card-wrapper {
+display: inline-block;
+float: right;
+clear: both;
+
+}
+
+.card {
+position: relative;
+left: 32px;
+padding: 16px 32px 16px 64px;
+margin: 2px;
+x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+background: #fff;
+transition: all 0.3s ease-in-out 0.1s;
+border: 1px solid red;
+z-index: 999;
+
+}
+
+.card:hover {
+position: relative;
+left: 100%;
+margin-left: -50px;
+box-shadow:
+0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+0 8px 8px -8px rgba(0, 0, 0, 0.5);
+transition: all 0.3s ease-in-out;
+
+}
+
+.card-content {
+display: inline-block;
+color: white;
+font-family: 'Droid Sans', sans-serif;
+font-size: 16px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.bg-01 { background: rgb(0,0,0,0.5);}
+/*侧边导航栏结束*/
+
+
+
+
+* {box-sizing: border-box;}
+		
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  /*background-image: url(../img/电影-背景/1.jpg);*/
+		background: rgb(255,255,255,0.9);
+		  width: 100%;
+		  height:50px
+		}
+		
+
+		
+		.topnav a {
+	    float: left;
+	    display: block;
+	    color: #999;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    font-size: 17px;
+	}
+			
+		
+		.topnav a.active {
+		  background-color:#99;
+		   
+		}
+		
+		.topnav .search-container {
+		  float: right;
+		}
+		
+		.topnav input[type=text] {
+		  padding: 6px;
+		  margin-top: 8px;
+		  font-size: 17px;
+		  border: none;
+		}
+		
+		.topnav .search-container button {
+		  float: right;
+		  padding: 6px 10px;
+		  margin-top: 8px;
+		  margin-right:580px;
+		  background:rgb(0,0,0,0);
+		  font-size: 17px;
+		  border: none;
+		  cursor: pointer;
+		}
+		
+		.topnav .search-container button:hover {
+		  background:rgb(0,0,0,0);
+		}
+		
+		@media screen and (max-width: 600px) {
+		  .topnav .search-container {
+		    float: none;
+		  }
+		  .topnav a, .topnav input[type=text], .topnav .search-container button {
+		    float: none;
+		    display: block;
+		    text-align: left;
+		    width: 100%;
+		    margin: 0;
+		    padding: 14px;
+		  }
+		  .topnav input[type=text] {
+		    border: 1px solid #ccc;  
+		  }
+		}
+		input{border:1px solid red;background-color:transparent;}
+			
+			
+			.ceshi{
+				margin-top: -44px;
+				margin-right: 10px;
+			}
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+			<!--导航栏-->
+	
+	
+		<div class="topnav" id="daohanglan">
+		  <a class="active tupianxiaoguo" href="#home" style="color: #999;">影视</a>
+		  <div class="search-container">
+		    <form action="/action_page.php">
+		      <input type="text" placeholder="变形金刚5" name="search">
+		      <button class="tupianxiaoguo" type="submit" style="color: #999;"><i class="fa fa-search"></i></button>
+	
+		      
+		      
+		    </form>
+		    	<ul class="ceshi navbar-right tupianxiaoguo"><a href="../登录.html">登录</a></ul>  
+		       	<ul class="ceshi navbar-right tupianxiaoguo"><a href="../注册.html">注册</a></ul>  
+		       	<ul class="ceshi navbar-right tupianxiaoguo"><a href="../用户-个人中心.html">用户</a></ul>  
+		       	
+		    	
+		    
+		     
+		  </div>
+
+		</div>
+	
+
+
+
+
+			
+			<!--<div class="daohanglan">
+				<div class="card_01 bg_02">
+					<span>日韩电影</span>
+				</div>
+				
+				<div class="card_01 bg_02">
+					<span>港台电影</span>
+				</div>
+				
+				<div class="card_01 bg_02">
+					<span>国产电影</span>
+				</div>
+				
+				<div class="card_01 bg_02">
+					<span>其他地区</span>
+				</div>
+				
+				
+				
+				
+				
+				</div>-->
+				
+
+			<!--侧边导航栏开始-->
+		
+			
+<div class='card-holder'>
+<div class='card-wrapper'>
+<a   href="3---日韩电影.html">
+<div class='card bg-01'>
+<span class='card-content'>日韩电影</span>
+</div>
+</a>
+</div>
+
+<div class='card-wrapper'>
+<a href='#'>
+<div class='card bg-01'>
+<span class='card-content'>日韩电影</span>
+</div>
+</a>
+</div>
+
+<div class='card-wrapper'>
+<a href='#'>
+<div class='card bg-01'>
+<span class='card-content'>港台电影</span>
+</div>
+</a>
+</div>
+
+
+<div class='card-wrapper'>
+<a href='#'>
+<div class='card bg-01'>
+<span class='card-content'>国产电影</span>
+</div>
+</a>
+</div>
+
+<div class='card-wrapper'>
+<a href='#'>
+<div class='card bg-01'>
+<span class='card-content'>其他地区</span>
+</div>
+</a>
+</div>
+
+
+</a>
+</div>
+</div>
+
+			
+			
+			
+			
+			
+			
+			<!--侧边导航栏结束-->			
+			
+			<!--轮播测试-->
+			
+			<div id="jswbox">
+
+			<pre class="prev">prev</pre>
+		
+			<pre class="next">next</pre>
+		
+			<ul>
+				
+				<li><a href="1-测试.html"><img src="../img/轮播分类/日韩电影/他们死了.jpg"/></a></li>
+		
+				<li><a href="1-测试.html"><img src="../img/轮播分类/日韩电影/对不起先生轶事.jpg"/></a></li>
+		
+				<li><a href="1-测试.html"><img src="../img/轮播分类/日韩电影/生存家族.jpg"/></a></li>
+				<li><a href="1-测试.html"><img src="../img/轮播分类/日韩电影/花火.jpg"/></a></li>
+				<li><a href="1-测试.html"><img src="../img/轮播分类/日韩电影/记我的母亲.jpg"/></a></li>
+				<li><a href="变形金刚5播放.html"><img src="../img/轮播分类/日韩电影/那年夏天，宁静的海.jpg"/></a></li>
+		
+
+		
+			</ul>
+		
+		</div>
+			
+			
+			
+			
+			
+			
+			<!--最大的div-->
+			<div class="outer2">
+				
+				<!--日韩电影-->
+
+				
+				
+				<div class="oumeidianying jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/海云台.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					海云台
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">海云台</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/花火.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					花火
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">花火</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/花样厨神.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					花样厨神
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">花样厨神</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/极速先锋.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					极速先锋
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">极速先锋</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/记我的母亲.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					记我的母亲
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">记我的母亲</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/局内人.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					局内人
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">局内人</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+
+				
+				
+				<div class="oumeidianying  jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/可疑的顾客们.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					可疑的顾客们
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">可疑的顾客们</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/快乐的借口.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					快乐的借口
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">快乐的借口</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/浪矢解忧杂货店.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					浪矢解忧杂货店
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">浪矢解忧杂货店</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/乐师们.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					乐师们
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">乐师们</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/力道山.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					力道山
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">力道山</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/镰仓物语.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					镰仓物语
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">镰仓物语</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+			
+				
+				<div class="oumeidianying  jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/灵异导航.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					灵异导航
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">灵异导航</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/骆驼言.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					骆驼言
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">骆驼言</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/没有浪漫.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					没有浪漫
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">没有浪漫</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/没有秘密.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					没有秘密
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">没有秘密</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/母亲.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					母亲
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">母亲</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/挪威的森林.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					挪威的森林
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">挪威的森林</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="oumeidianying  jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/杀人依赖.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					杀人依赖
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">杀人依赖</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/深夜食堂.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					深夜食堂
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">深夜食堂</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/神之一手.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					神之一手
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">神之一手</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/时光之舞.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					时光之舞
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">时光之舞</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/时间脱离者.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					时间脱离者
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">时间脱离者</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/他们死了.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					他们死了
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">他们死了</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="oumeidianying  jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/甜蜜小谎言.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					甜蜜小谎言
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">甜蜜小谎言</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/铁道员.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					铁道员
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">铁道员</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/晚餐.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					晚餐
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">晚餐</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/野火.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					野火
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">野火</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/白夜行.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					白夜行
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">白夜行</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/办公室.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					办公室
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">办公室</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="oumeidianying  jianju">
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/表白.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					表白
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="测试视频播放器.html"><h4 class="title">表白</h4></a>
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"> 
+					</ul>
+				</div>
+				</div>
+					
+									
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/惩罚者.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					惩罚者
+				</div>
+				</div>
+					<div class="box-content">
+					<h4 class="title">惩罚者</h4>
+					<a href="index.html"><p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/船.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					船
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">船</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/纯美的相遇.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					纯美的相遇
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">纯美的相遇</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				
+				
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/垫底辣妹.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					垫底辣妹
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">垫底辣妹</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+				</div>
+				
+				<div class="box">
+				<div class="box-img">
+				<img src="../img/电影/日韩电影/对不起先生轶事.jpg" alt="">
+				<div class="om_yinduhehuoren">
+					对不起先生轶事
+				</div>
+				</div>
+					<div class="box-content">
+					<a href="index.html"><h4 class="title">对不起先生轶事</h4></a> 
+					<p class="description">片名“布希维克”本是美国纽约一个区的区名，故事也发生在这个地区。《布希维克》，男女主人公来到布希维克，本来轻松愉悦的两人却突然遭遇恐怖袭击，枪战、爆炸遍布城市，紧张窒息的情绪扑面而来。<ul class="social-links"></a> 
+					</ul>
+				</div>
+			
+
+		<!--引入jquery-->
+
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+		<script type="text/javascript" src="../js/ZoomPic.js"></script>
+		
+		<script type="text/javascript">
+		$(function(){
+
+		new ZoomPic("jswbox");	
+
+		})
+
+</script>
+<script type="text/javascript">
+            window.onscroll=function(){
+               var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
+                var bignav  = document.getElementById("daohanglan");//获取到导航栏id
+                if(topScroll > 250){  //当滚动距离大于250px时执行下面的东西
+                    bignav.style.position = 'fixed';
+                    bignav.style.top = '0';
+                    bignav.style.zIndex = '9999';
+                }else{//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+                    bignav.style.position = 'static';
+                }
+            }
+        </script> 
+	</body>
+</html>
