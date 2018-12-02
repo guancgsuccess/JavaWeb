@@ -1,0 +1,47 @@
+			.om_yinduhehuoren{
+				height: 22px;
+				width: 187px;
+				margin-top:5px;
+				text-align: left;
+				border: 1px solid red;
+			}
+			.oumei{
+					border: 1px solid red;
+					
+					
+				
+					float: left;}
+
+			.oumeidianying{
+				height: 620px;
+				width: 1200px;
+				border: 1px solid green;
+				float: left;
+			}
+			
+			.om{
+					width: 193px;
+					height: 295px;
+					border: 1px solid blue;
+					margin-top: 5px;
+					margin-right: 3px;
+					margin-bottom: 5px;
+					margin-left: 3px;
+					padding-top: 5px;
+					padding-right: 3px;
+					padding-bottom: 5px;
+					padding-left: 3px;
+					float: left;
+			}
+			
+			
+			
+			/*移动效果,向左移动110px进行居中*/
+			
+			
+			.yidong{
+				margin-left: 110px;
+				
+			}
+			
+			
