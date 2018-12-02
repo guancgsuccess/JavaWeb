@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<style type="text/css">
+			
+			.outer{
+				background-image:url(../img/prisoner02.jpg);
+				background-size: 100% 100%;
+				background-repeat:no-repeat;
+				/*position: relative;*/
+				width:100%;
+				height:600px;
+				/*top: -20px;*/
+				background-color:rgba(00,00,00,0.9)
+				}
+			.c1{
+				/*主体背景div*/
+				width:1000px;
+				height: 500px;
+				position: relative;
+				top: -320px;
+				margin:auto;
+				/*border: 1px solid black;*/
+				background-color: #E8E8E8;
+				border-radius: 10px;
+				background-image: -moz-linear-gradient(top, #99FFFF, #f6f6f8); 
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #99FFFF), color-stop(1,#f6f6f8)); 
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99FFFF', endColorstr='#f6f6f8', GradientType='0'); 			}
+			#n1{
+				/*好再来监狱大标题*/
+				width: 998px;
+				height: 180px;
+				position: absolute;
+				/*border: 1px solid black;*/
+				text-align:center;
+				font-size: 6em;
+				line-height: 180px;
+			}
+			#n2{
+				width: 700px;
+				height: 500px;
+				top: 200px;
+				right: 150px;
+				position: absolute;
+				background-color: white;
+				box-shadow: 10px 10px 5px #888888;
+				border-radius: 20px;
+				padding-top: 100px;
+				padding-left: 80px;
+				padding-right: 80px;
+				font-weight: bold;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-default my-nav" role="navigation">
+					<div class="container-fluid"> 
+				    <div class="navbar-header">
+				        <button type="button" class="navbar-toggle" data-toggle="collapse"
+				                data-target="#example-navbar-collapse">
+				            <span class="sr-only">切换导航</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
+				        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home	">&nbsp;</span>好再来监狱囚犯系统</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+				        <ul class="nav navbar-nav navbar-right">
+				            <li class="active"><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>个人信息</a></li>
+				            <li><a href="#"><span class="glyphicon glyphicon-envelope">&nbsp;</span>写信息</a></li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				                	<span class="glyphicon glyphicon-th	">&nbsp;</span>
+				                                         小卖部 <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li><a href="#">jmeter</a></li>
+				                    <li><a href="#">EJB</a></li>
+				                    <li><a href="#">Jasper Report</a></li>
+				                    <li class="divider"></li>
+				                    <li><a href="#">分离的链接</a></li>
+				                    <li class="divider"></li>
+				                    <li><a href="#">另一个分离的链接</a></li>
+				                </ul>
+				            </li>
+				        </ul>
+				    </div>
+				    </div>
+					<div class="outer"></div>
+					<div class="c1">
+						<div id="n1">好再来爱心邮箱</div>
+						<div id="n2">
+							         <table style="width:300;font-size: 18px;" cellspacing="10">
+							            <tr>
+							                <td width="100px">
+							                    <span>收件人:</span>
+							                </td>
+							                <td width="300px">
+							                    <input type="text" style="width: 100%" />
+							                </td>
+							            </tr>
+							            <tr>
+							                <td width="100px">
+							                    <span>主题:</span>
+							                </td>
+							                <td width="300px">
+							                    <table style="width:100%;cellpadding:0;cellspacing:0;">
+							                        <tr>
+							                            <td width="100%"><input type="text" style="width:100%"/></td>
+							                        </tr>
+							                    </table>
+							                </td>
+							            </tr>
+							            <tr>
+							                <td width="100px">
+							                    <span>正文:</span>
+							                </td>
+							                <td width="300px">
+							                    <textarea style="margin: 0px; width: 409px; height: 235px;"></textarea>
+							                </td>
+							            </tr>
+							        </table>
+
+						</div>
+		            </div>
+		
+		<!--引入jquery-->
+		
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
