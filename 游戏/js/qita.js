@@ -1,15 +1,4 @@
 
-//    jQuery
-//    $(function () {
-//        $("#other").click(function () {
-//            if($(this).attr("checked")){
-//                $("#txt").css("display","block")
-//            }else {
-//                $("#txt").css("display","none")
-//            }
-//        })
-//    })
-//    原生JS
 	function change() {
    	 	var other = document.getElementById("other");
     	var txta = document.getElementById("txta");

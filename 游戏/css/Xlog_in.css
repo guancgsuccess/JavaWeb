@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0;border: none;}
+			body{margin: 0 auto;padding: 0 auto;text-align: center;background-color: #0d1e30;background-image: url(../img/log_in/login-background-1280.4JLnG.jpg);background-position: 50% 0%; background-repeat:no-repeat;}
+			.wrapper{width: 100%;height: auto;}
+			.wrapper .logo{width: 200px;height: 105px;text-indent: -9999px;margin: 0 auto;font-size: 35px;line-height: 40px;color: #FFF;background: url(../img/log_in/blizzard-default.1C4OH.png);	margin-top: 5%;}
+			.login{width: 380px;height: auto;margin: 0 auto;padding: 0 auto;}
+			.login .error{margin: 0px auto;padding: 0px auto;width: 380px;height: 40px;margin-top: 25px;}
+			.login .error .email_err{width: 100%;height: 100%;background-color: #360e10;box-shadow: 0 0 0 1px #551e21 inset, 0 5px 10px rgba(0,0,0,0.75);margin-left: 5px; line-height: 24px;vertical-align: top;position: relative;}
+			.login .error .email_err_icon{width:24px;height:24px;background-image: url(../img/icon/sprite-24-red.0PPlX.png);background-size: ;overflow:hidden;background-position: -24px 0;background-repeat: no-repeat;position: absolute; top: 8px; left:8px;}
+			.login .error .email_err_info{height: 100%;width: 340px;margin-left: 40px;color:  rgba(255,255,255,0.7);font-size: 13px;line-height: 40px;text-align: left;}
+			.login .control{margin: 0px auto;padding: 0px auto;width: 370px;height: 50px;margin-top: 25px;}
+			.login .control input{width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);color: #fff;border-radius: 2px;font-size: 17px;line-height: 20px;height: 40px;padding-left: 10px;}
+			.input_err{border: 1px solid red;}
+            .login .submit{margin: 0px auto;padding: 0px auto;width: 380px;height: 40px;margin-top: 25px;}
+    		#submit{width: 100%;height: 100%;margin-bottom: 6px;background-color:#0e86ca;color: #fff;font-weight: 400;font-size: 20px;margin-left: 5px;}
+    		#submit:hover{background-color:#0e86cc;cursor: pointer;opacity: 0.5;}
+    		#hlep{margin-top: 25px;}
+    		#hlep li{list-style-type: none;margin-top: 10px;}
+    		#hlep li:hover{opacity: 0.5;}
+    		#hlep li a{text-decoration: none;color: #0e86ca;font-size: 18px;}
+    		.footer{width: 100%;height: 400px;position: ;bottom: %;}
+    		.footer .nav_footer{width: 600px;height: 400px;margin:0 auto;padding: 0 auto;position: relative;}
+    		.footer .nav_footer .links_footer{width: 100%;height: auto;position: absolute;bottom: 50px;text-align: center;}
+    		.footer .nav_footer .links_footer .nav_links_row{margin: 6px 0;}
+			.footer .nav_footer .links_footer .nav_a{font-size: 13px;text-decoration: none;color: rgba(255, 255, 255, 0.7);display: inline-block;}
+			.footer .nav_footer .links_footer .nav_a:hover{cursor: pointer;color:rgb(255, 255, 255);}
+			.footer .nav_footer .links_footer span{color: rgba(255, 255, 255, 0.3);margin: 0 5px 0 5px;}
+			.footer .nav_footer .links_footer .copyright{padding: 8px 0; color:rgba(255, 255, 255, 0.3);font-size: 12px;}
+			.footer .nav_footer .links_footer .nav_footer_icon_list{}
+			.footer .nav_footer .links_footer .nav_footer_icon_item{width: 28px; height: 28px;display: inline-block;background-repeat: no-repeat;margin-right: 10px;list-style-type: ;}
+			.footer .nav_footer .links_footer .icon_police{background-image: url(../img/footer_logo/police.png);}
+			.footer .nav_footer .links_footer .icon_zx100{background-image: url(../img/footer_logo/zx110.png);}
+			.footer .nav_footer .links_footer .icon_sgs{background-image: url(../img/footer_logo/sgs-icon.png);}
+			.footer .nav_footer .links_footer .icon_shjbzx{background-image:url(../img/footer_logo/icon20120516.png);}
+			.hide{display:none;}
+			.show{display: show;}
