@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.myactive{
+    border-bottom: 3px solid red;
+}
+#yy_nav{
+    background-color: white;
+    border: none;
+}
+#example-navbar-collapse > ul:nth-child(1) > li:hover{
+    border-bottom: 3px solid red;!important;
+}
+#world_map>.map{
+    width: 1300px;
+    height: 639px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../img/world_map.png")no-repeat;
+}
+#world_map>.map>.map-point{
+    list-style: none;
+    position: relative;
+}
+#world_map>.map>.map-point>li{
+    display: list-item;
+    position: absolute;
+    width: 85px;
+    height: 57px;
+    background:url("../img/map_point.png")no-repeat;
+}
+#world_map>.map>.map-point>li:hover{
+    animation: jump 1s infinite !important;
+}
+#world_map>.map>.map-point>.america{
+    top: 190px;
+    left: 370px;
+}
+#world_map>.map>.map-point>.south_america{
+    top: 335px;
+    left: 445px;
+}
+#world_map>.map>.map-point>.boat{
+    top: 490px;
+    left: 340px;
+}
+#world_map>.map>.map-point>.europe{
+    top: 130px;
+    left:720px;
+}
+#world_map>.map>.map-point>.middleEast{
+    top: 227px;
+    left: 713px;
+}
+#world_map>.map>.map-point>.africa{
+    top: 295px;
+    left: 675px;
+}
+#world_map>.map>.map-point>.northeastAsia{
+    top: 132px;
+    left: 880px;
+}
+#world_map>.map>.map-point>.hongkong{
+    top: 211px;
+    left: 899px;
+}
+#world_map>.map>.map-point>.seaisa{
+    top: 250px;
+    left: 840px;
+}
+#world_map>.map>.map-point>.oceania{
+    top: 370px;
+    left: 1000px;
+}
+#world_map>.map>.map-point>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 17px 30px 5px 0;
+    text-align: center;
+    font:14px/20px "microsoft yahei";
+}
+/*动画*/
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(0,-25px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75%{
+        transform: translate(0,-15px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+#world_map>.map>.map-info{
+    position: relative;
+    list-style: none;
+    z-index: 4;
+    display: list-item;
+
+}
+#world_map>.map>.map-info>li{
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 410px;
+    height: 180px;
+    padding: 10px 0 0;
+    background:url("../img/map_info_bg.png")no-repeat;
+}
+#world_map>.map>.map-info>li>div>.close{
+    position: absolute;
+    right: 14px;
+    width: 25px;
+    height: 25px;
+    font: 20px/25px tahoma;
+    color: #333;
+    text-align: center;
+    z-index: 9999;
+}
+#world_map>.map>.map-info>li>div>.map-them-icon{
+    display: block;
+    float: left;
+    width: 130px;
+    height: 105px;
+    margin: 20px 20px ;
+    background: url("../img/map_info.png") no-repeat 0 9999px
+}
+#world_map>.map>.map-info>li>div>.detail{
+    float: left;
+    width: 230px;
+    color: #333;
+}
+#world_map>.map>.map-info>li>div>.detail>.title{
+    position: relative;
+    padding: 10px 0;
+    margin: 6px 0 10px -10px;
+    border-bottom: 1px solid #333;
+    font: 22px/1 "microsoft yahei";
+    text-align: center;
+}
+#world_map>.map>.map-info>li>div>.detail>.title>b{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    background-color: #333;
+    transform:rotate(45deg);
+}
+#world_map>.map>.map-info>li>div>.detail>.title>a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+#world_map>.map>.map-info>li>div>.detail>.title>a:hover{
+    text-decoration: underline;
+}
+#world_map>.map>.map-info>li>div>.detail>.destn{
+    margin-bottom: 8px;
+    overflow: hidden;
+    zoom: 1;
+}
+#world_map>.map>.map-info>li>div>.detail>.destn>a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    margin: 0 10px 6px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#world_map>.map>.map-info>li>div>.detail>.destn>a:hover{
+    text-decoration: underline;
+}
+#world_map>.map>.map-info>li>.map_info_ft{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 410px;
+    height: 10px;
+    background: url("../img/map_info_bg.png") 0 -316px no-repeat;
+}
+#containerBox>.destnBox{
+    position: relative;
+    width: 1180px;
+    margin: 20px auto 0;
+}
+#containerBox>.destnBox>.item{
+    position: relative;
+    float: left;
+    width: 168px;
+    height: 100%;
+}
+#containerBox>.destnBox>.item>.line{
+    position: absolute;
+    height: 1000px;
+    width: 1px;
+    border-left: 1px dotted #ccc;
+}
+#containerBox>.destnBox>.item>.title{
+    margin-bottom: 5px;
+    font: 18px/2.5 "microsoft yahei";
+    text-align: center;
+}
+#containerBox>.destnBox>.item>.title>.icon{
+    color: black;
+    text-decoration: none;
+}
+#containerBox>.destnBox>.item>.title>.icon:hover{
+    color: #32c6c6;
+}
+#containerBox>.destnBox>.item>.title>.icon>em{
+    display: inline-block;
+    width: 110px;
+    height: 105px;
+    background: url("../img/icon_large.png") no-repeat ;
+}
+#containerBox>.destnBox>.item>ul{
+    margin: 0 auto;
+    list-style: none;
+}
+#containerBox>.destnBox>.item>ul>li{
+    margin-bottom: 15px;
+    text-align: center;;
+}
+#containerBox>.destnBox>.item>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+#containerBox>.destnBox>.item>ul>li:hover>a{
+    color: white;
+}
+#containerBox>.destnBox>.item>ul>li:hover{
+    background-color: #32c6c6;
+}
