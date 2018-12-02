@@ -4,12 +4,14 @@
 		<meta charset="UTF-8">
 		<title>梅赛德斯-奔驰</title>
 		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../css/header.css" />
-		<link rel="stylesheet" href="../css/homepage_body.css" />
-		<link rel="stylesheet" href="../css/foot.css" />
+		<link rel="stylesheet"text/css" href="../css/button.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="keywords"/>
+	    <meta name="description"/>
+	    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NdbUOqN6YtGqVHlnal8E9PcLbLkhHaPf"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<!--<style type="text/css">
+		<style type="text/css">
 			.header{
 				background-color: #000000;
 				width: 100%;
@@ -18,11 +20,10 @@
 				position: absolute;
 				top: 5%;
 				right: 8%;
-				z-index: 1;
 			}
 			.div1{
 				padding-top: 6%;
-				padding-left: 8%;
+				padding-left:8%;
 				height: 200px;
 			}
 			
@@ -34,20 +35,46 @@
 				padding-left: 25%;
 				z-index: -1;
 				font-size: 30px;
-				/*position: relative;
-				background-color: #000000;
-				border: 0px;
-				top: 5px;
-				left: 38%;
-				z-index: 1;
-				font-size: 20px;
-				width: 70%;*/
 			}
-			li a{
+			.text {
+				padding-top:30px;
+				padding-right: 100px;
+				height: 20px;
+				background-color: black;
+				float:left;
+				font-size: 20px;
+			}
+			.text>a:hover{
+				color:white;
+				text-decoration:none;
+			}
+			.text>a{
+				color:white;
+			}
+			.text .mbox {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				background-color:white;
+				display: none;
+				z-index:3;
+			}
+			.text:hover .mbox {
+				display: block;
+			}
+			.mmp a:link{
+				color: black;
+				text-decoration:none;
+			}
+			.mmp a:hover{
+				color: skyblue;
+				text-decoration:none;
+			}
+			li a:link{
 				color: white;
 			}
 			li a:hover{
-				color: dodgerblue;
+				color: blue;
 			}
 			.mypicture{
 				width: 100%;
@@ -75,11 +102,11 @@
 			#cars div{
 				border: 1px solid white;
 				position: absolute;
-				width: 18.8%;
-				height: 485px;
+				width: 18.75%;
+				height: 607px;
 				font-size: 36px;
 				padding-top: 0px;
-				/*color: white;*/
+				
 			}
 			#cars a{
 				opacity:0.1;
@@ -93,36 +120,115 @@
 				text-decoration: none;
 			}
 			#cars a:hover{
-				opacity: 0.4;
+				opacity: 0.5;
 			}
 			#div1{
 				top:0px;
-				left: 189px;
+				left: 238px;
 			}
 			#div2{
 				top: 0px;
-				left: 474px;
+				left: 594px;
 			}
 			#div3{
 				top: 0px;
-				left: 760px;
+				left: 950px;
 			}
 			#div4{
 				top: 0px;
-				left:1044px;
+				left:1306px;
 			}
-			.footer a:link{
-				opacity: 0;
+			active{
+				font-weight: bold;
 			}
-			.footer a:hover{
-				opacity: 0.5;
+			.menu-toggle_loge-img{
+				margin-left: 30%;
 			}
-			#bg{
-				background-image: url(../img/homepage/footer-4.jpg);
-				width: 100%;
-				height: 442px;
-				padding: 5% 20%;
-				margin-bottom: 70px;
+			a:link{
+				color: black;
+			}
+			a:hover{
+				color: blue;
+			}
+			.mmp{
+				padding-left: 200px;
+			}
+			.maodian{
+				width:100vw;
+				background-color:black;
+				height:18px;
+				text-align:center;
+				word-spacing: 50px;
+				font-size:14px;
+				color:white;
+				position:fixed;
+				_position:absolute;
+				top:0px;
+				_top:expression(documentElement.scrollTop + "px"); 
+				z-index:999;
+			}
+			.maodian a{
+				color:white;
+				font-weight:bold;
+			}
+			.maodian a:hover{
+				color:red;
+				text-decoration:none;
+			}
+			.maodian a:link{
+				color:white;
+				text-decoration:none;
+			}
+			.video{
+				width:100vw;
+				height:422px;
+			}
+			.chexingmaodian{
+				height:167px;
+				width:100vw;
+				background-color:black;
+				color:white;
+				font-size:40px;
+				padding-top:60px;
+			}
+			.chexing{
+				background-color:black;
+				width:100vw;
+				font-weight:bold;
+				word-spacing:50px;
+				font-size:15px;
+			}
+			.chexing a{
+				color:white;
+			}
+			.chexing a:hover{
+				color:red;
+				text-decoration:none;
+			}
+			.chexing a:link{
+				color:white;
+				text-decoration:none;
+			}
+			.chaxunmaodian{
+				height:167px;
+				width:100vw;
+				background-color:black;
+				color:white;
+				font-size:40px;
+				padding-top:60px;
+			}
+			.guanyumaodian{
+				height:167px;
+				width:100vw;
+				background-color:black;
+				color:white;
+				font-size:40px;
+				padding-top:60px;
+			}
+			.guanyu{
+				height:600px;
+				width:100vw;
+				background-color:black;
 			}
 			.p li{
 				list-style: none;
@@ -164,65 +270,24 @@
 			.p span{
 				padding: 50px;
 			}
-			.text {
-				/*width: 175px;*/
-				padding-top: 30px;
-				padding-right: 100px;
-				height: 20px;
-				background-color: black;
-				float:left;
-				font-size: 20px;
-			}
-			.text .mbox {
-				border-bottom: 1px solid;
-				box-shadow: 2px 2px 2px gray;
-				position: absolute;
-				left: 0px;
-				width: 100%;
-				/*height: 900px;*/
-				background-color:white;
-				color: black;
-				display: none;
-				z-index: 99;
-			}
-			.text:hover .mbox {
-				display: block;
-			}
-			.mbox a:link{
-				color: black;
-			}
-			.mbox a:visited{
-				color: black;
-			}
-			.mbox a:hover{
-				color: cornflowerblue;
-				text-decoration: none;
-			}
-			.text a{
-				color: white;
-			}
-			
-			.text a:hover{
-				color: cornflowerblue;
-				text-decoration: none;
-			}
-		</style>-->
+		</style>
 	</head>
 	<body>
-		<header class="container header"style="overflow-x: hidden;overflow-y: hidden;">
-			<div class="div1" >
-				<a href="home_page.html" style="position: absolute;top: 5%;left: 3%;">
+		<header class="container header">
+			<div class="div1">
+				<a href="home_page.html" style="position: absolute;top: 3%;left: 3%;">
 					<img src="../img/logo.png" />
 				</a>
 				<div class="myarea">
-					<ul class="breadcrumb" style="background-color: #000000;">
-    					<li><a href="login.html">登录</a></li>
-   						<li><a href="register.html">注册</a></li>
+					<ul class="breadcrumb" style="background-color: #000000;  ">
+    					<li ><a href="#">登录</a></li>
+   						<li><a href="#">注册</a></li>
 					</ul>
 				</div>
 				<div class="text mynav">
-					&nbsp;
+					.
 				</div>
+				
 				<div class="text" style="color: white;">
 					车型
 					<div class="mbox">
@@ -573,13 +638,13 @@
 					</div>
 					</div>
 				</div>
-				<div class="text"style="color: white;">
+				<div class="text "style="color: white;">
 					购车指南
 					<div class="mbox"  style="padding-left: 10%;padding-right: 10%;">
 						<div style="margin-bottom: 30px;">
 							<h1>购车指南</h1>
 						</div>
-						<div class="row" style="margin-bottom: 70px;">
+						<div class="row" style="margin-bottom: 70px ;">
 							<div class="col-md-3">
 								<a href="#"><img src="../img/guide/440240banner.jpg" width="100%"/>心意所属，远行相伴</a>
 								<p style="font-size: 12px;padding-top: 5px;">在线预订GLE SUV、GLE轿跑SUV、GLS SUV任意一款，得限量好礼。</p>
@@ -598,7 +663,7 @@
 							</div>
 						</div>
 						<div  style="margin-bottom: 70px;">
-							<a href="test_drive.html"><img src="../img/guide/Test_Drive.png" width="23%"><p>预约试驾</p></a>
+							<a href="#"><img src="../img/guide/Test_Drive.png" width="23%"><p>预约试驾</p></a>
 							<p style="font-size: 12px;padding-top: 5px;">选择您心仪的车型，联系经销商，即刻体验梅赛德斯-奔驰。</p>
 						</div>
 						<hr />
@@ -612,13 +677,14 @@
 					</div>
 				</div>
 				<div class="text"style="color: white;">
-					<a href="customer-service.html">客户服务</a>
+					客户指南
+					<div class="mbox"></div>
 				</div>
 				<div class="text" style="color: white;">
-					<a href="#">mercedes me</a>
+					<a href="http://127.0.0.1:8020/%E5%A5%94%E9%A9%B0/view/mercedes%20me.html?__hbt=1543729005009"> mercedes me</a>
 				</div>
 				<div class="text" style="color: white;">
-					<a href="#">梅赛德斯</a>
+					<a href="http://127.0.0.1:8020/%E5%A5%94%E9%A9%B0/view/mercedes-AMG.html?__hbt=1543740599861">梅赛德斯</a> 
 				</div>
 			</div>
 		</header>
@@ -629,24 +695,45 @@
 		        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		        <li data-target="#myCarousel" data-slide-to="1"></li>
 		        <li data-target="#myCarousel" data-slide-to="2"></li>
-		        <li data-target="#myCarousel" data-slide-to="3"></li>
+		        <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
 		    </ol>   
 		    <!-- 轮播（Carousel）项目 -->
 		    <div class="carousel-inner">
 		        <div class="item active">
-		            <img src="../img/homepage/homepage-1.jpg" class="img-responsive mypicture" alt="First slide">
-		            <div class="">
-		            	
-		            </div>
+		        	<span style="position: absolute;color: white;padding:50px 515px ;">
+		        		<div align="center"style="width: 500px;">
+		        			<span style="font-family: '楷体'; font-size:18PX;">全新梅赛德斯-AMG 63 4MATIC+轿跑 </span><br />
+		        			<span style="font-family: '新宋体'; font-size:45PX;">乘锋__架势</span><br /><br />
+		        			<span style="font-family:'黑体' font-size:15PX;">凌厉锋芒耀眼夺目，非凡气势摄人心魂</span><br />
+		        			<br />
+		        			<button class="small red button" ;>了解更多</button>
+		        		</div>
+		        	</span>
+		            <img src="../img/mercedes-AMG/glc63coupe-banner-pc.jpg" class="img-responsive mypicture" alt="First slide">
+		        </div>
+		        <div class="item " >
+		        	<span style="position: absolute;color: white;padding:50px 515px;">
+		        		<div  align="center "style="width: 500px;" >
+		        			<span style="font-family: '楷体'; font-size:18PX;">全新梅赛德斯-AMG GT家族</span><br />
+		        			<span style="font-family: '新宋体'; font-size:45PX;">不言__而驭</span><br /><br />
+		        			<span style="font-family:'黑体' font-size:15PX;">四大猛将齐聚赛道，御风之速，一驭便知</span><br />
+		        			<br />
+		        			<button class="small red button" ;">了解更多</button>
+		        		</div>
+		        	</span>
+		            <img src="../img/mercedes-AMG/oneweb-gt-pc.jpg" class="img-responsive mypicture" alt="Second slide">
 		        </div>
 		        <div class="item">
-		            <img src="../img/homepage/homepage-2.jpg" class="img-responsive mypicture" alt="Second slide">
-		        </div>
-		        <div class="item">
-		            <img src="../img/homepage/homepage-3.jpg" class="img-responsive mypicture" alt="Third slide">
-		        </div>
-		        <div class="item">
-		            <img src="../img/homepage/homepage-4.jpg" class="img-responsive mypicture" alt="Forth slide">
+		        	<span style="position: absolute;color: white;padding:50px 515px; ">
+		        		<div  align="center" style="width: 500px;">
+		        			<span style="font-family: '楷体'; font-size:18PX;">AMG驾驶学院</span><br />
+		        			<span style="font-family: '新宋体'; font-size:45PX;">十分血性__满分夺冠</span><br /><br />
+		        			<span style="font-family:'黑体' font-size:15PX;">即刻加入梅赛德斯-AMG战队，全速集结，驾驭非凡</span><br />
+		        			<br />
+		        			<button class="small red button" ;">了解更多</button>
+		        		</div>
+		        	</span>
+		            <img src="../img/mercedes-AMG/ada-new.jpg" class="img-responsive mypicture" alt="Third slide">
 		        </div>
 		    </div>
 		    <!-- 轮播（Carousel）导航 -->
@@ -655,62 +742,425 @@
 		    <a class="carousel-control right" href="#myCarousel" 
 		       data-slide="next"><span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
-		
-		<div style="position: relative;">
-			<div class="title myfont" style="padding-top: 100px;padding-bottom: 100px;">全部车型</div>
-			<div class="text-center" id="cars">
-				<img src="../img/homepage/cars.jpg"  class="img-responsive center-block" style="width:75%; " />
-				<div id="div1"><a href="#"><img src="../img/dark.png" style="width: 100%;height: 483px;"><span style="color: white;">轿车</span></a></div>
-				<div id="div2"><a href="#"><img src="../img/dark.png" style="width: 100%;height: 483px;"><span style="color: white;">SUV</span></a></div>
-				<div id="div3"><a href="#"><img src="../img/dark.png" style="width: 100%;height: 483px;"><span style="color: white;">轿跑车&敞篷跑车</span></div></a>
-				<div id="div4"><a href="#"><img src="../img/dark.png" style="width: 100%;height: 483px;"><span style="color: white;">MPV</span></a></div>
-			</div>
 		</div>
 		
-		<div>
-			<div class="title myfont" style="padding-top: 100px;padding-bottom: 100px;">发现更多</div>
-			<div class="text-center" style="position: relative;">
-				<img width="75%" src="../img/homepage/footer-1.jpg">
-				<div class="footer" style="position: absolute; top: 0px; left: 189px;">
-					<a href="#"><img src="../img/dark.png"style="width: 1141px;height: 365px;"></a>
-					<div style="position: absolute; top: 130px;left: 100px;"class="myfont">
-						<p class="myfont" style="color: white;">限时购车方案</p>
-						<p style="color: white;font-size: 16px;" class="myfont" >多种优惠方案，</p>
-						<p style="color: white;font-size: 16px;" class="myfont">助你轻松拥有一辆梅赛德斯-奔驰。</p>
-					</div>
-				</div>
-			</div>
-			<br />
-			<div class="text-center" style="position: absolute;left: 190px; z-index: 10;">
-				<img width="120%" src="../img/homepage/footer-2.jpg">
-				<div class="footer" style="position: absolute; top: 0px; left: 0px;">
-					<a href="#"><img src="../img/dark.png"style="width: 745px;height: 360px;"></a>
-					<div style="position: absolute; top: 150px;left: 100px;"class="myfont">
-						<p class="myfont" style="color: white;">加入She's Mercedes</p>
-						<p style="color: white;font-size: 16px;" class="myfont" >发出你的声音, 唤醒女性力量。</p>
-					</div>
-				</div>
-			</div>
-			<br />
-			<div class="text-center" style="position: absolute;left: 760px;top:2200px;">
-				<img width="49.15%"  src="../img/homepage/footer-3.jpg">
-				<div class="footer" style="position: absolute; top: 0px; left: 192px;">
-					<a href="#"><img src="../img/dark.png"style="width: 375px;height: 360px;"></a>
-					<div style="position: absolute; top: 150px;left: 20px;"class="myfont">
-						<p class="myfont" style="color: white;">星友荟</p>
-						<p style="color: white;font-size: 16px;" class="myfont" >尽情表达自我、分享观点、结识新友的星徽社群。</p>
-					</div>
-				</div>
-			</div>
-			<br />
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script>
+			$('#myCarousel').carousel({
+				interval:2000
+			})
+		</script>
+		<div class="maodian ">
+			<a href="#1">
+					车型
+			</a>
+			<a href="#2">
+					查找经销商
+			</a>
+			<a href="#3">
+					关于AMG
+			</a>
+			<a href="#4">
+					体验AMG
+			</a>
+			<a href="#5">
+					AMG赛车活动
+			</a>
+			<a href="#6">
+					AMG车主俱乐部
+			</a>
 		</div>
-		<br />
-		<div id="bg" style="margin-top: 360px;">
-			<div style="background-color: rgba(255,255,255,0.7); width: 300px;height: 250px;padding-top: 70px;" class="text-center">
-				<p class="myfont" style="opacity: 1;">预约试驾</p>
-				<p>亲身体验梅赛德斯-奔驰吧。</p>
-				<a href="test_drive.html" class="myfont">→Go</a>
-			</div>
+		<div class="video">
+			<video autoplay loop muted src="../img/mercedes-AMG/AMG_GT_ALL_4_original.mp4" style="width: 100vw;"></video>
+		</div>
+		<div class="chexingmaodian text-center">
+			<span id="1" >/AMG车型</span>
+		</div>
+		<div class="chexing text-center">
+			<a href="#jiaoche">
+					轿车
+			</a>
+			<a href="#suv">
+					suv
+			</a>
+			<a href="#jiaopao">
+					轿跑车&敞篷车
+			</a>
+			<br />
+			<div id="jiaoche" style="height: 850px;">
+							    <div class="col-md-3">
+								    <img src="../img/cars/L400.png" height="70%"width="70%">&nbsp;&nbsp;&nbsp;
+							   		<div>
+							   	 		<h3>S级</h3><br />
+							   			<a href="">
+							    		<h4>S级轿车</h4>
+							    		<p>￥86.38万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    		<h4>梅赛德斯-迈巴赫S级轿车</h4>
+							    		<p>￥140.88万起</p>
+							   			 </a>
+							    		<br />
+							    		<a href="">
+							   			 <h4>梅赛德斯-AMGS63L 
+							    			<br />
+							    			<br/>
+							    			4MATIC+
+							    			<br />
+							    			<br />
+							               		梅赛德斯-AMS65L</h4>
+							    		<p>￥232.88万起</p>
+							    		</a>
+							    	</div>
+							    </div>
+								<div class="col-md-3">
+							
+									<img src="../img/cars/L400 (1).png" height="70%"width="70%">&nbsp;&nbsp;&nbsp;
+							    	
+							 		<div></div>
+							   		<div>
+							   	 		<h3>E级</h3><br />
+							   			<a href="">
+							    		<h4>长轴距E级轿车</h4>
+							    		<p>￥43.58万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    		<h4>长轴距E级运动轿车</h4>
+							    		<p>￥43，58万起</p>
+							   			 </a>
+							    		<br />
+							    		<a href="">
+							   			 <h4>标准轴距E级车运动版</h4>
+							    		<p>￥43.58万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>梅赛德斯-AMG4MATIC
+							    			<br />
+							    			<br />
+							    			特别版
+							    			</h4>
+							    			<p>￥91.88万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>全新梅赛德斯-AMGS 
+							    				<br/><br />
+							    				4MATIC+特别版
+							    			</h4>
+							    			<p>￥166.88万起</p>
+							    		</a>
+								    </div>
+								</div>
+								<div class="col-md-3">
+									<img src="../img/cars/L400 (2).png" height="70%"width="70%"/>
+									<div></div>
+							   		<div>
+							   	 		<h3>C级</h3><br />
+							   			<a href="">
+							    		<h4>长轴距C级运功轿车</h4>
+							    		<p>￥31.58万起</p>
+							    		</a>
+							    		<br />
+							       		<a href="">
+							   			 <h4>标准轴距C级车运动版</h4>
+							    		<p>￥31.88万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>长轴距C级轿车</h4>
+							    			<p>￥32.38万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>新一代C级旅行轿车</h4>
+							    			<p>￥36.38万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>新一代梅赛德斯-AMGC43 
+							    				<br/><br />
+							    				4MATIC
+							    			</h4>
+							    			<p>￥61.88万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    			<h4>新一代梅赛德斯-AMGC63</h4>
+							    			<p>￥94.18万起</p>
+							    		</a>
+								    </div>
+								</div>
+								<div class="col-md-3">
+									<img src="../img/cars/L400 (3).png" height="70%"width="70%" />
+									<div></div>
+							   		<div>
+							   	 		<h3>A级</h3><br />
+							   			<a href="">
+							    		<h4>全新长轴距A级轿车</h4>
+							    		<p>￥21.69万起</p>
+							    		</a>
+							    		<br />
+							    		<a href="">
+							    		<h4>A级车</h4>
+							    		<p>￥21.98万起</p>
+							   			 </a>
+							    		<br />
+							    		<a href="">
+							   			 <h4>梅赛德斯-AMGA454MATIC</h4>
+							    		<p>￥46.38万起</p>
+							    		</a>
+							    		<br />
+									</div>
+								</div>
+							</div>
+						  	<div id="suv" style="height: 800px;">
+						    	<div class="col-md-3">
+						    		<img src="../img/cars/Vehicle.png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div>
+						    			<h3>G级</h3><br />
+						    			<a href="#"><h4>全新G级越野车</h4>
+						    			<p>￥158.88万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>全新梅赛德斯-AMGG63</h4>
+						    			<p>￥219.88万起</p>
+						    			</a>
+						    		</div>
+						    	</div>
+								<div class="col-md-3">
+									<img src="../img/cars/1.png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		    <div> 
+						    			<h3>GLS</h3>
+						    			<br />
+						    			<a href="#"><h4>GLS SUV</h4>
+						    			<p>￥102.28万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMGGLS63
+						    			<br />
+						    			4MATIC
+						    			</h4>
+						    			<p>￥198.18万起</p>
+						    			</a>
+						    			</div>
+						    	</div>
+						    	<div class="col-md-3">
+						    		<img src="../img/cars/L400 (4).png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div> 
+						    			<h3>GLE</h3>
+						    			<br />
+						    			<a href="#"><h4>GLESUV</h4>
+						    			<p>￥73.98万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>GLE轿跑SUV</h4>
+						    			<p>￥86.08万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMGGLE43
+						    			<br />
+						    			4MATIC
+						    			</h4>
+						    			<p>￥100.68万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMGGLS63
+						    			<br />
+						    			4MATIC
+						    			</h4>
+						    			<p>￥179.88万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMGGLS43
+						    			<br />
+						    			4MATIC 轿跑 SUV
+						    			</h4>
+						    			<p>￥105.98万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMG GLS 63
+						    			<br />
+						    			4MATIC 轿跑 SUV
+						    			</h4>
+						    			<p>￥192.18万起</p>
+						    			</a>
+						    		</div>
+						    	</div>
+								<div class="col-md-3">
+						    		<img src="../img/cars/400-162.png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div> 
+						    			<h3>GLC</h3>
+						    			<br />
+						    			<a href="#"><h4>新梅赛德斯-奔驰长轴距GLC<br />
+						    			SUV
+						    			</h4>
+						    			<p>￥42.98万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>GLC轿跑SUV</h4>
+						    			<p>￥46.38万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMG GLC 43
+						    			<br />
+						    			4MATIC
+						    			</h4>
+						    			<p>￥65.18万起</p>
+						    			</a>
+						    			<br />
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMG GLC 43
+						    			<br />
+						    			4MATIC 轿跑 SUV
+						    			</h4>
+						    			<p>￥67.98万起</p>
+						    			</a>
+						    			<a href="#"><h4>梅赛德斯-AMG GLC 63
+						    			<br />
+						    			4MATIC
+						    			</h4>
+						    			<p>￥98.80万起</p>
+						    			</a>
+						    			
+						    			<br />
+						    			<a href="#"><h4>梅赛德斯-AMG GLC 63
+						    			<br />
+						    			4MATIC 轿跑 SUV
+						    			</h4>
+						    			<p>￥101.80万起</p>
+						    			</a>
+						    		</div>
+						    	</div>
+						  	</div>
+						  	<div id="jiaopao" style="height: 650px;">
+						  	  	<div class="col-md-3">
+						  			<img src="../img/cars/L400 (5).png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div>
+						    			<h3>CLS</h3>
+						    			<br />
+						    			<a href="#"><h4>全新CLS四门轿跑车</h4>
+						    			<br />
+						    			<p>￥64.88万起</p>
+						    			</a>
+						    		</div>
+						  		</div>
+						  		<div class="col-md-3">
+						  			<img src="../img/cars/L400 (6).png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div>
+						    			<h3>E级</h3>
+						    			<br />
+						    			<a href="#"><h4>E级轿跑车</h4>
+						    			<br />
+						    			<p>￥52.88万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>全新E级敞篷轿跑车</h4>
+						    			<br />
+						    			<p>￥64.28万起</p>
+						    			</a>
+						    		</div>
+						  		</div>
+						  		<div class="col-md-3">
+						  			<img src="../img/cars/L400 (7).png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div>
+						    			<h3>C级</h3>
+						    			<br />
+						    			<a href="#"><h4>新一代C级轿跑车</h4>
+						    			<br />
+						    			<p>￥36.98万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>新一代梅赛德斯-AMG C43<br />
+						    			4MATIC 轿跑车
+						    			</h4>
+						    			<br />
+						    			<p>￥64.88万起</p>
+						    			</a>
+						    			<br />
+						    			<a href="#"><h4>新一代梅赛德斯-AMG C63 轿<br />
+						    			跑车
+						    			</h4>
+						    			<br />
+						    			<p>￥97.18万起</p>
+						    			</a>
+						    		</div>
+						  		</div>
+								<div class="col-md-3">
+									<img src="../img/cars/L400 (8).png"height="70%"width="70%" />&nbsp;&nbsp;&nbsp;&nbsp;
+						    		<div>
+						    			<h3>SLC</h3>
+						    			<br />
+						    			<a href="#"><h4>SLC敞篷跑车</h4>
+						    			<br />
+						    			<p>￥51.88万起</p>
+						    			</a>
+									</div>
+								</div>
+							</div>
+		</div>
+		<div class="chaxunmaodian text-center">
+			<span id="2" >
+				/经销商查询<br />
+			</span>
+		</div>
+		<div class="chaxun">
+    <div style="width:1600;height:600px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(120.561556,31.88114),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+		</div>
+		<div class="guanyumaodian text-center">
+			<span id="3" >
+				/关于AMG<br />
+			</span>
+		</div>
+		<div class=" guanyu" >
+			<span style="position: absolute;color: white;padding:50px 100px; ">
+		        		<div   style="width: 500px;">
+		        			<span style="font-family: '楷体'; font-size:45PX;">AMG公司</span><br />
+		        			<span style="font-family: '新宋体'; font-size:18PX;text-align:left;">AMG总部位于非凡驾驭之乡——德国阿法特巴赫。作为戴姆勒集团在高性能汽车细分市场中的技术先锋，AMG以“非凡驾驭”作为品牌承诺、始终以尖端科技与执着匠心磨砺自我：旨在打造兼具品质和动力的高性能座驾，为客户带来酣畅淋漓的多重感官体验。</span><br /><br />
+		        		</div>
+		        	</span>
+		        	<img style="float: right;" src="../img/mercedes-AMG/bgStory-desktop-1.jpg" />
 		</div>
 		<div class="p">
 			<div>
@@ -731,7 +1181,7 @@
 					<li class="char2"><a href="#">限时购车新方案</a></li>
 					<li class="char2"><a href="#">查找经销商</a></li>
 				    <li class="char2"><a href="#">金融计算器</a></li>
-					<li class="char2"><a href="test_drive.html">预约试驾</a></li>
+					<li class="char2"><a href="#">预约试驾</a></li>
 					<li class="char2"><a href="#">下载手册</a></li>
 				</ul>
 			</div>
@@ -781,12 +1231,6 @@
 				<span><a href="#"><img src="../img/homepage/zhihu_mouse_over.png"width="40px"height="40px"/></a></span>
 			</div>
 		</div>	
-		<script src="../plugins/jquery/jquery.min.js"></script>
-		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script>
-			$('#myCarousel').carousel({
-				interval:2000
-			})
-		</script>
 	</body>
 </html>
+

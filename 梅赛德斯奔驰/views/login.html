@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>登录</title>
+		<!--<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>-->
+		<style type="text/css">
+			.bg{
+				background-image: url(../img/bg.jpg);
+				background-size: cover;
+			}
+			.mylogin{
+				border: 1px solid black;
+				
+				width:600px;
+				height: 400px;					
+				padding: 50px ;
+				
+				/**设置圆角**/
+				border-radius: 20px;
+				
+				/*设置边框的阴影*/
+				box-shadow: 2px 2px 4px black;
+				background-color:rgba(255,255,255,.3);
+				position: relative;
+				left:25%;
+			     }
+		</style>
+	</head>
+	<body class="bg">
+		<div class="container-fluid" style="margin-top: 100px;">
+			<div class="row mylogin">
+				<form class="form-horizontal" role="form" >
+					<div align="center"style="font-size: 30px;font-family: '楷体';color: white;"><b>登录</b></div>
+					<div align="left"style="color: whitesmoke;">请输入你的登录数据</div>
+				 	<fieldset>
+					<legend></legend>
+					<br /><br />
+				 	<div class="form-group has-feedback"align="center">
+				    <div class="col-md-5">
+				    	 <span class="glyphicon glyphicon-user form-control-feedback"></span>
+				      	手机号码 <input type="text"  placeholder="请输入手机号码">
+				    </div>
+				  </div>
+				  <br /><br />
+				  <div align="center">
+				    <div>
+				     密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password"  placeholder="请输入密码">
+				    </div>
+				  </div>
+				  <br /><br />
+				  <div>
+				    <div >
+				      <span class="checkbox">
+				      	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+				      	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+				        <label>
+				          <input type="checkbox">
+                                                        请记住我
+				        </label>
+				      </span>
+                      &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                      &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+				      <span ><a href="#">忘记密码</a></span>
+				    </div>
+				  </div>
+				  <br />
+				  <div >
+				    <div align="center">
+				      <button type="submit" class="btn btn-default"style="height: 30px;
+				      	width: 200px;background-color:lightblue;border-radius: 20px;">登录</button>
+				    </div>
+				    <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10"align="center">
+				    	<pre style="font-size: 15px;color: gray;">您还没有账户？</pre>
+				      <button type="button" class="btn btn-default"style="height: 30px;
+				      	width: 200px;background-color:lightblue;border-radius: 20px;">注册</button>
+				    </div>
+				  </div>
+				  </fieldset>
+				</form>
+			</div>
+		</div>
+		
+		<!--引入jquery-->
+		<!--<script src="../plugins/jquery/jquery.min.js"></script>-->
+		<!--引入bootstrap.min.js-->
+		<!--<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>	-->	
+	</body>
+</html>

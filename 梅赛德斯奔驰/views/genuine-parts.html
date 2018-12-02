@@ -3,49 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>原厂配件</title>
-		<link rel="stylesheet" type="text/css" href="../plugins1/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 		<!--引用原厂配件的css文件-->
-		<link rel="stylesheet" type="text/css" href="../css/原厂配件.css" />
+		<link rel="stylesheet" type="text/css" href="../css/genuine-parts.css" />
+		<!--应用网页底部的css文件-->
+		<link rel="stylesheet" href="../css/foot.css" />
+		<!--应用网页头部的css文件-->
+		<link rel="stylesheet" href="../css/header.css" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<style type="text/css">
-			.header{
-				background-color: #000000;
-				width: 100%;
-			}
-			.myarea{
-				position: absolute;
-				top: 5%;
-				right: 8%;
-				z-index: 1;
-			}
-			.div1{
-				padding: 6% 8%;
-				height: 220px;
-			}
-			
-			.mynav{
-				position: relative;
-				background-color: #000000;
-				border: 0px;
-				top: 0px;
-				left: 40%;
-				z-index: 1;
-				font-size: 30px;
-				width: 70%;
-			}
-			li a{
-				color: white;
-			}
-			li a:hover{
-				color: dodgerblue;
-			}
-		</style>
 	</head>
 	<body bgcolor="#E8E8E8">
-		<header class="container header">
-			<div class="div1">
-				<a href="home_page.html" style="position: absolute;top: 3%;left: 10%;">
+		<header class="container header"style="overflow-x: hidden;overflow-y: hidden;">
+			<div class="div1" >
+				<a href="home_page.html" style="position: absolute;top: 5%;left: 3%;">
 					<img src="../img/logo.png" />
 				</a>
 				<div class="myarea">
@@ -54,38 +25,68 @@
    						<li><a href="#">注册</a></li>
 					</ul>
 				</div>
-				<nav class="navbar navbar-default mynav" role="navigation">
-				    <div class="collapse navbar-collapse" style="z-index: -1;" id="example-navbar-collapse">
-				        <ul class="nav navbar-nav">
-				            <li><a href="#" >车型</a></li>
-				            <li><a href="#" >购车指南</a></li>
-				           	<li class ="dropdown">
-				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">客服服务
-				            		<b class="caret"></b>
-				            	</a>
-								<ul class="dropdown-menu" style="position: relative; width: 100 vw;">
-					                <li><a href="#">星徽保养菜单</a></li>
-			                    	<li><a href="#">原厂修养套餐家族</a></li>
-			                   	 	<li><a href="#">手机端服务体验</a></li>
-			                    	<li><a href="原厂配件.html">原厂配件</a></li>
-			                    	<li><a href="#">事故与保险服务</a></li>
-			                    	<li><a href="#">24小时道路救援</a></li>
-			                    	<li><a href="#">召回通知</a></li>
-			                   	 	<li><a href="#">留学回国人员购车业务</a></li>
-			                    	<li><a href="#">金融服务</a></li>
-				               	</ul>
-				            </li>
-				           	<li><a href="#">Mercedes me</a></li>
-				           	<li><a href="#">梅赛德斯-AMG</a></li>
-				           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				           	<span class="glyphicon glyphicon-search"></span>
-				        </ul>
-				    </div>
-				</nav>
+				<div class="text mynav">
+					&nbsp;
+				</div>
+				<div class="text" style="color: white;">
+					车型
+					<div class="mbox">
+					</div>
+				</div>
+				<div class="text"style="color: white;">
+					购车指南
+					<div class="mbox"  style="padding-left: 10%;padding-right: 10%;">
+						<div style="margin-bottom: 30px;">
+							<h1>购车指南</h1>
+						</div>
+						<div class="row" style="margin-bottom: 70px;">
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/440240banner.jpg" width="100%"/>心意所属，远行相伴</a>
+								<p style="font-size: 12px;padding-top: 5px;">在线预订GLE SUV、GLE轿跑SUV、GLS SUV任意一款，得限量好礼。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/special-offer.jpg" width="100%"/>限时购车新方案</a>
+								<p style="font-size: 12px;padding-top: 5px;">提供人性化的选车和购车方案，让购车体验更多元，更轻松。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/Dealer_Locator.png" width="100%"/>查找经销商</a>
+								<p style="font-size: 12px;padding-top: 5px;">根据服务项目及贩售车型，筛选出符合您需求的经销商。</p>
+							</div>
+							<div class="col-md-3">
+								<a href="#"><img src="../img/guide/Financial_Calculator.png" width="100%"/>金融计算器</a>
+								<p style="font-size: 12px;padding-top: 5px;">提供各种弹性购车的新方案，您可以根据预算来进行试算。</p>
+							</div>
+						</div>
+						<div  style="margin-bottom: 70px;">
+							<a href="#"><img src="../img/guide/Test_Drive.png" width="23%"><p>预约试驾</p></a>
+							<p style="font-size: 12px;padding-top: 5px;">选择您心仪的车型，联系经销商，即刻体验梅赛德斯-奔驰。</p>
+						</div>
+						<hr />
+						<div class="collapse navbar-collapse"  id="example-navbar-collapse" style="padding-bottom: 3%;">
+							<ul class="nav navbar-nav">
+								<li><a href="#" >在线购车</a></li>
+				           		<li><a href="#">咨询销售信息</a></li>
+				           		<li><a href="#">下载产品手册</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="text"style="color: white;">
+					客户指南
+					<div class="mbox"></div>
+				</div>
+				<div class="text" style="color: white;">
+					<a href="#">mercedes me</a>
+				</div>
+				<div class="text" style="color: white;">
+					<a href="#">梅赛德斯</a>
+				</div>
 			</div>
 		</header>
+		
+		
 		<div class="text-size">
-			<img  class="bg-img" src="../img/原厂配件/原厂配件背景.jpg" />
+			<img  class="bg-img" src="../img/genuine-parts/genuine-parts-bgimg.jpg" />
 			<div>
 				<div id="components1">
 					<p class="title-components1">原厂配件</p>
@@ -147,7 +148,7 @@
 					               	• 耐高低温防腐蚀垫圈，高效密封
 					                </p>
 					                <p>
-					               	<img src="../img/原厂配件/原厂配件01.jpg"/>
+					               	<img src="../img/genuine-parts/genuine-parts01.jpg"/>
 					                </p>
 					                <p> </p>
 									<p>
@@ -160,7 +161,7 @@
 										• 采用特殊工艺的滤纸材质，以保障均匀的滤纸褶边间距，使滤清器更加稳定，防止变形
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件02.jpg" />
+										<img src="../img/genuine-parts/genuine-parts02.jpg" />
 									</p>
 									<p> </p>
 									<p>
@@ -174,7 +175,7 @@
 										• 专利边框设计，安装便捷，不易因潮湿而变形失效
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件03.jpg" />
+										<img src="../img/genuine-parts/genuine-parts03.jpg" />
 									</p>
 									<p><br />
 										<b>原厂雨刮片</b>
@@ -188,7 +189,7 @@
 										• 与风挡玻璃严密贴合，工作安静无噪音
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件04.jpg" />
+										<img src="../img/genuine-parts/genuine-parts04.jpg" />
 									</p>
 									<p><br />
 										<b>原厂制动盘</b>
@@ -206,7 +207,7 @@
 										• 制造工艺差造成与制动片不均匀摩擦，产生刺耳的噪声，影响驾驶舒适性
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件05.jpg" />
+										<img src="../img/genuine-parts/genuine-parts05.jpg" />
 									</p>
 									<p><br />
 										<b>原厂制动片</b>
@@ -226,7 +227,7 @@
 										• 材料耐磨性差，造成频繁的更换，增加保养费用
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件06.jpg" />
+										<img src="../img/genuine-parts/genuine-parts06.jpg" />
 									</p>
 									<p><br />
 										<b>原厂AGM蓄电池</b>
@@ -248,7 +249,7 @@
 										AGM蓄电池在其使用寿命中免维护。
 									</p>
 									<p>
-										<img src="../img/原厂配件/原厂配件07.jpg" /><br />
+										<img src="../img/genuine-parts/genuine-parts07.jpg" /><br />
 									<br />
 									</p>
 									<p> </p>
@@ -289,7 +290,7 @@
 										- 原厂渠道，权威品质保障
 									</p>
 									<p>
-										<img src="../img/发动机油/发动机油21.jpg" /><br />
+										<img src="../img/engine-oil/engine-oil21.jpg" /><br />
 									</p>
 									<p> </p>
 									<p>
@@ -304,7 +305,7 @@
 										• 有助于节省燃料和减少二氧化碳排放，满足梅赛德斯-奔驰严格环保标准<br />
 									</p>
 									<p>
-										<img src="../img/发动机油/发动机油22.jpg" />
+										<img src="../img/engine-oil/engine-oil22.jpg" />
 									</p>
 									<p> </p>
 									<p>
@@ -318,7 +319,7 @@
 										定期更换发动机油对您爱车的性能保养至关重要，若换油周期过长，会引起机油清洁性能的减弱，从而产生积碳和油泥，同时，机油添加剂的活性因子会因失效导致润滑性能的下降，造成发动机磨损，缩短发动机寿命。因此，梅赛德斯-奔驰建议您每一万公里或一年更换一次原厂发动机油，以保障您爱车的出色性能。<br />
 									</p>
 									<p>
-										<img src="../img/发动机油/发动机油23.jpg" />
+										<img src="../img/engine-oil/engine-oil23.jpg" />
 									</p>
 					        	</div>
 					        </div>
@@ -407,9 +408,77 @@
 			<br />
 		</div>
 		
+		<div class="p">
+			<div>
+			<ul>
+				<li class="char1">车型</li>
+				<li class="char2"><a href="#">轿车</a></li>
+				<li class="char2"><a href="#">SUV</a></li>
+				<li class="char2"><a href="#">轿车和敞篷跑车</a></li>
+			    <li class="char2"><a href="#">MPV</a></li>
+				<li class="char2"><a href="#">EQC</a></li>
+				<li class="char2"><a href="#">车型总览</a></li>
+			</ul>
+       		</div>
+			<div>
+				<ul>
+					<li class="char1">购车指南</li>
+					<li class="char2"><a href="#">在线购车</a></li>
+					<li class="char2"><a href="#">限时购车新方案</a></li>
+					<li class="char2"><a href="#">查找经销商</a></li>
+				    <li class="char2"><a href="#">金融计算器</a></li>
+					<li class="char2"><a href="#">预约试驾</a></li>
+					<li class="char2"><a href="#">下载手册</a></li>
+				</ul>
+			</div>
+			<div style="display: inline">
+				<ul>
+					<li class="char1">客户服务</li>
+					<li class="char2"><a href="#">星徽保养菜单</a></li>
+					<li class="char2"><a href="#">原厂修养套餐家族</a></li>
+					<li class="char2"><a href="#">手机端服务体验</a></li>
+				    <li class="char2"><a href="#">原厂配件</a></li>
+					<li class="char2"><a href="#">事故与保险服务</a></li>
+					<li class="char2"><a href="#">24小时道路救援</a></li>
+					<li class="char2"><a href="#">召回通知</a></li>
+					<li class="char2"><a href="#">留学回国人员购车业务</a></li>
+					<li class="char2"><a href="#">金融服务</a></li>
+				</ul>
+			</div>
+			<div style="display: inline">
+				<ul>
+					<li class="char1">奔驰天下</li>
+					<li class="char2"><a href="#">Mercedes me</a></li>
+					<li class="char2"><a href="#">品牌介绍</a></li>
+					<li class="char2"><a href="#">奔驰新闻</a></li>
+				    <li class="char2"><a href="#">企业社会责任</a></li>
+					<li class="char2"><a href="#">奔驰驾驶学院</a></li>
+					<li class="char2"><a href="#">供应商信息平台</a></li>
+					<li class="char2"><a href="#">环保信息清单</a></li>
+					<li class="char2"><a href="#">奔驰杂志</a></li>
+					<li class="char2"><a href="#">星友荟</a></li>
+				</ul>
+			</div>
+			<div class="clear">
+			<hr />
+			</div>
+			<div ><p class="char1">其他奔驰网站</p>
+		          <span><a href="#">Mercedes me</a></span>
+		          <span><a href="#">星瑞认证二手车</a></span>
+		          <span><a href="#">She'sMercedes</a></span>
+		          <span><a href="#">金融服务</a></span>
+			</div>
+			<br />
+			<hr />
+			<p class="char1">关注我们</p>
+			<div>
+				<span><a href="#"><img src="../img/homepage/wechat_mouse_over.png"width="40px"height="40px"/></a></span>
+				<span><a href="#"><img src="../img/homepage/sina_mouse_over.png"width="40px"height="40px"/></a></span>
+				<span><a href="#"><img src="../img/homepage/zhihu_mouse_over.png"width="40px"height="40px"/></a></span>
+			</div>
+		</div>	
 		
-		
-		<script src="../plugins1/jquery/jquery.min.js"></script>
-		<script src="../plugins1/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
