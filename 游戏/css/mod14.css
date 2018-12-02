@@ -1,0 +1,121 @@
+input,textarea {
+	border:2px solid #ddd;
+	border-radius:0;
+	color:#999;
+	display:inline;
+	font:400 1em/1 "Open Sans",sans-serif;
+	margin:0 0 .5em;
+	padding:1em 1.25em;
+	width:100%;
+	-webkit-transition:border-color 300ms,color 300ms;
+	transition:border-color 300ms,color 300ms;
+	-webkit-appearance:none
+}
+input:focus,textarea:focus {
+	border-color:#333;
+	color:#333;
+	outline:0
+}
+textarea {
+	margin:0;
+	min-height:7.5em;
+	line-height:1.5;
+	overflow:auto;
+	resize:vertical
+}
+.arrow {
+	border-top:9px solid #ddd;
+	border-right:9px solid #ddd;
+	border-bottom:9px inset transparent;
+	border-left:9px inset transparent;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	-webkit-transition:border-color 300ms;
+	transition:border-color 300ms
+}
+input:focus+.arrow,textarea:focus+.arrow {
+	border-top-color:#333;
+	border-right-color:#333
+}
+
+.dibu{
+text-align: center;
+position:fixed;
+bottom:1;
+width:100%;
+height:15%;
+}
+
+.dingbu{
+text-align: center;
+position:fixed;
+top:0;
+width:100%;
+height:15%;
+}
+
+       #container {
+            width: 90%;
+            height: 75%;
+            margin: 0px auto 0;
+            position: absolute;
+        }
+
+       .header {
+            background: #B0E2FF;
+			width: 100%;
+            height: 35px;
+            color: #FFFFFF;
+            line-height: 34px;
+            font-size: 20px;
+            padding: 0 10px;
+            margin-top: 100px;
+        }
+
+        .content {
+            font-size: 12px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding: 5px;
+        }
+        .content li {
+            margin-top: 10px;
+            padding-left: 0px;
+            width: 100%;
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+        .content li img {
+            float: left;
+        }
+        .content li span{
+            background: #7cfc00;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            margin: 6px 10px 0 10px;
+            max-width: 200px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 3px #ccc;
+        }
+        .content li img.imgleft { 
+            float: left; 
+        }
+        .content li img.imgright { 
+            float: right; 
+        }
+        .content li span.spanleft { 
+            float: left;
+            background: #fff;
+        }
+        .content li span.spanright { 
+            float: right;
+            background: #7cfc00;
+        }
+
+        }  
+ 

@@ -1,0 +1,127 @@
+			body.home .fight_section {
+				padding-top: 80px;
+				background: 0 0;
+				color: #f0edf2;
+				text-shadow: 1px 2px 3px rgba(51, 51, 51, .5);
+			}
+			
+			body.home .fight_section {
+				letter-spacing: .05em;
+				padding: 65px 0 95px;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				border-bottom: 1px solid rgba(255, 255, 255, .4);
+			}
+			
+			section.outter {
+				display: block;
+				width: 100%;
+				max-width: 100%;
+			}
+			
+			section>.inner {
+				padding: 0 30px;
+			}
+			
+			section>.inner {
+				width: 100%;
+				max-width: 1250px;
+				margin: 0 auto;
+			}
+			
+			body.home .fight_section .intro-heading {
+				text-shadow: 0 4px 5px rgba(60, 72, 96, .5);
+			}
+			
+			.intro-heading {
+				margin-bottom: 44px;
+				text-transform: none;
+				font-style: italic;
+			}
+			
+			h2 {
+				font-size: 7.2rem;
+				margin: 0;
+				display: block;
+				font-family: "microsoft yahei", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+				font-weight: 400;
+				color: inherit;
+				text-rendering: optimizeLegibility;
+				white-space: normal;
+				font-style: inherit;
+			}
+			
+			.u-center-block {
+				display: table;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.intro-text {
+				line-height: 1.47;
+				margin-bottom: 3.6rem;
+				font-size: 2.8rem;
+			}
+			
+			h2+p {
+				margin-top: .5em;
+			}
+			
+			.bg-cairo {
+				background-size: cover;
+				background-position: center top;
+				background-image: url(../img/fight-section/cairo-desktop.jpg);
+				background-color: #e4dfe6;
+			}
+			
+			.bg-volskaya {
+				background-size: cover;
+				background-position: center top;
+				background-image: url(../img/fight-section/volskaya-2560.jpg);
+			}
+			
+			.bg-london {
+				background-size: cover;
+				background-position: center top;
+				background-image: url(../img/fight-section/london-2560.jpg);
+			}
+			
+			.bg-fftf {
+				opacity: 1;
+				content: '';
+				position: absolute;
+				z-index: -2;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.bg-fftf.trans-in {
+			
+				animation:5s linear bg-fade-out ;
+				animation:5s linear bg-fade-in ;
+			}
+			
+			.bg-fftf.trans-out-latest {
+				z-index: -1;
+				animation:5s linear bg-fade-out ;
+				animation:5s linear bg-fade-in ;
+			}
+			
+			.bg-fftf.trans-out {
+				z-index: -10;
+				animation:5s linear bg-fade-in ;
+				animation:5s linear bg-fade-out ;
+			}
+			
+			@keyframes bg-fade-in{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			
+			@keyframes bg-fade-out{
+				from{opacity: 1;}
+				to{opacity: 0;}
+			}

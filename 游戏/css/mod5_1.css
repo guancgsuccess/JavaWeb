@@ -1,0 +1,10 @@
+	body.home .bg_mountain_city {
+				background-attachment: fixed;
+				min-height: 150rem;
+				background-position: center 16%;
+				background-image: url(../img/dorado-desktop.jpg);
+				/*不能fixed*/
+				background-size: cover;
+				z-index: -1;
+				position: relative;
+			}
