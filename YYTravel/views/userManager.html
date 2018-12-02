@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面一</title>
+    <link rel="stylesheet" href="../plugins/jquery-easyui-1.6.10/themes/default/easyui.css">
+    <link rel="stylesheet" href="../plugins/jquery-easyui-1.6.10/themes/icon.css">
+
+</head>
+<body >
+<table id="table">
+
+</table>
+<script type="text/javascript" src="../plugins/jquery-easyui-1.6.10/jquery.min.js"></script>
+<script type="text/javascript" src="../plugins/jquery-easyui-1.6.10/jquery.easyui.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        console.log("加载完成");
+        $("#table").datagrid({
+            url:'http://localhost:9999/SSHProject/studentController/queryAllStu',
+            columns:[[
+                {field:'id',title:'Id',width:100},
+                {field:'name',title:'name',width:100},
+                {field:'birthday',title:'birthday',width:100,align:'right'}
+            ]]
+        });
+    })
+</script>
+</body>
+</html>
