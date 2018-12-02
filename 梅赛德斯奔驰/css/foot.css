@@ -1,0 +1,40 @@
+.p li{
+	list-style: none;
+	padding: 10px;
+}
+ .clear{
+ 	clear:both
+ }
+.p ul{
+	float: left;
+	padding: 50px;
+}
+.p a{
+	text-decoration: none;
+}
+.p a:link{
+		color: dimgrey;
+	}
+.p a:visited{
+		color: dimgrey;
+	}
+.p a:hover{
+		color:cornflowerblue
+	}
+.p .char1{
+		font-family: "微软雅黑";
+		font-size: 18px;
+	}	
+.p .char2{
+		font-family: "微软雅黑";
+		font-size: 15px;
+	}
+.p{
+	background-color: #F5F5F5;
+	position: relative;
+	padding-left: 250px;
+	padding-bottom: 70px;
+}
+.p span{
+	padding: 50px;
+}
