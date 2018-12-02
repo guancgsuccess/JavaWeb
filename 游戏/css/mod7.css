@@ -1,0 +1,86 @@
+		 body.home .prepurchase-section-desktop {
+		 	text-align: center;
+		 	position: relative;
+		 	border-top: 1px solid rgba(255, 255, 255, .4);
+		 }
+		 
+		 .bg-museum {
+		 	background-image: url(../img/prepurchase/bg-museum.jpg);
+		 	background-size: cover;
+		 	background-position: center top;
+		 }
+		 
+		 .content-box {
+		 	padding-top: 80px;
+		 	padding-bottom: 80px;
+		 }
+		 
+		 body.home .fg-widowmaker-shoulder-rifle {
+		 	width: 50%;
+		 	height: 118%;
+		 	background-image: url(../img/prepurchase/widowmaker-default-pc.png);
+		 	background-size: 100% auto;
+		 }
+		 
+		 body.home .fg-widowmaker-shoulder-rifle {
+		 	position: absolute;
+		 	bottom: 0;
+		 	left: 0;
+		 	right: 0;
+		 	background-position: center top;
+		 }
+		 
+		 .page-wrapper {
+		 	padding-left: 30px;
+		 	padding-right: 30px;
+		 }
+		 
+		 .page-wrapper {
+		 	width: 100%;
+		 	max-width: 1250px;
+		 	padding-left: 15px;
+		 	padding-right: 15px;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 }
+		 
+		 .row {
+		 	max-width: none;
+		 	margin-left: auto;
+		 	margin-right: auto;
+		 }
+		 
+		 .xl-offset-6 {
+		 	margin-left: 50%;
+		 }
+		 
+		 .xl-5 {
+		 	width: 41.66667%;
+		 }
+		 
+		
+		 
+		 .colum {
+		 	padding-left: 2.2rem;
+		 	padding-right: 2.2rem;
+		 	float: left;
+		 }
+		 
+		 .intro-heading-gradient-blue {
+		 	background: -webkit-linear-gradient(top, #3f6493 10%, #345177 100%);
+		 	-webkit-text-fill-color: transparent;
+		 	-webkit-background-clip: text;
+		 	text-shadow: 0 4px 5px rgba(60, 72, 96, .5);
+		 }
+		 
+		 .intro-text {
+		 	line-height: 1.47;
+		 	margin-bottom: 3.6rem;
+		 	font-size: 2.8rem;
+		 }
+		 
+		 .button.m-lg {
+		 	font-size: 3.2rem;
+		 	padding: 6px 40px 13px;
+		 	color: #fefefe;
+		 }

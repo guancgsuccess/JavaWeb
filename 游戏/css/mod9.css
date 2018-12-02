@@ -1,0 +1,85 @@
+
+        ul{
+            	/*清除ul默认格式中的.*/
+            list-style: none;
+            /*list-style: ;*/
+        }
+        /*清除margin-top塌陷*/
+        .clearfix:before,.clearfix:after{
+            content:"";
+            display:table;
+        }
+        /*清除浮动*/
+        .clearfix:after{
+            clear:both;
+        }
+        /*兼容IE*/
+        .clearfix{
+            zoom:1;
+        }
+
+
+        .pic_list_con{
+            width:958px;
+            border:0px solid #ddd;
+            /*visible	默认值。内容不会被修剪，会呈现在元素框之外。
+			 *hidden	内容会被修剪，并且其余内容是不可见的。
+			 *scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+			 *auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+			 *inherit	规定应该从父元素继承 overflow 属性的值。
+			 */
+            overflow:auto;
+        }
+        .pic_list_con h3{
+            width:900px;
+            height:50px;
+            border-bottom: 1px solid #ddd;
+            /*是h3居中，不是h3中的文字居中哦！*/
+            margin:0 auto;
+        }
+        .pic_list_con h3 span{
+            /*内联元素转为内联块元素，支持全部样式*/
+            display:inline-block;
+            height:50px;
+            border-bottom: 2px solid red;
+            font: 18px/50px 'Microsoft YaHei UI';
+            padding:0 15px;
+        }
+        .pic_list_con ul{
+            width: 950px;
+            margin:20px 0 13px 20px;
+        }
+        .pic_list_con ul li{
+            width:150px;
+            height:280px;
+            /*多个div在一个页面上，默认情况是：一行一个div，但是只要在div的css中使用
+            *float：left，可以使一行有多个div，这样可以把网页划分成很多块，
+            *但是使用该属性会影响后面的元素，所有如果后面的div不想再被影响，
+            *可以使用clear:both；
+            *可以理解为清除float:left和float:right的影响，返回到默认状态。*/
+            float:left;
+            margin:0 29px 25px 0;
+            /*clear:both；*/
+        }
+        .pic_list_con {
+			margin-top: 200px;
+			/*margin-left:100px;*/
+			background-color:rgba(1,1,1,0.0) ;
+			position:absolute ;
+	
+		}
+		.pop-tips{
+			color: #9D9D9D;
+		}
+		.bxlist-t1{
+			color: red;
+		}
+		.t2-fwb{
+			color: gold;
+		}
+		.bxlist-t2{
+			text-align:;
+			margin-left: 20px;
+		}
+		
+			
