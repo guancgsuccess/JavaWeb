@@ -346,7 +346,7 @@ a:focus, a:hover {
 		text-decoration: none;
 		height: 61px;
 		width: 38px;
-		background: transparent url("../../img/风景/themes.gif") no-repeat left top;
+		background: transparent url("../../img/viewing/themes.gif") no-repeat left top;
 		margin-top: -45px;
 	}
 
@@ -373,7 +373,7 @@ a:focus, a:hover {
 	/*-- Fading-Image --*/
 
 	.animated {
-		background-image: url("../../img/风景/heading.png");
+		background-image: url("../../img/viewing/heading.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-top: 20%;
@@ -547,7 +547,7 @@ h4.modal-title {
 /*-- Details --*/
 
 .agileinfodetails {
-	background-image: url("../../img/风景/details.jpg");
+	background-image: url("../../img/viewing/details.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -706,7 +706,7 @@ h4.modal-title {
 .wthreelocationsaits .loading {
 	opacity: 0;
 	z-index: 1;
-	background: transparent url("../../img/风景/preloader.gif") no-repeat center center;
+	background: transparent url("../../img/viewing/preloader.gif") no-repeat center center;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -1062,7 +1062,7 @@ a.popup-with-zoom-anim:hover {
 	}
 
 	.text-box-light {
-		background: #FFF url("../../img/风景/calender.png") no-repeat 95% 50%;
+		background: #FFF url("../../img/viewing/calender.png") no-repeat 95% 50%;
 		cursor: pointer;
 		position: relative;
 	}
@@ -1082,18 +1082,18 @@ a.popup-with-zoom-anim:hover {
 		/*-- w3layouts --*/
 		/*-- agileits --*/
 		display: inline-block;
-		background: url("../../img/风景/icon.png") no-repeat -111px -26px;
+		background: url("../../img/viewing/icon.png") no-repeat -111px -26px;
 	}
 
 	.payment {
 		width: 32px;
 		height: 32px;
 		display: inline-block;
-		background: url("../../img/风景/icon.png") no-repeat -154px -23px;
+		background: url("../../img/viewing/icon.png") no-repeat -154px -23px;
 	}
 
 	.payment-date-section {
-		background: url("../../img/风景/calender.png") no-repeat #fff 50%;
+		background: url("../../img/viewing/calender.png") no-repeat #fff 50%;
 	}
 
 	.payment-sendbtns {
@@ -1183,12 +1183,12 @@ a.popup-with-zoom-anim:hover {
 		cursor: pointer;
 		/*-- w3layouts --*/
 		/*-- agileits --*/
-		background: url("../../img/风景/icon.png") no-repeat -188px -25px;
+		background: url("../../img/viewing/icon.png") no-repeat -188px -25px;
 		margin-right: 8px;
 	}
 
 	input[type=checkbox].css-checkbox1:checked + label.css-label1 {
-		background: url("../../img/风景/icon.png") no-repeat -215px -25px;
+		background: url("../../img/viewing/icon.png") no-repeat -215px -25px;
 	}
 
 	input[type=checkbox].css-checkbox2 + label.css-label2 {
@@ -1202,25 +1202,25 @@ a.popup-with-zoom-anim:hover {
 		cursor: pointer;
 		/*-- w3layouts --*/
 		/*-- agileits --*/
-		background: url("../../img/风景/icon.png") no-repeat -218px -24px;
+		background: url("../../img/viewing/icon.png") no-repeat -218px -24px;
 	}
 
 	input[type=checkbox].css-checkbox2:checked + label.css-label2 {
-		background: url("../../img/风景/icon.png") no-repeat -190px -24px;
+		background: url("../../img/viewing/icon.png") no-repeat -190px -24px;
 	}
 
 	.visa {
 		display: inline-block;
 		width: 32px;
 		height: 32px;
-		background: url("../../img/风景/icon.png") no-repeat -32px -28px;
+		background: url("../../img/viewing/icon.png") no-repeat -32px -28px;
 	}
 
 	.paypal {
 		display: inline-block;
 		width: 32px;
 		height: 32px;
-		background: url("../../img/风景/icon.png") no-repeat -71px -26px;
+		background: url("../../img/viewing/icon.png") no-repeat -71px -26px;
 	}
 
 	.payment-online-form-right {
@@ -1631,7 +1631,7 @@ figure.effect-apollo:hover figcaption::before {
 
 .cd-image-block {
 	position: relative;
-	background: url("../../img/风景/review.jpg");
+	background: url("../../img/viewing/review.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1690,7 +1690,7 @@ figure.effect-apollo:hover figcaption::before {
 }
 
 li.wthreeli-1 {
-	background: url("../../img/风景/review-1.jpg");
+	background: url("../../img/viewing/review-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1700,7 +1700,7 @@ li.wthreeli-1 {
 }
 
 li.wthreeli-2 {
-	background: url("../../img/风景/review-2.jpg");
+	background: url("../../img/viewing/review-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1710,7 +1710,7 @@ li.wthreeli-2 {
 }
 
 li.wthreeli-3 {
-	background: url("../../img/风景/review-3.jpg");
+	background: url("../../img/viewing/review-3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1720,7 +1720,7 @@ li.wthreeli-3 {
 }
 
 li.wthreeli-4 {
-	background: url("../../img/风景/review-4.jpg");
+	background: url("../../img/viewing/review-4.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -2068,7 +2068,7 @@ li.agiletravelerw3ls p {
 /*-- Contact --*/
 
 .agilecontactw3ls {
-	background-image: url("../../img/风景/contact.jpg");
+	background-image: url("../../img/viewing/contact.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -2247,7 +2247,7 @@ address {
 .agilefooterwthree-grid3 .submit {
 	width: 35px;
 	height: 35px;
-	background-image: url("../../img/风景/subscribe.png");
+	background-image: url("../../img/viewing/subscribe.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: transparent;
@@ -2302,7 +2302,7 @@ address {
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../../img/风景/to-top.png") no-repeat 0px 0px;
+	background: url("../../img/viewing/to-top.png") no-repeat 0px 0px;
 }
 
 /*-- //Go-To-Top-Button --*/
@@ -2658,11 +2658,11 @@ address {
 		left: 10px;
 		width: 20px;
 		height: 40px;
-		background: transparent url(../../img/风景/themes.gif) no-repeat -9px -10px;
+		background: transparent url(../../img/viewing/themes.gif) no-repeat -9px -10px;
 	}
 	.callbacks_nav.next {
 		right: 10px;
-		background: transparent url(../../img/风景/themes.gif) no-repeat -47px -10px;
+		background: transparent url(../../img/viewing/themes.gif) no-repeat -47px -10px;
 	}
 	.w3lsaboutaits h4 {
 		width: 83%;

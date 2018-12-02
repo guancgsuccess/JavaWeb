@@ -453,17 +453,17 @@ body #loader-wrapper {
 }
 
 #lionhero .slide.one {
-    background: url(../../img/主页/slider/slide-1.jpg) 48% 48%;
+    background: url(../../img/homepage/slider/slide-1.jpg) 48% 48%;
     background-size: cover;
 }
 
 #lionhero .slide.two {
-    background: url(../../img/主页/slider/slide-2.jpg) 48% 48%;
+    background: url(../../img/homepage/slider/slide-2.jpg) 48% 48%;
     background-size: cover;
 }
 
 #lionhero .slide.three {
-    background: url(../../img/主页/slider/slide-3.jpg) 48% 48%;
+    background: url(../../img/homepage/slider/slide-3.jpg) 48% 48%;
     background-size: cover;
 }
 
