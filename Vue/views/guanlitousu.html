@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+	</head>
+	<style type="text/css">
+	    
+		.backgroundfront{
+			background-image:url(../img/index_first.jpg);
+		}
+	
+		.backgroundtousu{
+			background-image:url(../img/03201f65b216d8984b0e4846a29beea5.jpg);
+		}
+		.background1{
+			background-image:url(../img/2344fcddebc38e609427518ddd906ac1.jpg)
+		}
+		.biaoti{
+				font-size: 4em;
+				color: white;
+				/*设置文本的阴影部分(首先文本要是白色);
+				第一个参数:阴影部分如果是正数,阴影向右移动;如果是负数,则往左移动
+				第二个参数:如果是正数,向下移动;如果是负数,则往上移动
+				第三个参数:阴影的模糊度,值越小,阴影越黑;
+				第四个参数:阴影部分的颜色*/
+				text-shadow: -6px 6px 3px #1B6D85;
+			}
+			.biaoti2{
+				font-size: 10px;
+				color: white;
+				
+				/*设置文本的阴影部分(首先文本要是白色);
+				第一个参数:阴影部分如果是正数,阴影向右移动;如果是负数,则往左移动
+				第二个参数:如果是正数,向下移动;如果是负数,则往上移动
+				第三个参数:阴影的模糊度,值越小,阴影越黑;
+				第四个参数:阴影部分的颜色*/
+				text-shadow: -6px 6px 3px blanchedalmond;
+			}
+	</style>
+	<body>
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">diandian——管理界面</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">会员/非会员管理&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">信用等级评定</a>
+								</li>
+								<li>
+									 <a href="#">会员/非会员信息CRUD</a>
+								</li>
+								<li>
+									 <a href="#">会员/非会员审核</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">商家管理&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">商家星级评定</a>
+								</li>
+								<li>
+									 <a href="#">商家信息CRUD</a>
+								</li>
+								<li>
+									 <a href="#">商家审核</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">外卖员管理&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">外卖员审核</a>
+								</li>
+								<li>
+									 <a href="#">外卖员信息CRUD</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">订单管理&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">全部订单</a>
+								</li>
+								<li>
+									 <a href="#">订单评价</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							 <a href="#">投诉信息管理</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user "></span><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">登录<span class="glyphicon glyphicon-log-in"></span></a>
+								</li>
+								<li>
+									 <a href="#">退出<span class="glyphicon glyphicon-off"></span></a>
+								</li>
+								
+								<li>
+									 <a href="#">设置<span class="glyphicon glyphicon-cog"></span></a>
+								</li>
+								<li class="divider">
+								</li>
+								
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="jumbotron backgroundfront" >
+				<h1 class="biaoti">
+					diandian管理
+				</h1>
+				<p>
+			
+				</p>
+				
+			</div>
+			<div class="jumbotron backgroundtousu" align="center">
+				<h1 class="biaoti2">
+					投诉管理制度
+				</h1>
+				<div class="table-responsive">
+				  <table class="table my-table-hover">
+                   <a href="#" id="top"></a>
+				  	<caption>制度目录</caption>
+				    <thead>
+				      <tr>
+				        <th><a href="#1">客户投诉管理制度（一）</a></th>
+				        <th><a href="#2">客户投诉管理制度（二）</a></th>
+				        <th><a href="#2">客户投诉管理制度（三）</a></th>
+				        <th><a href="#2">客户投诉管理制度（四）</a></th>
+				        <th><a href="#2">客户投诉管理制度（五）</a></th>
+				        <th><a href="#2">客户投诉管理制度（六）</a></th>
+				        
+				      </tr>
+				    </thead>
+				  	</table>
+				  </div>
+				<pre class="background1">
+					
+
+　　<h4><a href="#" id="1">客户投诉管理制度（一）：</a></h4>
+       
+
+　　为及时、有效地处理客户的投诉及意见反馈，切实保障客户的利益，提高服务质量，完善服务制度，经合伙人会议讨论决定，特制定本制度。
+
+　　一、投诉及意见反馈的接待和受理工作
+
+　　(一)电话或上门的投诉和意见反馈由总台接待并转专门负责人受理。
+
+　　(二)书面的投诉和意见反馈由行政总台负责受理。
+
+　　(三)司法行政机关、律师协会转来的投诉和意见反馈由专门负责人受理。
+
+　　(四)接待受理人员的工作:
+
+　　1、填写投诉或意见反馈处理登记表及台帐；
+
+　　2、留存相关材料的原件；
+
+　　3、将相关材料及处理登记表按规定转给相关处理人员。
+
+　　<h4><a href="#" id="1">客户投诉管理制度（二）：</a></h4>
+
+　　(一)被投诉人应当回避。
+
+　　(二)先由专门负责人出具书面意见，再由业务分管合伙人处理，如分管合伙人不在，则由主任或其他合伙人处理。重大事项应由所务会议或合伙人会议讨论决定。
+
+　　(三)处理人员应当对相关事情及材料的真实性进行调查。
+
+　　(四)涉及原则性问题或重大问题的投诉，应召开所务会议或合伙人会议讨论处理方案，并确定是否向相关管理部门通报。
+
+　　(五)应及时与投诉人或意见反馈人联系，明确告知处理的工作安排状况。
+
+　　(六)处理人员应当签署明确处理意见，并将相关材料移交专门负责人，由专门负责人组织实施。
+
+　　(七)处理工作的注意事项:
+
+　　1、相关人员在受理或处理相关事宜时，不得与投诉人发生争执；
+
+　　2、处理投诉应当认真、细致，仔细核查相关状况的细节；
+
+　　3、应尽可能缓解投诉人的情绪，但在作来源理决定前不得做任何承诺；
+
+　　4、处理人员不得将投诉及处理事宜告知不相关人员；
+
+　　5、原则上要求采用书面形式回复意见。
+
+　　<h4><a href="#" id="1">客户投诉管理制度（三）：</a></h4>
+
+　　(一)处理完结后的所有材料由行政人员归档备查。行政人员应按年度建立案宗。
+
+　　(二)调查相关人员对处理意见的满意度。
+
+　　(三)如投诉人或被投诉人对处理意见不满意，应及时向处理人员反映，并做好后续工作。
+
+　　(四)将处理意见及相关状况及时反馈给专门负责人。
+
+　　客户投诉管理制度（二）：
+
+　　客户投诉管理办法
+
+　　(一)目的
+
+　　为求迅速处理客护投诉案件，维护公司信誉，促进质量改善与售后服务，制定本办法。
+
+　　(二)范围
+
+　　包括客户投诉表单编号原则，客户投诉的调查处理、追踪改善、成品退货、处理期限，核决权限及处理逾期反应等项目。
+
+　　(三)适用时机
+
+　　凡本公司PCB产品遇客户反应质量异常的申诉(以下简称“客户投诉”)时，依本施行办法的规定办理。(如未造成损失时业务部或有关单位前往处理时，应填报“异常处理单”反应有关单位改善)。
+
+　　(四)处理程序
+
+　　(五)客户投诉分类
+
+　　客户投诉处理作业依客户投诉异常原因的不同区分为：
+
+　　1.非质量异常客户投诉发生原因(指人为因素造成)。
+
+　　2.质量异常客户投诉发生原因。
+
+　　(六)处理部门
+
+　　(七)处理职责
+
+　　各部门客户投诉案件的处理职责
+
+　　1.业务部门
+
+　　(1)详查客户投诉产品的订单编号、料号、数量、交运日期。
+
+　　(2)了解客户客户投诉要求及客户投诉理由的确认。
+
+　　(3)协助客户解决疑难或带给必要的参考资料。
+
+　　(4)迅速传达处理结果。
+
+　　2.质量管理部
+
+　　(1)综理客户投诉案件的调查、提报与职责人员的拟定。
+
+　　(2)发生原因及处理、改善对策的检查、执行、督促、防之提报。
+
+　　(3)客户投诉质量的检验确认。
+
+　　3.总经理室生产管理组
+
+　　(1)客户投诉案件的登记，处理时效管理及逾期反应。
+
+　　(2)客户投诉资料的审核、调查、提报。
+
+　　(3)客户投诉立会的联系。
+
+　　(4)处理方式的拟定及职责归属的判定。
+
+　　(5)客户投诉改善案的提出、洽办、执行成果的督促及效果确认
+
+　　(6)协助有关部门与客户接洽客户投诉的调查及妥善处理。
+
+　　(7)客户投诉处理中客户投诉反应的意见提报有关部门追踪改善。
+
+　　4.制造部门
+
+　　(1)针对客户投诉资料详细调查，并拟定处理对策及执行检查
+
+　　(2)提报生产单位、机班别、生产人员，及生产日期。
+
+　　(八)客户投诉处理表编号原则
+
+　　1.客户投诉处理的编号原则
+
+　　年度(××)月份(××)流水编号(××)
+
+　　2.编号周期以年度月份为原则。
+
+　　(九)客户反应调查及处理
+
+　　1.业务部人员于接到客户反应产品异常时，应即查明该异常(编号、料号、交运日期、数量、不良数量)、客户要求，并即填具“客户抱怨处理表”(表14.6.3)连同异常样品签注意见后送总经理室办理。
+
+　　若客户要求退(换)货数量因客户尚在加工中而无法确定时应于“客户要求”栏注明：“客户加工中未确定”。
+
+　　2.客户投诉案件若需会勘者，业务部门在未填立“客户抱怨处理单”前为应客户需求及确保处理时效：业务人员应立即反应质量管理部人员(或制造部品保组)会同制造部门人员共同前往处理，若质量管理部人员无法及时前往时由总经理指派有关人员前往处理，并于处理后向总经理报告。
+
+　　3.为及时了解客户反应异常资料及处理状况，由质量管理部或有关人员于调查处理后三天内提出报告呈总经理批示。
+
+　　4.总经理室生产管理组接到业务部门的“客户抱怨处理表”后即编列客户投诉编号并登记于“客户抱怨案件登记追踪表”后送质量管理部追查分析原因及判定职责归属部门后，送生产单位分析异常原因并拟定处理对策，并送经理室批示意见，另依异常状况送研发部提示意见，再送回总经理室查核后送回业务部门拟定处理意见，再送总经理室综合意见后，依核决权限呈核再送回业务部依批示处理。
+
+　　5.业务人员收到总经理室送回的“客户抱怨处理表”时，应立即向客户说明、交涉，并将处理结果填入表中，呈主管核阅后送回总经理室。
+
+　　6.总经理室生产管理组接到业务部填具交涉结果的“客户抱怨处理表”后，应于一日内就业务与工厂的意见加以分析作成综合意见，依据核决权限分送业务部经理、副总经理或总经理核决。
+
+　　7.判定发生单位，若属我方质量问题应另拟定处理方式，改善方法是否需列入追踪(人为疏忽免列案追踪)作明确的判定，并依“客户投诉损失金额核算基准”及“客户投诉罚扣判定基准”拟定职责部门损失金额，个人惩处种类呈主管批示后，依罚扣标准办理，若涉及行政处分则依“客户投诉行政处理原则”办理。
+
+　　8.经核签结案的“客户抱怨处理表”第一联质量管理部存，第二联制造部门存，第三联送业务部门依批示办理，第四联送会计科存，第五联总经理室存。
+
+　　9.“客户抱怨处理表”会决后的结论，若客户未能理解时业务部门应再填一份新的“客户抱怨处理表”附原抱怨表一并呈报处理。
+
+　　10.总经理室生产管理组每月10日前汇总上月份结案的案件于“客户投诉案件统计表”会同制造部、质量管理部、研发部及有关部门主管判定职责归属确认及比率并检查各客户投诉项目进行检查改善对策及处理结果。
+
+　　11.业务部门不得超越核决权限与客户做任何处理的答复协议或承认。对“客户抱怨处理表”的批示事项据以书信或电话转答客户(不得将“客户抱怨处理表”影印送客户)。
+
+　　12.各部门对客户投诉处理决议有异议时得以“签呈”专案呈报处理。
+
+　　13.客户投诉资料若涉及其他公司，原物料供应商等的职责时由总经理室会同有关单位共同处理。
+
+　　14.客户投诉不成立时，业务员于接获“客户抱怨处理表”时，以规定收款期收回应收帐款，如客户有异议时，再以“签呈”呈报上级处理。
+
+　　(十)客户投诉案件处理期限
+
+　　1.“客户抱怨处理表”处理期限自总经理室受理起国内13天国外17天内结案。
+
+　　2.各单位客户投诉处理作业流程处理期限
+
+　　(十一)客户投诉金额核决权限
+				</pre>>
+			
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+	<!--引入jquery-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		
+	</body>
+</html>
