@@ -1,0 +1,114 @@
+.mynav{
+	background-color: rgb(30,137,224);
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: rgb(0,107,199);
+	font-size: 14px;
+}
+.bgcolor{
+	background-color: rgb(247,247,247);
+}
+.login-img{
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    font-size: 22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    
+    color:white; 
+    font-size: 22px;
+    float: left;
+}
+.myadress{
+	padding: 0 0 15px 17px;
+}
+.row input[type=text]{
+	position: absolute;
+	right: 17px;
+}
+.rstblock {
+    border-bottom: 1px #f5f5f5 solid;
+    /*height: 140px;*/
+}
+.my_body{
+	width: 1180px ;
+	height=4200px;
+	background-color: white;
+	border: 1px solid #E6E6E6;
+}
+.my_img{
+	width: 70px;
+	height: 70px;
+	margin: 20px;
+}
+.rstblock-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    margin: 20px;
+}
+.logo,.rstblock-title{
+	float: left;
+}
+/*星级 尚未实现*/
+.starrating {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    color: #ccc;
+}
+.foot-link ,.foot-contect{
+	float: left;
+    width: 15%;
+    margin-top: 30px;
+}
+.foot-link h3{
+	font-size: 14px;
+	line-height: 30px;
+}
+.foot-link a{
+	width: 50%;
+	font-size: 12px;
+	color: #999;
+    display: block;
+    line-height: 24px;
+}
+.foot-contect{
+	padding-left: 3%;
+    border-left: 1px #e6e6e6 solid;
+    width: 23%;
+    padding-right: 10px;
+}
+.foot-contect-title{
+	margin-bottom: 12px;
+    color: #666;
+    font-size: 14px;
+    margin-top:20px;
+}
+.foot-contect-title a{
+	color: inherit;
+}
+
+.body-center{
+	margin: auto;
+	width: 1180px;
+}
+.place-search {
+    float: right;
+    margin: 10px 0;
+    height: 32px;
+    /*border: 1px solid #ccc;*/
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+.footer{
+	margin-top: 30px;
+	/*padding-top:-30px;*/
+	border-top: 1px solid #eee;
+}
