@@ -1,0 +1,17 @@
+仓库 - 存放项目
+
+主分支 - master - 组长的分支
+分支 - branch05 - 组长
+分支 - branch01
+分支 - branch02
+分支 - branch03
+分支 - branch04
+
+时间time节点...
+
+
+
+
+
+
+

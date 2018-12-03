@@ -1,0 +1,30 @@
+e:新建web目录
+
+进入web目录中
+git clone https://github.com/guancgsuccess/WebPrj.git
+
+将会看到一个WebPrj的目录.
+目录结构:web\WebPrj目录[仓库的目录]
+
+重启eclipse,选择空间区间 - 定位web\WebPrj
+
+只要workspace改动了,那么之前配置的tomcat,字体,jsp模板将会重置.
+
+导入原来创建的web工程 - 并且勾上copy选项.
+
+定位到WebPrj目录,用cmd进去..
+
+git branch 分支名称
+
+git checkout 分支名称
+
+git status
+
+git add 项目工程名
+
+git commit -m "01-first-commit"
+
+git push origin branchxxx:branchxxx
+
+===
+

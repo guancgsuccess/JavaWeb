@@ -1,0 +1,45 @@
+需要安装三个软件
+1. JDK8.0 - 解压缩之后放入到非C非中文非特殊字符的地方.
+
+2. Tomcat8.x
+
+3. eclipse-mars
+===
+人机交互:GUI - Graphical User Interface - 图形化界面操作
+
+		CLI - Command Line Interface - 命令行方式
+
+第一步:配置JDK(Java Development Kit) - Java开发工具包
+	    - 包含JRE,JVM
+
+右击计算机 - 属性 - 高级系统配置 - 高级 - 环境变量(N)...
+
+- 选择系统变量 - 新建 - 
+					变量名:JAVA_HOME
+					变量值:D:\Program Files\Java\jdk1.8.0_66
+
+继续选择Path - 编辑 - 推荐在最左边%JAVA_HOME%\bin;
+===
+配置服务器环境变量Apatch - Tomcat
+新建 变量名- CATALINA_HOME
+           
+        变量值-  E:\apache-tomcat-8.0.37
+
+继续选择Path - 编辑 - 推荐在最左边%CATALINA_HOME%\bin;
+
+在cmd中输入: echo %CATALINA_HOME%
+
+在cmd中输入:path
+===
+1. 如何在eclipse中配置tomcat
+
+    window - showview - servers
+
+2. eclipse中如何启动和关闭服务器
+
+3. eclipse中如何创建web项目
+===
+http://localhost:8888/SuccessManager/views/user.jsp
+
+
+

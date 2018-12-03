@@ -1,0 +1,13 @@
+1 - 新增jar包文件
+
+2 - 新增几个包
+     com.cx.util - 工具包
+     拷贝三个.java文件
+
+3 - 新建包
+     com.cx.util.support
+     拷贝三个.java文件
+
+4 - 新建包config
+     拷贝一个文件.properties文件
+     修改user和password的值

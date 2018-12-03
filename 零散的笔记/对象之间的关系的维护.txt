@@ -1,0 +1,25 @@
+单向关联:
+
+public class Customer{
+	private Integer id;
+
+	private String cname;
+
+	//一个客户是对应多个订单
+
+	//import java.util.List
+	private List<Order> orders;
+}
+
+public class Order{
+	private Integer id;
+
+	private String ordNo;
+
+	private Double price;
+
+	private Date createDate;
+
+	//多个订单对应一个客户
+	//private Customer customer;
+}

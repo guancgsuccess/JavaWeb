@@ -1,0 +1,80 @@
+1. 组长必须要新建一个分支zz,尽量不要直接操作master.
+
+2. 本地的git-repo目录[自己作为管理者],
+     git clone 你的仓库地址[名称是JavaWeb]
+
+3. 进入到JavaWeb目录中,在本地新建一个分支zz
+     git branch zz
+
+4. 切换到zz分支
+     git checkout zz
+
+5. 新建项目的骨架
+
+6. git add .
+
+7. git commit -m "项目骨架"
+
+8. 切换到master分支,执行git merge zz
+
+    git checkout master
+
+9. 切换到zz分支,推送本地zz分支到远程的zz分支
+
+    git push origin zz:zz
+
+10. 将远程的分支zz合并到远程的master分支
+
+11. 通知组员进行clone操作.
+
+====================================
+组长确认自己管理的那个仓库
+master分支上的东西是否和我上面的保持一致.
+
+项目名称XXX游戏
+
+组员新建目录 -  git clone 仓库地址
+
+需要进入到XXX游戏中.
+
+XXX游戏中,新建自己的本地分支 git branch 分支名称
+
+把自己的原先所有的东西整合到当前的这个骨架中.
+
+git add .
+git commit -m "说明"
+
+git checkout master
+git merge branch分支名称
+
+git checkout branch分支名称
+git push origin branch分支名称:branch分支名称
+
+登录到远程branch分支名称 - 确认远程仓库中是否有记录.
+
+点击新拉请求 - 如果看到"合并"俩个字....
+
+===
+先同步master,再同步branch分支
+===
+这里涉及到一个版本的更新问题,此处我不再详细讲解.有兴趣的学生可以自行搜索.需要组长的事情是,统一大家仓库的版本.
+步骤如下:
+第一步:删除之前下面的仓库目录JavaWeb
+第二步:
+重新git clone https://github.com/guancgsuccess/JavaWeb.git
+
+第三步:切换到自己的分支比如:git checkout branch10
+第四步:整合今晚学员新的提交
+第五步:git add .
+第六步:git commit -m "xxx组 - 第二次提交"
+第七步:切换到master,执行git merge branch10
+第八步:
+切换到branch10,执行git push origin branch10:branch10
+第九步:网页版,新拉请求,让我能够看到提交消息
+
+====
+以后每天的工作,组长必须先同步远程的master到本地的master和自己的分支,特别强调!
+
+====
+
+
