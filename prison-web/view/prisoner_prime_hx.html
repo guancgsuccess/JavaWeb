@@ -6,408 +6,68 @@
 		<!--引入bootstrap样式-->
 		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
 		<style type="text/css">
-			
-			.outer{
-				background-image:url(../img/prisoner02.jpg);
-				background-size: 100% 100%;
-				background-repeat:no-repeat;
-				/*position: relative;*/
-				width:100%;
-				height:600px;
-				/*top: -20px;*/
-				background-color:rgba(00,00,00,0.9)
-				}
-			.c1{
-				/*主体背景div*/
-				width:1000px;
-				height: 1150px;
-				position: relative;
-				top: -320px;
-				margin:auto;
-				/*border: 1px solid black;*/
+			.my-nav{
+				background-color: black;
+			}
+			.my-li{
+				background-color:#ff0000;
 			}
 			#n1{
-				/*好再来监狱大标题*/
-				width: 998px;
-				height: 180px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				text-align:center;
-				font-size: 6em;
-				line-height: 180px;
-			}
-			#n2{
-				/*囚犯大头照*/
-				width: 175px;
-				height:250px ;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 180px;
-				left: 824px;
-				background-image: url(../img/prisoner03.jpg)
-			}
-			#n3{
-				/*公示公告背景div*/
-				width: 200px;
-				height: 250px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 180px;
-			}
-			#n6{
-				/*公示公告标题*/
-				width:198px;
-				height: 60px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				border-radius: 5px;
-				text-align: center;
-				font-size: 2em;
-				line-height: 60px;
-				background-color: blueviolet;
-				font-weight: bold;
-			}
-			#n7{
-				/*公示公告内容*/
-				width: 198px;
-				height: 188px;
-				padding-left: 10px;
-				padding-top: 20px;
-				padding-right: 10px;
-				position: absolute;
-				/*border: 1px solid #00FFFF;*/
-				border-radius: 5px;
-				top: 60px;
-				background-image: -moz-linear-gradient(top, #0ff, #fff); 
-                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0ff), color-stop(1,#fff)); 
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='0ff', endColorstr='#fff', GradientType='0'); 
+				/*左上图标板块*/
+				position: relative;
+				top: 10px;
+				left: 25px;
 			}
 			#n4{
-				/*滑动图片*/
-				width:624px;
-				height: 250px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 180px;
-				left:200px;
+				/*按钮*/
+				position: relative;
+				width: 200px;
+				height: 200px
+				border: 1px solid black;
+				top: -20px;
+				left: 800px;
 			}
-			#n5{
-				/*好再来小卖部*/
-				width: 998px;
-				height: 300px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top:430px;
-			}
-			#SmallShopPhoto{
-				/*小卖部图片*/
-				width:500px;
-				height: 203px;
-				position: absolute;
-				/*border: 1px solid black;*/	
-				top: 95px;
-				background-image: url(../img/prisoner05.jpg)
-			}
-			#SmallShopText{
-				/*小卖部面包屑*/
-				width:322px ;
-				height: 203px;
-				position: absolute;
-				/*border: 2px solid #0000FF;*/
-				left: 500px;
-				top: 95px;
-				border-radius: 5px;
-			}
-			#PeopleInformation{
-				/*囚犯信息介绍*/
-				width: 175px;
-				height:298px ;
-				position: absolute;
-				/*border: 1px solid black;*/
-				left: 822px;
-			}
-			#PeopleInformation1{
-				width: 173px;
-				height: 60px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				border-radius: 5px;
-				text-align: center;
-				line-height: 60px;
-				font-size: 2em;
-				font-weight: bold;
-			}
-			#PeopleInformation2{
-				width: 168px;
-				height: 236px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				padding-top: 20px;
-				padding-left: 10px;
-				padding-right: 10px;
-				top: 60px;
-				left: 5px;
-				border-radius: 5px;
-				background-color: #99FFFF;
-			}
-			#InformationPart{
-				/*信息公开板块*/
-				width: 998px;
-				height: 700px;
-				position: absolute;
-				border: 1px solid #00FFFF;
-				top: 730px;
-				/*border-radius: 5px;*/
-				background-color: #CCFFCC;
-			}
-			#InformationPhoto{
-			    /*信息公开图片*/
-				width: 996px;
-				height: 40px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				background-image: url(../img/prisoner01.jpg)
-			}
-			#YuWu{
-				/*狱务板块*/
-				width: 498px;
-				height: 330px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 40px;
-			}
-			#YuWuTitle{
-				/*狱务标题*/
-				width: 496px;
-				height: 40px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				text-align: center;
-				font-size: 1em;
-				line-height: 40px;
-				font-weight: bold;
-			}
-			#YuWuPrime{
-				/*狱务主体*/
-				width: 496px;
-				height: 288px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 40px;
-			}
-			#GuiFan{
-				/*规范板块*/
-				width: 498px;
-				height: 330px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				left: 498px;
-				top: 40px;
-			}
-			#GuiFanTitle{
-				/*规范标题*/
-				width: 496px;
-				height: 40px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				text-align: center;
-				font-size: 1em;
-				line-height: 40px;
-				font-weight: bold;
-			}
-			#GuiFanPrime{
-				/*规范主体*/
-				width: 496px;
-				height: 288px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 40px;
-			}
-			#JianXing{
-				/*减刑板块*/
-				width: 498px;
-				height: 328px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 370px;
-			}
-			#JianXingTitle{
-				/*减刑标题*/
-				width: 496px;
-				height: 40px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				text-align: center;
-				font-size: 1em;
-				line-height: 40px;
-				font-weight: bold;
-			}
-			#JianXingPrime{
-				/*减刑主体*/
-				width: 496px;
-				height: 286px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 40px;
-			}
-			#ZanYu{
-				/*暂予板块*/
-				width: 498px;
-				height: 328px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 370px;
-				left: 498px;
-			}
-			#ZanYuTitle{
-				/*暂予标题*/
-				width: 496px;
-				height: 40px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				text-align: center;
-				font-size: 1em;
-				line-height: 40px;
-				font-weight: bold;
-			}
-			#ZanYuPrime{
-				/*暂予主体*/
-				width: 496px;
-				height: 286px;
-				position: absolute;
-				/*border: 1px solid black;*/
-				top: 40px;
-			}
-			
 		</style>
+		
 	</head>
-	<body>
+	<body style="background: url(../img/prison-life-yz.jpg) no-repeat center 0px;
+background-position: center 0;
+background-size: cover;">
 		
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar navbar-default my-nav" role="navigation">
-					<div class="container-fluid"> 
-				    <div class="navbar-header">
-				        <button type="button" class="navbar-toggle" data-toggle="collapse"
-				                data-target="#example-navbar-collapse">
-				            <span class="sr-only">切换导航</span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				        </button>
-				        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home	">&nbsp;</span>好再来监狱囚犯系统</a>
-				    </div>
-				    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-				        <ul class="nav navbar-nav navbar-right">
-				            <li class="active"><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>个人信息</a></li>
-				            <li><a href="#"><span class="glyphicon glyphicon-envelope">&nbsp;</span>写信息</a></li>
-				            <li class="dropdown">
-				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				                	<span class="glyphicon glyphicon-th	">&nbsp;</span>
-				                                         小卖部 <b class="caret"></b>
-				                </a>
-				                <ul class="dropdown-menu">
-				                    <li><a href="#">jmeter</a></li>
-				                    <li><a href="#">EJB</a></li>
-				                    <li><a href="#">Jasper Report</a></li>
-				                    <li class="divider"></li>
-				                    <li><a href="#">分离的链接</a></li>
-				                    <li class="divider"></li>
-				                    <li><a href="#">另一个分离的链接</a></li>
-				                </ul>
-				            </li>
-				        </ul>
-				    </div>
-				    </div>
-					<div class="outer"></div>
-					<div class="c1">
-						<div id="n1">
-							<span>好再来监狱囚犯操作系统</span>
-						</div>
-						<div id="n2"></div>
-						<div id="n3">
-							<div id="n6">
-								<span style="color: white;">公示公告</span>
-							</div>
-							<div id="n7">
-								<a href="">
-									<p>好再来监狱管理局大宗物资采购管理委员会招标公告</p>
-								</a><br />
-								<a href="">
-									<p>好再来监狱管理局“马上办、网上办、就近办、一次办”审批服务事项目录公告</p>
-								</a>
-							</div>
-						</div>
-						<div id="n4">
-							<div id="identifier" class="carousel slide">
-							    <!-- 轮播（Carousel）指标 -->
-							    <ol class="carousel-indicators">
-							        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							        <li data-target="#myCarousel" data-slide-to="1"></li>
-							        <li data-target="#myCarousel" data-slide-to="2"></li>
-							        <li data-target="#myCarousel" data-slide-to="3"></li>
-							    </ol>   
-							    <!-- 轮播（Carousel）项目 -->
-							    <div class="carousel-inner">
-							        <div class="item active">
-							            <img src="../img/prisoner04.jpg" alt="First slide">
-							        </div>
-							        <div class="item">
-							            <img src="../img/prisoner06.jpg" alt="Second slide">
-							        </div>
-							        <div class="item">
-							            <img src="../img/prisoner07.jpg" alt="Third slide">
-							        </div>
-							        <div class="item">
-							            <img src="../img/prisoner08.jpg" alt="Forth slide">
-							        </div>
-							    </div>
-							    <!-- 轮播（Carousel）导航 -->
-							    <a class="carousel-control left" href="#myCarousel" 
-							       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
-							    <a class="carousel-control right" href="#myCarousel" 
-							       data-slide="next">&rsaquo;</a>
-							</div>
-						</div>
-						<div id="n5">
-							<div id="SmallShopPhoto"></div>
-							<div id="SmallShopText"></div>
-							<div id="PeopleInformation">
-								<div id="PeopleInformation1">个人信息</div>
-								<div id="PeopleInformation2">
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<div id="InformationPart">
-							<div id="InformationPhoto"></div>
-							<div id="YuWu">
-								<div id="YuWuTitle">
-									<p style="font-size: 18px;">狱务公开指南</p>
-								</div>
-								<div id="YuWuPrime"></div>
-							</div>
-							<div id="GuiFan">
-								<div id="GuiFanTitle">
-									<p style="font-size: 18px;">规范性文件</p>
-								</div>
-								<div id="GuiFanPrime"></div>
-							</div>
-							<div id="JianXing">
-								<div id="JianXingTitle">
-									<p style="font-size: 18px;">减刑假释公示</p>
-								</div>
-								<div id="JianXingPrime"></div>
-							</div>
-							<div id="ZanYu">
-								<div id="ZanYuTitle">
-									<p style="font-size: 18px;">暂予监外执行公示</p>
-								</div>
-								<div id="ZanYuPrime"></div>
-							</div>
-						</div>
-					</div>
-				</nav>
+    <div class="container-fluid"> 
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="color: white;font-weight:bold;">好再来监狱</a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="my-li"><a href="#" style="color: white;">编号:00000001</a></li>
+            <li><a href="#" style="color: white;">姓名:王某强</a></li>
+            <li><a href="#" style="color: white;">余额:￥65</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+				<div id="n1">
+					<img src="../img/prisoner_hx00.png" style="width: 80px;height: 80px;"/>
+					<p style="font-weight: bold;color: white;">好再来监狱囚<br />犯系统</p>
+				</div>
+				<div id="n4">
+					<p>
+						<button type="button" class="btn btn-primary btn-lg">个人信息查询</button>
+					</p><br /><br />
+					<p><button type="button" class="btn btn-primary btn-lg">好再来小超市</button></p><br /><br />
+					<p><button type="button" class="btn btn-primary btn-lg">好再来大信箱</button></p><br /><br />
+				</div>
 			</div>
 		</div>
 		
@@ -416,10 +76,5 @@
 		<script src="../plugins/jquery/jquery.min.js"></script>
 		<!--引入bootstrap.min.js-->
 		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script>
-			$('#identifier').carousel({
-			    interval: 2000
-			})
-		</script>
 	</body>
 </html>

@@ -16,6 +16,31 @@
         box-shadow: 2px 2px 4px #000;
       }
 		</style>
+    <script type="text/javascript">
+      var ide;
+      var ID="1";
+      var pass;
+      function changeSelect(){
+        var myselect = document.getElementById('ide');
+        var index = myselect.selectedIndex;
+        ID = myselect.options[index].value;
+        ide = myselect.options[index].text;
+      }
+    	function login(){
+        if (ID=="1"){
+          location.href="view/warden_home-yz.html";
+        }
+        else if(ID=="2"){
+          location.href="view/yujing_first-zsj.html";
+        }
+        else if(ID=="3"){
+          location.href="view/hyj-xqbg.html";
+        }
+        else if(ID=="4"){
+          location.href="view/prisoner_prime_hx.html";
+        }
+      }
+    </script>
 	</head>
 	<body>
 		
@@ -28,11 +53,11 @@
 				<div class="form-group">
 					<label for="inputIdentified" class="col-md-2 control-label">身份</label>
 					<div class="col-md-8">
-						<select class="form-control">
-							<option>狱警</option>
-							<option>监狱长</option>
-							<option>法院</option>
-							<option>囚犯</option>
+						<select id="ide" class="form-control" onclick="changeSelect()">
+							<option value="1">监狱长</option>
+							<option value="2">狱警</option>
+							<option value="3">法院</option>
+							<option value="4">囚犯</option>
 						</select>
 					</div>
 				</div>
@@ -40,7 +65,7 @@
 				<div class="form-group has-feedback">
 					<label for="inputName" class="col-md-2 control-label">编号</label>
 					<div class="col-md-8">
-						<input type="text" class="form-control"placeholder="编号" maxlength="5">
+						<input id="ID" type="text" class="form-control"placeholder="编号" maxlength="5">
 						<span class="glyphicon glyphicon-user form-control-feedback"></span>
 					</div>
 				</div>
@@ -48,7 +73,7 @@
 				<div class="form-group has-feedback">
 					<label for="inputPassword" class="col-md-2 control-label">密码</label>
 					<div class="col-md-8">
-						<input type="password" class="form-control" placeholder="密码" required>
+						<input id="pass" type="password" class="form-control" placeholder="密码" required>
 						<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 					</div>
 				</div>
@@ -63,9 +88,9 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-2">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+							<button class="btn btn-lg btn-primary btn-block" type="button" onclick="login()">Sign in</button>
 						</div>
-						<div class="col-md-2 col-md-offset-1"><a href="#" class="btn btn-lg btn-default btn-block">游客</a></div>
+						<div class="col-md-2 col-md-offset-1"><a href="view/first.html" class="btn btn-lg btn-default btn-block">游客</a></div>
 					</div>
 				</div>
       </form>
