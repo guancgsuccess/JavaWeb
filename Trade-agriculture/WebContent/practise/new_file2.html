@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<title>卖家模块</title>
+		<script type="text/javascript" src="../js/BuyerReceipt.js"></script>
+		<style type="text/css">
+			.panel table tr td:link {
+				border: 1px solid white;
+				color: red;
+			}
+			
+			.panel table tr td:visited {
+				border: 1px solid white;
+					color: black;
+			}
+			
+			.panel table tr td:hover {
+				border: 1px solid white;
+				color:orange;
+			}
+			
+			.panel table tr td:active {
+				border: 1px solid white;
+				color: red;
+			}
+		</style>
+		</script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div style="height: 100px;">
+					所有分类>
+					<hr>
+				</div>
+				<div class="panel-group col-sm-offset-1 col-sm-10" id="accordion">
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<table>
+									<tbody>
+									<tr >
+										<td> 品牌：</td>
+										<td><label class="checkbox-inline">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option1"> 农家水产
+	   									 	</label>
+										</td>
+										<td><label class="checkbox-inline" style="margin-left: 20px;">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option2"> 小蔡土家鸡
+	   									 	</label>
+										</td>
+										<td><label class="checkbox-inline" style="margin-left: 20px;">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option3"> 王小蔬菜店
+	   									 	</label>
+										</td>
+										<td><label class="checkbox-inline" style="margin-left: 20px;">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option4"> 大脚水果店
+	   									 	</label>
+										</td>
+										<td><label class="checkbox-inline" style="margin-left: 20px;">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option5"> 苏北香米
+	   									 	</label>
+										</td>
+										<td><label class="checkbox-inline"style="margin-left: 20px;">
+	        									<input type="checkbox" id="inlineCheckbox1" value="option6"> 涟水鸡糕
+	   									 	</label>
+										</td>
+										<td><a data-toggle="collapse" data-parent="#accordion" 
+					   							href="#collapseOne" style="margin-left: 20px;">更多</a></td>
+										</tbody>
+								</table>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse">
+							<div class="panel-body">
+								<table>
+									<tbody>
+										<div class="btn-group" data-toggle="buttons" style="margin-left: 200px;">
+											<label class="btn btn-success">
+        										<input type="checkbox"> 提交
+   											</label>
+											<label class="btn btn btn-warning" style="margin-left: 30px;">
+       											<input type="checkbox"> 取消
+   											</label>
+										</div>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<table>
+								<tbody>
+									<tr>
+										<td> 商品地址：</td>
+										<td>
+											<select id="cmbProvince" name="cmbProvince" style="width: 120px "></select>
+										</td>
+										<td>
+										<select id="cmbCity" name="cmbCity" style="width: 120px  "></select>
+										</td>
+										<td>
+											<select id="cmbArea" name="cmbArea" style="width: 120px "></select>
+										</td>
+										<td>  <a data-toggle="collapse" data-parent="#accordion" 
+				  	  						 href="#collapseTwo" style="margin-left: 20px;">
+												更多
+					 					 	</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+										<table>
+									<tbody>
+										<div class="btn-group" data-toggle="buttons" style="margin-left: 150px;">
+											<label class="btn btn-success">
+        										<input type="checkbox"> 提交
+   											</label>
+											<label class="btn btn btn-warning" style="margin-left: 30px;">
+       											<input type="checkbox"> 取消
+   											</label>
+										</div>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="panel ">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<table>
+									<tbody>
+										<tr>
+											<td> 热卖月份：</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox1" value="option1"> 1月
+   									 			</label>
+											</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox2" value="option2"> 4月
+   									 			</label>
+											</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox3" value="option3"> 8月
+   									 			</label>
+											</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox4" value="option4"> 9月
+   									 			</label>
+											</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox5" value="option5"> 10月
+   									 			</label>
+											</td>
+											<td><label class="checkbox-inline" style="margin-left: 20px;">
+        											<input type="checkbox" id="inlineCheckbox6" value="option6"> 12月
+   									 			</label>
+   									 			<td> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="margin-left: 20px;">
+															更多
+													</a>
+												</td>
+										</tr>
+								</tbody>
+							</table>
+			</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+										<tbody>
+										<div class="btn-group" data-toggle="buttons" style="margin-left: 150px;">
+											<label class="btn btn-success">
+        										<input type="checkbox"> 提交
+   											</label>
+											<label class="btn btn btn-warning" style="margin-left: 30px;">
+       											<input type="checkbox"> 取消
+   											</label>
+										</div>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="panel ">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<table>
+									<tbody>
+										<tr>
+											<td> 售卖方向：</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox1" value="option1" > 双人套餐
+   									 				</label>
+												</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox1" value="option2" > 单人套餐
+   									 				</label>
+												</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox2" value="option3" > 组合套餐
+   												 	</label>
+												</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox3" value="option4" > 折扣套餐
+   									 				</label>
+												</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox4" value="option5" > 热销套餐
+   									 				</label>
+												</td>
+												<td><label class="checkbox-inline" style="margin-left: 20px;">
+        												<input type="checkbox" id="inlineCheckbox5" value="option6" > 复合套餐
+   									 				</label>
+												</td>
+													<td> <a data-toggle="collapse" data-parent="#accordion" 
+				   								href="#collapseFour" style="margin-left: 20px;">
+													更多
+												</a>
+										</td>
+									</tr>
+								</tbody>
+								</table>
+			</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse">
+							<div class="panel-body">
+									<tbody>
+										<div class="btn-group" data-toggle="buttons" style="margin-left: 200px;">
+											<label class="btn btn-success">
+        										<input type="checkbox"> 提交
+   											</label>
+											<label class="btn btn btn-warning" style="margin-left: 30px;">
+       											<input type="checkbox"> 取消
+   											</label>
+										</div>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('#collapseFour').collapse({
+					toggle: false
+				})
+			});
+			$(function() {
+				$('#collapseTwo').collapse('show')
+			});
+			$(function() {
+				$('#collapseThree').collapse('toggle')
+			});
+			$(function() {
+				$('#collapseOne').collapse('hide')
+			});
+		</script>
+		<script type="text/javascript">
+			addressInit('cmbProvince', 'cmbCity', 'cmbArea');
+		</script>
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
