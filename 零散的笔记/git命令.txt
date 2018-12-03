@@ -1,0 +1,29 @@
+1. 克隆远程项目到本地.
+
+    git clone 地址
+
+ 2. 查看本地分支
+
+    git branch
+
+ 3. 创建本地分支
+    
+    git branch 分支名称
+
+ 4. 切换分支
+
+    git checkout 分支名称
+
+5. git add . 
+
+    添加当前目录到缓冲区
+
+6. git commit -m "message注释说明"
+
+    真正提交
+
+7. 同步本地分支到远程分支
+
+    git push origin branch01:branch01
+
+    git pull origin master:wy 
