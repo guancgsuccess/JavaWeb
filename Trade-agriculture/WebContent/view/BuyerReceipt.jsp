@@ -1,0 +1,199 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>收货地址</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			.main {
+				/*margin: auto;*/
+				/*border: 1px solid red;*/
+				/*width: 960px;*/
+				/*height: 550px;*/
+			}
+			
+			.my_color {
+				margin-top: 20px;
+				color: cornflowerblue;
+			}
+			
+			.mg {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			
+			div>a:link {
+				text-decoration: none;
+			}
+			
+			div>a:visited {
+				color: black;
+			}
+			
+			div>a:hover {
+				color: cornflowerblue;
+			}
+			
+			div>a:active {
+				color: black;
+			}
+			
+			th {
+				text-align: center;
+			}
+			
+			td {
+				text-align: center;
+				vertical-align: middle;
+			}
+		</style>
+		<script type="text/javascript" src="../js/BuyerReceipt.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class=" navbar-default" role="navigation" style="border: 0px;background-color: aliceblue;">
+					<div class="navbar-header">
+						<small class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;农产品在线交易</small></a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">农产品主页</a>
+							</li>
+							<li>
+								<a href="#">收藏夹</a>
+							</li>
+							<li>
+								<a href="#">商品分类</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									联系客服 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">买家客服</a>
+									</li>
+									<li>
+										<a href="#">卖家客服</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">意见反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--</div>-->
+				</nav>
+
+				<!--<div class="form-group">-->
+				<div class="col-sm-offset-1 col-sm-10 ">
+					<div class="col-sm-2">
+						<div class="row my_color">
+							<font size="6">全部功能</font>
+						</div>
+						<br /><br /><br />
+						<div class="row mg">
+							<a href="#">
+								<font size="4">愿望单</font>
+							</a>
+						</div><br />
+						<div class="row mg">
+							<a href="#">
+								<font size="4">订单记录</font>
+							</a>
+						</div><br />
+						<div class="row mg">
+							<a href="#">
+								<font size="4">评价管理</font>
+							</a>
+						</div><br />
+						<div class="row mg">
+							<a href="#">
+								<font size="4">退款服务</font>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-10 ">
+						<p style="font-size: 30px; margin-top: 19px; color: cadetblue;">收货地址</p>
+						<hr>
+						<form class="form-horizontal" role="form">
+							<fieldset>
+								<form>
+									<div class="from-group has-feedback">
+										<label for="firstname" class="col-sm-2 control-label">地址信息：</label>
+										<div class="col-sm-10">
+											<select id="cmbProvince" class="btn btn-default" name="cmbProvince" style="width: 205px "></select>
+											<select id="cmbCity" class="btn btn-default" name="cmbCity" style="width: 205px  "></select>
+											<select id="cmbArea" class="btn btn-default" name="cmbArea" style="width: 205px "></select> <br><br>
+											<input type="text" class="form-control" id="firstname" placeholder="请输入详细的地址信息，如门牌号、道路、小区、楼栋号单元等信息">
+											<span class="glyphicon glyphicon-home form-control-feedback" style="margin-top: 50PX;"></span>
+										</div>
+									</div>
+								</form>
+								<div class="from-group has-feedback" style="margin-top: 50PX;">
+									<label for="lastname" class="col-sm-2 control-label" style="margin-top: 50PX;">邮政编码：</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="lastname" placeholder="请填写邮政编码信息" style="margin-top: 50PX;">
+										<span class="glyphicon glyphicon-send form-control-feedback" style="margin-top: 50PX;"></span>
+									</div>
+								</div>
+								<div class="from-group has-feedback">
+									<label for="firstname" class="col-sm-2 control-label" style="margin-top: 50PX;">收货人姓名：</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="firstname" placeholder="长度不超过25个字符" style="margin-top: 50PX;">
+										<span class="glyphicon glyphicon-user form-control-feedback" style="margin-top: 50PX;"></span>
+									</div>
+								</div>
+								<div class="from-group has-feedback">
+									<label for="lastname" class="col-sm-2 control-label" style="margin-top: 50PX;">手机号码：</label>
+									<div class="col-sm-4">
+										<input type="password" class="form-control" id="lastname" placeholder="大陆+86" style="margin-top: 50PX;">
+										<span class="glyphicon glyphicon-earphone form-control-feedback" style="margin-top: 50PX;"></span>
+									</div>
+								</div>
+								<div class="col-sm-4" style="margin-top: 50PX;">
+									<input type="text" class="form-control" id="firstname" placeholder="电话号码和手机号码必须一致">
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<div class="checkbox">
+											<label>
+				          <input type="checkbox">设置为默认收货地址
+				        </label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-primary">保存</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			addressInit('cmbProvince', 'cmbCity', 'cmbArea');
+		</script>
+		<!--引入jquery-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

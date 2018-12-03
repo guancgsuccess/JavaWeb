@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>轮播</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--引入bootstrap样式-->
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		
+	</head>
+	<body>
+		
+		<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../img/index_first.jpg" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="../img/index_two.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="../img/index_three.jpg" alt="Third slide">
+        </div>
+        <div class="item">
+            <img src="../img/index_four.jpg" alt="Four slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="carousel-control right" href="#myCarousel" 
+       data-slide="next">&rsaquo;</a>
+</div>
+		
+		<!--引入jquery-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script>
+			$('#myCarousel').carousel({
+    		interval: 1000
+			});
+		</script>
+	</body>
+</html>
